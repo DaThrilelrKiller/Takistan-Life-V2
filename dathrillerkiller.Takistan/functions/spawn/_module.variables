@@ -1,0 +1,13 @@
+﻿module_spawn = true;
+
+
+SpawnPoints = [
+["Insurgent Aircrafts",[1019.47,3626.21,0.00119019],"dtk_ins"],
+["Insurgent Spawn",[1388.56,3506.27,0.00132751],"dtk_ins"],
+
+["Police Base (North)",[6132.79,11527.6,0.0014267],"dtk_cop"],
+
+["Air Field",[6000.44,11534.8,0.00144196],"true"],
+["Civilain Spawn",[5656.24,8892.89,0.00144196],"dtk_civ"]
+
+];

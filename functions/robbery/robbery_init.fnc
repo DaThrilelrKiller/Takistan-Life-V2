@@ -1,0 +1,1 @@
+[30,S_robbery_loop]call core_AddLoop;

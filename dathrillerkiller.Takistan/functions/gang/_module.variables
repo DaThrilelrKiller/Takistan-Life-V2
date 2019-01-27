@@ -1,0 +1,12 @@
+﻿module_gang = true;
+dtk_gang_invites = [];
+v_gang_areas = [
+gangarea1,
+gangarea2,
+gangarea3
+];
+
+dtk_notAllowed = [
+"South Goverment",
+"North Goverment"
+];

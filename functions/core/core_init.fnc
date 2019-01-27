@@ -1,0 +1,1 @@
+[900,s_core_cleaner]call core_AddLoop;

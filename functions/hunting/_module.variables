@@ -1,0 +1,3 @@
+huntingarray  = [["hunt", 300],["cow",150]];
+maxboars = 39;
+maxcows = 21;

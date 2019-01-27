@@ -1,0 +1,21 @@
+
+How to setup a Arma 2 Takistan life server
+
+	1.Install Steam ("https://store.steampowered.com/about/")
+	2.Login to steam.
+	3.Install Arma 2 From steam
+	4.Install Arma 2 Operation ArrowHead from steam
+	5.Install Microsoft Visual C++ 2010 Redistributable Package (x86) ("https://www.microsoft.com/en-in/download/details.aspx?id=5555")
+	6.Once installed launch both Arma 2 and Arma 2 Operation ArowHead and close them
+	7.Then located start.bat with is in the same directoy as theeses instuctions.
+	8.Launch start.bat but double clicking
+	9.Now join your server and play - Rember to unblock the nesaseary ports in your firewall
+	
+Note:
+	The laucnher will automaticly detect your arma 2 and arma 2 Operatin arrow head directoy and setup and lauch the server.
+	
+	
+	
+	
+	
+	

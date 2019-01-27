@@ -1,0 +1,13 @@
+module_map = true;
+
+removeBuilgings =
+
+[
+30019,30018,29759,29937,29933,29936,30004,30016
+];
+
+
+/* 
+hint str nearestobjects [getPos cursorTarget, [], 5];
+ */
+

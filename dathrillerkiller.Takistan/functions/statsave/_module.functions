@@ -1,0 +1,11 @@
+﻿[
+"load",
+"loadwhitelist",
+"retrivevehicleland",
+"save",
+"savevehicle",
+"init",
+"markers",
+"nearSave",
+"ToggleSave"
+];

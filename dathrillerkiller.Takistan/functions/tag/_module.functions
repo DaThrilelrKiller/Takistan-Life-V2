@@ -1,0 +1,10 @@
+﻿[
+"add",
+"remove",
+"show",
+"init",
+"jip",
+"handler",
+"notify",
+"motd"
+];

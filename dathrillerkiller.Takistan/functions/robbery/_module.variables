@@ -1,0 +1,24 @@
+﻿robbery_actions = [
+[fuelshop1,"Gas n Porn"],
+[fuelshop2,"Gas N Pit"],
+[fuelshop3,"Gas N Chips"],
+[fuelshop4,"Gas N Go"],
+[fuelshop5,"Mikes Gas"],
+[fuelshop6,"JimBobs Fuel Station"],
+[fuelshop7,"Fast Fuel"],
+[fuelshop8,"Cum & Go"],
+[fuelshop9,"Get Gas Fast"],
+[pub1,"Taksitan Pub"],
+[pub2,"Joeys Pub"],
+[pub3,"Lukes Pub"]
+];
+
+robbery_dialog_array = 
+[
+["You: Put your hands up this is a robbery!","Clerk: Yes sir, let me open the register...","Clerk: Damn registers stuck!","Clerk: Here, take the money!"],
+["You: Hand me the fucking money!","Clerk: Here take it...","You: Give me all of it or I will kill you NOW!!","Clerk: Okay, Okay","Clerk: There take it all take it.","You: Your a Lucky one!"],
+["You: Hand me the money you have a minute","Clerk: Okay, please don't kill me.","You: Just hand me the fucking money NOWW!!","Clerk: Thats all just take it."],
+["You: Give me the key to the register.","Clerk: its under the counter.","You: If you make any sudden movements your dead.","Clerk: Okay Okay just take the money."]
+];
+
+wantedamountforrobbing = 20000;
