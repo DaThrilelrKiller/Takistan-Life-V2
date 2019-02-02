@@ -20,7 +20,7 @@ loadScreen = "data\images\loading.jpg";
 
 class Header
 {
-	 gameType = Life;            
+	 gameType = Team;            
 	 minPlayers = 1;             
 	 maxPlayers = 80;           
 };
@@ -55,6 +55,7 @@ class MissionSQM
 #include "data\dialogs\hooker_diaglog.hpp"
 #include "data\dialogs\interaction_menu.hpp"
 #include "data\vehicles\cfgvehicles.hpp"
+#include "data\dialogs\Paint_shop.hpp"
 
 class RscTitles
 {

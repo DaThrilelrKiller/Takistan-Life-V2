@@ -9,6 +9,9 @@ if (isClass _class)then {
 	_gear = getNumber (_class >> "weaponSlots");
 	_speed = getNumber (_class >> "maxSpeed");
 	_turn = getNumber (_class >> "turnCoef");
+	_paint = _this call paint_paintable;
+	_paint = if (_paint)then{"Yes"}else{"No"};
+	
 
 	
 	lbadd [303,format ["Fuel Tank: %1",_fuel]];
@@ -20,4 +23,5 @@ if (isClass _class)then {
 	lbadd [303,format ["Gear Cappacity: %1",_gear]];
 	lbadd [303,format ["Speed: %1",_speed]];
 	lbadd [303,format ["Turn Radius: %1",_turn]];
+	lbadd [303,format ["Paintable: %1",_paint]];
 };

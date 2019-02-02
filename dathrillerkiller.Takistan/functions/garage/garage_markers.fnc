@@ -1,9 +1,5 @@
 ﻿private ["_marker"];
 
 {
-	_marker = createMarkerLocal [("garage1_" + str _ForEachIndex), getPos _x];
-	_marker setMarkerTypeLocal "mil_dot";
-	_marker setMarkerColorLocal "colorBlack";
-	_marker setMarkerTextlocal "Performance Shop";
-	_marker setMarkerAlphaLocal 1;
+	[("garage1_" + str _ForEachIndex),getPos _x,nil,nil,"colorBlack","mil_dot",nil,"Performance Shop"]call core_createMarkerLocal;
 }ForEach (nearestobjects [dtk_center, ["Land_House_C_12_EP1"], (dtk_center select 0)]);

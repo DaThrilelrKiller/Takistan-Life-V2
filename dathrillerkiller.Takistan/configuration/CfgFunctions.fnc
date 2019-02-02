@@ -14,7 +14,6 @@ _Funcitons =
 ["inv","getitemsteuer","inventory"],
 
 
-["main","resetsafecode","main"],
 ["main","notification","main"],
 ["main","format_integer","main"],
 ["main","formatamount","main"],
@@ -28,7 +27,6 @@ _Funcitons =
 ["other","putplayerincar","vehicle"],
 
 ["other","getlottoarray","other"],
-["other","safecodedlgitems","other"],
 
 ["dtk","interationhandler","dathrillerkiller"],
 ["dtk","playerlisttocontrol","dathrillerkiller"]

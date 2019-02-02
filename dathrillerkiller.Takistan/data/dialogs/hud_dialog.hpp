@@ -14,20 +14,18 @@ class ar_hud
 	{
 		class Control913475649
 		{
-			type = 0;
+			type = CT_STRUCTURED_TEXT;
 			idc = 154;
+			style = 2;
 			x = safeZoneX + safeZoneW * 0.00125;
 			y = safeZoneY + safeZoneH * 0.94555556;
 			w = safeZoneW * 0.996875;
 			h = safeZoneH * 0.05111112;
-			style = 2;
 			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
-			font = "TahomaB";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1);
 			shadow = 1;
-			
+			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1);
 		};
 		
 	};

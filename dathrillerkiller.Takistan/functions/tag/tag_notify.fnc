@@ -1,8 +1,12 @@
-﻿private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_target"];
+﻿private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_target","_rsc"];
 disableSerialization;
-11 cutRsc ["tag_notify", "PLAIN"];
 _text = _this select 0;
 _img = _this select 1;
+_nodelay = _this select 2;
+_nodelay = if (isNil "_nodelay")then {false}else{true};
+_rsc = if (_nodelay)then {"tag_notify_nodelay"}else{"tag_notify"};
+
+11 cutRsc [_rsc, "PLAIN"];
 
 _display = (uiNamespace getVariable 'tag_notify');
 _control = _display displayCtrl 54;	

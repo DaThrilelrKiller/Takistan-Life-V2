@@ -19,6 +19,7 @@ dtk_active_modules =
 [
 "Music",
 "Network",
+"Zone",
 "Core",
 "Action",
 "Keypress",
@@ -41,7 +42,6 @@ dtk_active_modules =
 "Admin",
 "Police",
 "Cdb",
-"War",
 "Plates",
 "Cuffs",
 "Dog",
@@ -73,8 +73,11 @@ dtk_active_modules =
 "Flashbang",
 "Fingerprints",
 "Hud",
-"killfeed",
+"Killfeed",
 "Mounted",
+"Paint",
+"Bank",
+"Radar",
 "Spawn"
 ];
 

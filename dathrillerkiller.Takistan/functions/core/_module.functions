@@ -19,5 +19,7 @@
 "hit",
 "setVarName",
 "onlinePlayers",
-"commandingMenu"
+"commandingMenu",
+"createMarkerLocal",
+"setFlag"
 ];

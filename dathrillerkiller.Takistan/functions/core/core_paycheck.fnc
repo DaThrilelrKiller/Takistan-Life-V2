@@ -8,6 +8,9 @@ _money = _x select 1;
 
 	if (call _condition)then
 	{
+		if (typeName _money == "CODE")then {
+			_money = [_income] call _money;
+		};
 		_income = _income + _money;
 	};
 	true

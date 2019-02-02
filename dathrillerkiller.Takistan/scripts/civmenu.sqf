@@ -14,7 +14,8 @@ systemChat  localize "STRS_civmenucheck_beendisarmed";
 if (_loopart == "ticket") then 
 {
 	_strafe = _this select 1;					
-	_cop    = _this select 2;		
+	_cop    = _this select 2;	
+	_side = _this select 3;
 	_copplayernumber = playersNumber west;
 	_copticket = round(_strafe/_copplayernumber);	
 	_geld    = [player,"geld"] call storage_amount;
@@ -77,7 +78,14 @@ if (_civkopfgeld != 0) then
 
 (format ["systemChat format [localize ""STRS_civmenucheck_arrested_global"", name %1, name %3, %2]; %1 setVariable ['cdb_bounty',(%2*10000),true];%1_arrest = 1;", player, ((_prisondauer/60) call string_intToString), _copobj]) call network_broadcast;																	
 
-player setpos [5978,7499,0];
+if (_side == "PD")then {
+	player setpos [6170.67,11195.6,0.0014534];
+}else{
+	player setpos [8195.08,1794.78,0.00143433];
+};
+
+
+
 ["inmate"]call clothing_switch;
 dtk_disabledkeys = [44,47];
 
@@ -121,7 +129,11 @@ while {true} do
 																									
 if ((_exitart == "frei") or (_exitart == "freigelassen")) then 
 {
-	player setPos [5965.6,7488.98,0];	
+	if (_side == "PD")then {
+		player setpos [6158.1,11210.9,0.00143051];
+	}else{
+		player setpos [8173.13,1813.4,0.00143433];
+	};
 	player setdamage 0;	
 	(format ["if (player == %1) then { systemChat  localize ""STRS_civmenucheck_free_self"";}; systemChat format [localize ""STRS_civmenucheck_free_global"", name %1];", player]) call network_broadcast;
 	player call cdb_clear_warrants;

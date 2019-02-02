@@ -64,7 +64,7 @@ if (_art == 3) exitWith
 {
 
 _dauer = round(_this select 1);
-format ["if (player == %1) then {[""arrest"", %2, %3] execVM ""scripts\civmenu.sqf"";};", _civmenu_civ, _dauer, player] call network_broadcast;
+format ["if (player == %1) then {[""arrest"", %2, %3] execVM ""scripts\civmenu.sqf"";};", _civmenu_civ, _dauer, player,dtk_side] call network_broadcast;
 
 systemChat  format[localize "STRS_civmenu_arrested", _civmenu_civ];
 

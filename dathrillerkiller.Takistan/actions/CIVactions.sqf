@@ -1,7 +1,4 @@
 ﻿
-/*ROB*/
-[player,["Crack Safe","noscript.sqf", '["crackSafe", safe1]call Other_safehack;',1,false,true,"","player distance Safe1 <= 3"]]call action_add;
-
 /*GOV*/
 [player,["Crime Log","scripts\maindialogs.sqf",["coplog"],1,false,true,"","player distance rathaus <= 3"]]call action_add;
 [player,[format ["Pay Bail", slave_cost],"scripts\maindialogs.sqf", ["bail"],1,false,true,"","player distance bailflag <= 3"]]call action_add;

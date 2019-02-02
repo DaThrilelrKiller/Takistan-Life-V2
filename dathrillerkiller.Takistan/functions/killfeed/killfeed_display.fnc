@@ -1,4 +1,5 @@
-﻿_unit = _this select 0;
+﻿private ["_control","_unit","_killer","_text","_display","_message"];
+_unit = _this select 0;
 _killer = _this select 1;
 
 if (dtk_server)exitWith {};

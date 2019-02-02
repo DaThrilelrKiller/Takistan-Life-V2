@@ -15,5 +15,8 @@ _health set[count _health, 48];
 _health = parseNumber toString[_health select 2,_health select 3];
 _health = (100 - _health);	
 
-_playhud ctrlSetText format [ " Hunger: %1 | Health: %2 | Cash: %3 | Bank: %4 | FPS: %5 " ,_hunger ,_health ,_invmoney ,_bankmoney,round diag_fps ];
+_war = ["WAR ACTIVE","CEASEFIRE"]select peacecomps;
+_color = ["#ff0000","#ffff00"]select peacecomps;
+
+_playhud ctrlSetStructuredText parseText format[ "<t align='center'>Hunger: %1 | Health: %2 | Cash: %3 | Bank: %4 | FPS: %5 | <t color='%6'>%7</t></t>" ,_hunger ,_health ,_invmoney ,_bankmoney,round diag_fps,_color,_war];
 _playhud ctrlCommit 0;

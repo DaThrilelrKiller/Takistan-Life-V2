@@ -1,0 +1,8 @@
+zone_markers = [
+[[6173.81,5667.71,0],[250,250],"opforZone","Empty","ColorYellow","ELLIPSE"],
+[[6174.4,5661.29,0],[0.9,0.6],"opforFlag","Faction_INS","",""],
+[[1533,5663.17,0],[250,250],"indepZone","Empty","ColorYellow","ELLIPSE"],
+[[1532.73,5662.04,0],[0.9,0.6],"indepFlag","Faction_TKM_EP1","",""],
+[[3674.78,11084.2,0],[250,250],"bluforZone","Empty","ColorYellow","ELLIPSE"],
+[[3676.64,11085.1,0],[0.9,0.6],"bluforFlag","Faction_NATO_EP1","",""]
+];

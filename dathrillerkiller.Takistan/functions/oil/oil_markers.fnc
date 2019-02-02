@@ -26,11 +26,7 @@ _locations = [];
 
 {
 	if !([_x,500]call _near)then {
-		_marker = createMarkerLocal [("drill_" + str _ForEachIndex), getPos _x];
-		_marker setMarkerTypeLocal "mil_dot";
-		_marker setMarkerColorLocal "colorBlack";
-		_marker setMarkerTextlocal "Oil Field";
-		_marker setMarkerAlphaLocal 1;
+		_marker = [("drill_" + str _ForEachIndex),getPos _x,nil,nil,"colorBlack","mil_dot",nil,"Oil Field"]call core_createMarkerLocal;
 		v_oil_loc set [count v_oil_loc,_marker];
 	};
 }ForEach (nearestobjects [dtk_center, ["Land_Ind_Oil_Pump_EP1","Land_Ind_Oil_Tower_EP1"], (dtk_center select 0)]);

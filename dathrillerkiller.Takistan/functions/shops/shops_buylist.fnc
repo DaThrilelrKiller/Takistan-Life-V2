@@ -20,7 +20,7 @@ _sort = lbText [2101, (lbCurSel 2101)];
 		{
 			case "item":
 			{
-				_index = lbAdd [301, format ["%1 ($%2, %3kg)", _name, (_preis), (_infos call config_weight)] ]; 	
+				_index = lbAdd [301, format ["%1 ($%2, %3kg)", _name, (_preis call string_intToString), (_infos call config_weight)] ]; 	
 			};
 			case "label":
 			{
@@ -28,7 +28,7 @@ _sort = lbText [2101, (lbCurSel 2101)];
 			};
 			default 
 			{
-				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis)] ];
+				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis call string_intToString)] ];
 			};
 		};
 		

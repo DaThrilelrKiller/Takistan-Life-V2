@@ -14,7 +14,6 @@ none
 if (dtk_server)exitWith {};
 
 []spawn gear_handler;
-[]call gear_actions;
 
 gear_box = "UNBasicAmmunitionBox_EP1" createVehicleLocal [0,0,0];
 clearMagazineCargo gear_box; 

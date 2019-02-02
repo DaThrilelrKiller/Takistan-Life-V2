@@ -1,0 +1,3 @@
+﻿zones = ["opforZone", "indepZone", "bluforZone"];
+capturing = false;
+peacecomps = true;

@@ -7,7 +7,11 @@ SpawnPoints = [
 
 ["Police Base (North)",[6132.79,11527.6,0.0014267],"dtk_cop"],
 
-["Air Field",[6000.44,11534.8,0.00144196],"true"],
-["Civilain Spawn",[5656.24,8892.89,0.00144196],"dtk_civ"]
+["Air Field",[6000.44,11534.8,0.00144196],"dtk_nation == 'North'"],
+["North Civilain Spawn",[5656.24,8892.89,0.00144196],"dtk_nation == 'North' && {dtk_civ}"],
+
+["South Civilain Spawn",[5187.57,6074.86,0.00143433],"dtk_nation == 'South' && {dtk_civ}"],
+
+["Opfor Spawn",[8401.47,1885.06,0.00143433],"dtk_opf"]
 
 ];

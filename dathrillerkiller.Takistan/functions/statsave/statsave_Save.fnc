@@ -17,7 +17,7 @@ _save =
 		[dtk_side, "Warrants",(player getvariable "cdb_warrants")],
 		[dtk_side, "Notes",(player getvariable "cdb_notes")],
 		[dtk_side, "Bounty",(player getvariable "cdb_bounty")],
-		[dtk_side, "Storage",INV_PrivateStorage],
+		[dtk_side, "Storage",[]],
 		[dtk_side, "Apps",INVAppsInstalled],
 		["Main", "lifestate", (lifeState player)],
 		[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],

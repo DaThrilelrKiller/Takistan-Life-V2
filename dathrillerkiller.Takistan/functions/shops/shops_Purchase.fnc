@@ -45,12 +45,12 @@ switch(_itemtype)do
 	case "weapon":
 	{
 		
-		[_className, _amount] call INV_CreateWeapon;
+		[_className, _amount,_fahne] call INV_CreateWeapon;
 		_return = true;
 	};
 	case "magazin":
 	{
-		[_className, _amount] call INV_CreateMag;
+		[_className, _amount,_fahne] call INV_CreateMag;
 		_return = true;
 	};
 	case "vehicle":
@@ -92,9 +92,15 @@ switch(_itemtype)do
 	};
 	case "maintenance":
 	{
-		[_className,(vehicle player)]spawn garage_serviceVehicle;
+		if (_item == "dtk_paint")then {
 		closeDialog 0;
-		_return = true;
+			call paint_open;
+			_return = true;
+		}else {
+			[_className,(vehicle player)]spawn garage_serviceVehicle;
+			closeDialog 0;
+			_return = true;
+		};
 	};
 	case "clothing":
 	{

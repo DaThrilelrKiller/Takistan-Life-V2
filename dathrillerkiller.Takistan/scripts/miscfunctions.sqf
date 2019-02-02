@@ -151,18 +151,28 @@ ISSE_IsVictim =
 };
 
 
-INV_CreateWeapon =
- 
+INV_CreateWeapon = 
 {
+	if (isNil {(_this select 2) getVariable "Gear_action"})then {
+		(_this select 2) addaction ["Gear","noscript.sqf", format ["[%1]call gear_open",_x], 1, false, true];
+		(_this select 2) setVariable ["Gear_action",true];
+	};
+
 	private["_class", "_menge"];
 	_class = _this select 0;
 	_menge = _this select 1;
+	
+	
 	gear_box addWeaponCargoGlobal [_class,_menge];
 };
 
 INV_CreateMag =
- 
 {
+	if (isNil {(_this select 2) getVariable "Gear_action"})then {
+		(_this select 2) addaction ["Gear","noscript.sqf", format ["[%1]call gear_open",_x], 1, false, true];
+		(_this select 2) setVariable ["Gear_action",true];
+	};
+	
 	private["_class", "_menge"];
 	_class = _this select 0;
 	_menge = _this select 1;

@@ -2,11 +2,7 @@
 
 if (dtk_client)then {
 	{
-		_marker = createMarkerLocal [("save_" + str _ForEachIndex), getPos _x];
-		_marker setMarkerTypeLocal "mil_dot";
-		_marker setMarkerColorLocal "colorRed";
-		_marker setMarkerTextlocal "Vehicle Save Point";
-		_marker setMarkerAlphaLocal 1;
+		_marker = [("save_" + str _ForEachIndex),getPos _x,nil,nil,"colorRed","mil_dot",nil,"Vehicle Save Point"]call core_createMarkerLocal;
 		v_save_locs set [count v_save_locs,_marker];
 	}ForEach (nearestobjects [dtk_center, ["Land_Ind_Garage01_EP1"], (dtk_center select 0)]); 
 };

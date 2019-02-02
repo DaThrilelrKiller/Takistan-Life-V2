@@ -65,3 +65,38 @@ class tag_notify {
 		};
 	};
 };
+
+class tag_notify_nodelay {
+
+	idd = 1010;
+	movingEnable=0;
+	duration = 5;
+	fadein = 0;
+	fadeout = 0;
+	onLoad = "uiNamespace setVariable ['tag_notify',_this select 0]";
+	
+	class controlsBackground
+	{
+		class tag1 {
+			
+			idc = 54;
+			type = 13;
+			style = 0x01;
+			x = 0.5;
+			y = 0.5;
+			w = 0.35;
+			h = 1;
+			size = 0.02;
+			colorBackground[] = {0,0,0,0};
+			colortext[] = {0,0,0,0.7};
+			text ="";
+			shadow = 2;
+			
+			class Attributes {
+				align = "right";
+				valign = "middle";
+				size = "2";
+			};
+		};
+	};
+};

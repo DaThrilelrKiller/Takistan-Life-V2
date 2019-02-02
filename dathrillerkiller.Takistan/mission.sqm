@@ -30,7 +30,7 @@ class Mission
 	randomSeed=4744745;
 	class Intel
 	{
-		briefingName="Takistan Life RPG: Rise of South v20";
+		briefingName="A Hybrid between TLX & Rise | Takistan Life at its finest";
 		briefingDescription="By: DaThrillerKiller";
 		resistanceEast=1;
 		startWeather=0;

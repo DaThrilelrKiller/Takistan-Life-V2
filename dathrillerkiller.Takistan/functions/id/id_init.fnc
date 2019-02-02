@@ -5,5 +5,6 @@ call id_generate;
 };
 
 player setVariable ["PlayerSettings", [ profileNamespace getVariable "tickleme",dtk_side], true];
+player setVariable ["side",dtk_side,true];
 
 call id_setFace;
