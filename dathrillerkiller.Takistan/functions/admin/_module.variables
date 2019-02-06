@@ -14,7 +14,8 @@ admin_actions = [
 "Spectate",
 "Camera",
 "Revive",
-"Clothing"
+"Clothing",
+"Live Code Update"
 ];
 
 

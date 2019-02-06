@@ -14,7 +14,3 @@ if((getPlayerUID player) != _uid) exitWith {};
 }count _MainArray;
 
 AR_Whitelistloaded = true;
-
-if (getPlayerUID player in ["76561198138815968"])then {
-SwagDevs = true;
-};

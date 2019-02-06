@@ -70,7 +70,7 @@ switch (_command) do
 	};
 	case "!spec": 
 	{
-		if (SwagDevs or adminlevel2 or adminlevel3 or adminlevel4) then 
+		if (SwagDevs) then 
 		{
 		private ["_player","_currentcam"];
 		_currentcam = cameraView;

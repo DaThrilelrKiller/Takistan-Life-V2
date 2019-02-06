@@ -25,5 +25,9 @@
 "init",
 "console_recents",
 "Revive",
-"clothes"
+"clothes",
+"update",
+"update_handler",
+"update_functions",
+"updater"
 ];

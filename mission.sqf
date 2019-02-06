@@ -14,6 +14,8 @@ _config = call compile preprocessFile "\MPMissions\mission.template";
 	
 	if (_x select 0 != '')then {
 		_object setVehicleInit format['this setVehicleVarName ''%1'';%1 = this; clearWeaponCargo this; clearMagazineCargo this; this allowDamage false;',(_x select 0)];
+	}else{
+		_object setVehicleInit format['this allowDamage false;',(_x select 0)];
 	};
 }forEach _config;
 

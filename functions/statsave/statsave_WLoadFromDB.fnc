@@ -13,10 +13,7 @@ switch (_side) do
 	        ["Main", "adminlevel4"],
 			["Main", "adminlevel3"],
 			["Main", "adminlevel2"],
-			["Main", "SwagDevs"],
-			[_side, "PMC_id"],
-			[_side, "PMCDivisions_id"],
-			[_side, "PMCCommand_id"]
+			["Main", "SwagDevs"]
 		];
     };
 

@@ -73,6 +73,9 @@ switch (_text) do
 		closeDialog 0;
 		[]call admin_clothes;
 	};
-	
-
+	case "Live Code Update":
+	{
+		closeDialog 0;
+		call admin_updater;
+	};
 };

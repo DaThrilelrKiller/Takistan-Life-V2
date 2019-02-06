@@ -725,6 +725,119 @@ class admin_vehicles
 };
 
 
-
+class admin_update
+{
+	idd = 111;
+	movingEnable = true;
+	objects[] = {};
+	class controls
+	{	
+		class dummybutton : RscDummy {idc = 2;};
+		class RscBackground_2200: RscBackground
+		{
+			idc = 2200;
+			x = 0.180053 * safezoneW + safezoneX;
+			y = 0.210987 * safezoneH + safezoneY;
+			w = 0.167972 * safezoneW;
+			h = 0.561026 * safezoneH;
+		};
+		class RscBackground_2201: RscBackground
+		{
+			idc = 2201;
+			
+			x = 0.180053 * safezoneW + safezoneX;
+			y = 0.176985 * safezoneH + safezoneY;
+			w = 0.167972 * safezoneW;
+			h = 0.0340016 * safezoneH;
+			colorBackground[] = {0.5,0,0,1};
+		};
+		class RscBackground_2202: RscBackground
+		{
+			idc = 2202;
+			x = 0.356024 * safezoneW + safezoneX;
+			y = 0.210987 * safezoneH + safezoneY;
+			w = 0.463923 * safezoneW;
+			h = 0.561026 * safezoneH;
+		};
+		class RscBackground_2203: RscBackground
+		{
+			idc = 2203;
+			x = 0.356024 * safezoneW + safezoneX;
+			y = 0.176985 * safezoneH + safezoneY;
+			w = 0.463923 * safezoneW;
+			h = 0.0340016 * safezoneH;
+			colorBackground[] = {0.5,0,0,1};
+		};
+		class RscCombo_2100: RscCombo
+		{
+			idc = 2100;
+			x = 0.188052 * safezoneW + safezoneX;
+			y = 0.227987 * safezoneH + safezoneY;
+			w = 0.143976 * safezoneW;
+			h = 0.0340016 * safezoneH;
+		};
+		class RscListbox_1500: RscListbox
+		{
+			idc = 1500;
+			x = 0.188052 * safezoneW + safezoneX;
+			y = 0.27899 * safezoneH + safezoneY;
+			w = 0.143976 * safezoneW;
+			h = 0.476022 * safezoneH;
+			colorSelectBackground[] = {0.5,0,0,0.5};
+			onLBSelChanged = "_this call admin_exec1;";
+		};
+		class RscEdit_1400: RscEdit
+		{
+			idc = 1400;
+			x = 0.373461 * safezoneW + safezoneX;
+			y = 0.227987 * safezoneH + safezoneY;
+			w = 0.42393 * safezoneW;
+			h = 0.238011 * safezoneH;
+			style = ST_LEFT+ST_MULTI;
+			htmlControl = true;
+			autocomplete = "scripting";
+		};
+		class RscListbox_1501: RscListbox
+		{
+			idc = 1501;
+			onLBSelChanged = "_this call admin_update_handler;";
+			x = 0.372021 * safezoneW + safezoneX;
+			y = 0.5 * safezoneH + safezoneY;
+			w = 0.439927 * safezoneW;
+			h = 0.204009 * safezoneH;
+			colorSelectBackground[] = {0.5,0,0,0.5};
+		};
+		class RscButton_1600: RscButton
+		{
+			idc = 1600;
+			text = "Server"; 
+			action = "['SERVER']call admin_update";			
+			x = 0.372021 * safezoneW + safezoneX;
+			y = 0.72101 * safezoneH + safezoneY;
+			w = 0.135977 * safezoneW;
+			h = 0.0340016 * safezoneH;
+		};
+		class RscButton_1601: RscButton
+		{
+			idc = 1601;
+			text = "All"; 
+			action = "['ALL']call admin_update";			
+			x = 0.515997 * safezoneW + safezoneX;
+			y = 0.72101 * safezoneH + safezoneY;
+			w = 0.143976 * safezoneW;
+			h = 0.0340016 * safezoneH;
+		};
+		class RscButton_1602: RscButton
+		{
+			idc = 1602;
+			text = "Client"; 
+			action = "[(call compile lbData [2100, lbCurSel 2100]select 1)]call admin_update";
+			x = 0.667972 * safezoneW + safezoneX;
+			y = 0.72101 * safezoneH + safezoneY;
+			w = 0.143976 * safezoneW;
+			h = 0.0340016 * safezoneH;
+		};
+	};
+};
 
 
