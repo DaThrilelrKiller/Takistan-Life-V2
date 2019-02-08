@@ -55,9 +55,15 @@ _place setVariable ["robbery_money",0,true];
 _message = format ['Someone robbed %1', _name];
 ["ALL",["dtk_cop","Police Dispatch",_message],"Main_Notification",true,false]call network_MPExec;
 
-
-
 _place setVariable ["robbery_avalible",true,true];
+
+/* Create Evident for finger prints */
+_object = createVehicle ["Suitcase", position player, [], 10, "NONE"];
+
+_object call core_setVarName;
+["ALL",[_object,['','scripts\pickup.sqf',[_object, "evidence", 1],25,false,true,'LeanRight',format ['dtk_cop && {player distance _target < 5} && {!([_target,"Pick up %1 (E)","%2"]call tag_show)}',_name,"data\images\tags\oil"]]],"network_addAction",false,true]call network_MPExec;
+		
+
 
 
 local_useBankPossible = false;

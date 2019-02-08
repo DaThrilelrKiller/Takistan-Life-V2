@@ -14,6 +14,8 @@ if (!(call INV_isArmed)) exitwith
 ["ALL",[],{	titleText ["$$$ WARNING $$$ Security Guards have spotted armed men attempting to break into the national bank!!! $$$ WARNING $$$", "PLAIN DOWN"]; player  say "Bank_alarm";},false,true]call network_MPExec;
 _object setVariable ["cracking",name player,true];
 
+[player,"Bank Robbery",100000]call cdb_addWarrant;
+
 for "_i" from 1 to 100 step 1 do {
 		[format['Cracking into bank safe... %1%2',_i,"%"],'data\images\items\lockpick',true]call tag_notify;
 		uiSleep 0.7;

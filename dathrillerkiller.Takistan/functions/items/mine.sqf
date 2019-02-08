@@ -47,31 +47,26 @@ else
 				_pos = getposASL player;
 				_object = "Barrel4" createvehicle (position player);
 				_object setPos [ getPos _object select 0, (getPos _object select 1)+4, (getPos _object select 2)];
-				_object setvariable ["droparray", [_amount, _resource], true];
 			};
 			case (_resource == "iron"):{
 				_pos = getposASL player;
 				_object = "Suitcase" createvehicle (position player);
 				_object setPos [ getPos _object select 0, (getPos _object select 1)+4, (getPos _object select 2)];
-				_object setvariable ["droparray", [_amount, _resource], true];
 			};
 			case (_resource == "gold"):{
 				_pos = getposASL player;
 				_object = "Suitcase" createvehicle (position player);
 				_object setPos [ getPos _object select 0, (getPos _object select 1)+4, (getPos _object select 2)];
-				_object setvariable ["droparray", [_amount, _resource], true];
 			};
 			case (_resource == "copper"):{
 				_pos = getposASL player;
 				_object = "Suitcase" createvehicle (position player);
 				_object setPos [ getPos _object select 0, (getPos _object select 1)+4, (getPos _object select 2)];
-				_object setvariable ["droparray", [_amount, _resource], true];
 			};
 			case (_resource == "coal"):{
 				_pos = getposASL player;
 				_object = "Suitcase" createvehicle (position player);
 				_object setPos [ getPos _object select 0, (getPos _object select 1)+4, (getPos _object select 2)];
-				_object setvariable ["droparray", [_amount, _resource], true];
 			};
 		};
 

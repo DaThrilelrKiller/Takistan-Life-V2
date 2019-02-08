@@ -1,13 +1,15 @@
+private ["_unit","_side","_uid","_name","_return","_value"];
 
 _unit = _this select 0;
 _side = _this select 1;
 _uid = getPlayerUid _unit;
 _name = name _unit;
+_return = [];
 
+{
+	_value = [format["%1 - %2","Whitelist",_uid],"Whitelist",_x select 1,false]call s_statsave_read;
+	diag_log str _value;
+	_return set [_forEachIndex,_value];
+}forEach whitelist_data;
 
-_helper = [format["%1 - %2",_name,_uid],"Whitelist","Helper"]call s_statsave_read;
-_moderator = [format["%1 - %2",_name,_uid],"Whitelist","Moderator"]call s_statsave_read;
-_admin = [format["%1 - %2",_name,_uid],"Whitelist","Administrator"]call s_statsave_read;
-_developer = [format["%1 - %2",_name,_uid],"Whitelist","Developer"]call s_statsave_read;
-
-[_unit,[[_helper,"Helper"],[_moderator,"Moderator"],[_admin,"Administrator"],[_developer,"Developer"]],"whitelist_load",false,false]call network_MPExec;
+[_unit,_return,"whitelist_load",false,false]call network_MPExec;

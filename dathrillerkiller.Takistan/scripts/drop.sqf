@@ -28,7 +28,6 @@ if ([player,_item,-_amount] call storage_add) then
 	_object = _class createvehicle _pos;
 
 	_object setposASL getposASL player;
-	_object setvariable ["droparray", [_amount, _item], true];
 	_name13 = _item call config_displayname;
 	
 	_object call core_setVarName;	

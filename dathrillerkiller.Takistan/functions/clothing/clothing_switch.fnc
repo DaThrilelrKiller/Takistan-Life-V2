@@ -46,6 +46,8 @@ execVM format ['actions\%1actions.sqf',dtk_side];
 
 _PlayerSettings = profileNamespace getVariable "tickleme";
 player setVariable ["PlayerSettings",_PlayerSettings, true];
+player setVariable ["side",dtk_side,true];
+
 _face = (_PlayerSettings select 0);
 player setVehicleInit format["this setFace '%1';", _face];
 processInitCommands;

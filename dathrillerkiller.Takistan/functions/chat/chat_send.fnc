@@ -10,7 +10,7 @@ _message = "";
 chat_messages set [count chat_messages,_text];
 
 {_message = _message + _x}forEach chat_messages;
-["chat_messages",13]call array_trim;
+["chat_messages",10]call array_trim;
 
 12 cutRsc ["better_chat", "PLAIN"];
 _display = (uiNamespace getVariable 'better_chat');

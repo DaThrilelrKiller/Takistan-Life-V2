@@ -14,7 +14,7 @@ if(capturing) exitWith {
 	
     _curOwner = [_zone] call zone_owner;
 	
-    if(peacecomps && !dtk_ins && _curOwner == civilian) exitWith {
+    if(peacecomps && !dtk_ins && _curOwner == "CIV") exitWith {
         hint "Your side can only neutralize when it's not war, and not fully capture!";
     };
 	if(!(call INV_isArmed)) exitWith {
@@ -26,7 +26,7 @@ if(capturing) exitWith {
 	_capCancelled = false;
     _lockpos = getPosASL player;
 	
-	_text = if (_curOwner == civilian) then {"Capturing"}else{"Neutralizing"};
+	_text = if (_curOwner == "CIV") then {"Capturing"}else{"Neutralizing"};
 	
 	for "_i" from 1 to 100 step 1 do {
 		if (animationstate player != "AinvPknlMstpSlayWrflDnon_medic")then {
@@ -43,10 +43,10 @@ if(capturing) exitWith {
 		[_zone, _oldColor] call zone_setCapping;
         hint 'Flag Capture Interrupted';
     };
-	if (_curOwner != civilian) exitWith {
-		[_zone, civilian, _zonePole, _zoneFlag] call zone_setOwner;
+	if (_curOwner != "CIV") exitWith {
+		[_zone, "CIV", _zonePole, _zoneFlag] call zone_setOwner;
 		["ALL",[_zone],{systemchat format ["%1 has been neutralized!",(_this select 0)];},false,true]call network_MPExec;	
 		
 	};
-    [_zone, side player, _zonePole, _zoneFlag] call zone_setOwner;
+    [_zone, dtk_side, _zonePole, _zoneFlag] call zone_setOwner;
 	["ALL",[_zone,side player],{systemchat format ["%2 captured %1!",(_this select 0),_this select 1];},false,true]call network_MPExec;	

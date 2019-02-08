@@ -5,16 +5,16 @@ _zonePole = _this select 2;
 _zoneFlag = _this select 3;
 
 _data = call {
-	if (_chkTeamOwn == civilian)exitWith {
+	if (_chkTeamOwn == "CIV")exitWith {
 		["ColorYellow","\ca\ca_e\data\flag_white_co.paa","Empty"]
 	};
-	if (_chkTeamOwn == resistance)exitWith {
+	if (_chkTeamOwn == "INS")exitWith {
 		["ColorBlack","\ca\ca_e\data\flag_tkm_co.paa","Faction_TKM_EP1"]
 	};
-	if (_chkTeamOwn == east)exitWith {
+	if (_chkTeamOwn == "OPF")exitWith {
 		["ColorRed","\ca\data\Flag_chdkz_co.paa","Faction_INS"]
 	};
-	if (_chkTeamOwn == west)exitWith {
+	if (_chkTeamOwn == "PD")exitWith {
 		["ColorBlue","\ca\ca_e\data\flag_nato_co.paa","Faction_NATO_EP1"]
 	};
 };

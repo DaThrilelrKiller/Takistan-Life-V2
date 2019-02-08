@@ -1,4 +1,3 @@
-
 _object = _this select 0;
 _cracked = _object getVariable "cracked";
 
@@ -26,5 +25,6 @@ for "_i" from 1 to 100 step 1 do {
 
 if (bank_progress == 100)then {
 	[player,"geld",5000] call storage_add;	
+	bank_progress = -1;
 	_object setVariable ["cracked",(_cracked + 1),true];
 };

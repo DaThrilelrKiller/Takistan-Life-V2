@@ -11,7 +11,6 @@ if (isNil "server_auth" && {dtk_client})then {
 };
 
 waitUntil {(!isNull player && {!isNull(findDisplay 46)}) or dtk_server}; 
-diag_log text str playerSide;
 
 startLoadingScreen ["","dtk_loading"]; 
 

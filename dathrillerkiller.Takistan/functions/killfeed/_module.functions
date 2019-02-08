@@ -2,5 +2,7 @@
 "init",
 "display",
 "message",
-"color"
+"color",
+"add",
+"board"
 ];

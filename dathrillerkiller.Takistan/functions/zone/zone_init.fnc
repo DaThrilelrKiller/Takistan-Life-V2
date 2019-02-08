@@ -1,5 +1,5 @@
 if (dtk_client)then {
-	opforZoneFlag addaction ["","noscript.sqf","['opforZone',opforZoneFlag,'opforFlag']spawn zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {side player != ['opforZone'] call zone_owner} && {!([_target,'Cap/Neutralize Anar City (E)','data\images\tags\flag']call tag_show)}"];
-	indepZoneFlag addaction ["","noscript.sqf","['indepZone',indepZoneFlag,'indepFlag'] call zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {side player != ['indepZone'] call zone_owner} && {!([_target,'Cap/Neutralize Khushab City (E)','data\images\tags\flag']call tag_show)}"];
-	bluforZoneFlag addaction ["","noscript.sqf","['bluforZone',bluforZoneFlag,'bluforFlag'] call zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {side player != ['bluforZone'] call zone_owner} && {!([_target,'Cap/Neutralize North Oil Fields (E)','data\images\tags\flag']call tag_show)}"];
+	opforZoneFlag addaction ["","noscript.sqf","['opforZone',opforZoneFlag,'opforFlag']spawn zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {dtk_side != ['opforZone'] call zone_owner} && {!([_target,'Cap/Neutralize Anar City (E)','data\images\tags\flag']call tag_show)}"];
+	indepZoneFlag addaction ["","noscript.sqf","['indepZone',indepZoneFlag,'indepFlag'] call zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {dtk_side != ['indepZone'] call zone_owner} && {!([_target,'Cap/Neutralize Khushab City (E)','data\images\tags\flag']call tag_show)}"];
+	bluforZoneFlag addaction ["","noscript.sqf","['bluforZone',bluforZoneFlag,'bluforFlag'] call zone_capture;", 25, false, true, "LeanRight","!dtk_civ && {dtk_side != ['bluforZone'] call zone_owner} && {!([_target,'Cap/Neutralize North Oil Fields (E)','data\images\tags\flag']call tag_show)}"];
 };

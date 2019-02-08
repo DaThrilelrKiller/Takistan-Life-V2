@@ -25,7 +25,6 @@ _amounts = _array select 1;
 		_class = if(_x == "geld")then{"EvMoney"}else{"Suitcase"};
 		_object = _class createvehicle position player;
 
-		_object setvariable ["droparray", [_amount, _x], true];
 		_name13 = _x call config_displayname;
 		_object  setvehicleinit format["
 		this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2]];

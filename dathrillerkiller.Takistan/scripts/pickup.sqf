@@ -30,8 +30,6 @@ if (_amount <= 0) exitWith {systemChat  localize "STRS_inv_buyitems_maxgewicht";
 if(_exitvar == 1)exitwith{pickingup = false;};
 pickingup   = true;
 
-_object setvariable ["droparray", nil, true];
-
 if(primaryweapon player == "" and secondaryweapon player == "")then{player playmove "AmovPercMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon"}else{player playmove "AinvPknlMstpSlayWrflDnon"};
 
 sleep 1;
@@ -43,19 +41,16 @@ systemChat  format["You Picked Up %1 %2", _amount, _name];
 if(_amount < _tamount) then
 
 {
-
-_amount = _tamount - _amount;
-_object setvariable ["droparray", [_amount, _item], true];
-_n = iactionarr find _object;
-iactionarr set [_n, 0];
-iactionarr = iactionarr - [0, (iactionarr select (_n + 1))];
-pickingup = false;
+	_amount = _tamount - _amount;
+	_n = iactionarr find _object;
+	iactionarr set [_n, 0];
+	iactionarr = iactionarr - [0, (iactionarr select (_n + 1))];
+	pickingup = false;
 }
 else
 {
-_object setvariable ["droparray", nil, true];
-deletevehicle _object;
-pickingup = false;
+	deletevehicle _object;
+	pickingup = false;
 };
 
 pickingup = false;

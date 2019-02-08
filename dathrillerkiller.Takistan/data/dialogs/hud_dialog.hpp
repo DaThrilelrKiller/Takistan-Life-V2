@@ -82,10 +82,10 @@ class ar_hud
 			{
 				idc = 20;
 				type = CT_STRUCTURED_TEXT;
-				size = 0.033;
+				size = 0.031;
 				x = safeZoneX;
 				y = safeZoneY;
-				w = SafeZoneW; 
+				w = SafeZoneW * 0.3; 
 				h = SafeZoneH;
 				colorText[] = {1,1,1,1};
 				colorBackground[] = {0,0,0,0};

@@ -21,5 +21,6 @@
 "onlinePlayers",
 "commandingMenu",
 "createMarkerLocal",
-"setFlag"
+"setFlag",
+"sideNumber"
 ];

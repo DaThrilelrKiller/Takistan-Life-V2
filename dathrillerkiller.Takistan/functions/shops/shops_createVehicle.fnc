@@ -30,7 +30,7 @@ _classname =  _name call config_class;
 	_vehicle setDir _dir;
 	_vehicle setVariable ["DTK_OwnerUID",_data, true];
 	_vehicle setVariable ["dtk_storage",[[],[]], true];
-	_vehicle setvariable ["tuning",1.008, true];
+	_vehicle setvariable ["tuning",1.004, true];
 	_vehicle addeventhandler ["HandleDamage",'_this call vehicle_handleDamage' ];
 
 	

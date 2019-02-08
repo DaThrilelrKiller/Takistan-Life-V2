@@ -1,4 +1,6 @@
-﻿_unit = _this select 0;
+﻿private ["_unit","_killer","_name","_nameKiller","_distance","_weapon","_image","_message"];
+
+_unit = _this select 0;
 _killer = _this select 1;
 
 _name = _unit call killfeed_color;

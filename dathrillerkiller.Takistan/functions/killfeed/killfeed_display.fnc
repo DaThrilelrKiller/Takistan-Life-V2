@@ -5,6 +5,8 @@ _killer = _this select 1;
 if (dtk_server)exitWith {};
 if !(isPlayer _unit)exitWith {};
 
+_this call killfeed_add;
+
 _text = "";
 
 15 cutRsc ["kill_feed", "PLAIN"];

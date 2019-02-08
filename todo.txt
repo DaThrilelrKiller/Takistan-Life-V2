@@ -2,3 +2,5 @@
 -fix setting laws
 -add medic vehicles & supplies
 -add casino
+-Fix killfeed
+-fix id cards

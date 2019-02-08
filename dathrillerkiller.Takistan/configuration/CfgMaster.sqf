@@ -1099,6 +1099,7 @@ dtk_items = [
 ["camera_advanced",["Item", "misc"],["camera_advanced", "Advanced Camera"],[60000, 60000], [20, "",""], [false, true, false,false,"camera_place"]],
 ["camera_laptop",["Item", "misc"],["camera_laptop", "CCTV Laptop"],[10000, 10000], [20, "",""], [false, true, false,false,"camera_laptop"]],
 ["brush",["Item", "misc"],["Suitcase", "Detective Brush"],[1200, 1200], [20, "",""], [false, true, false,false,"fingerprints_gather"]],
+["evidence",["Item", "misc"],["Suitcase", "Evidence"],[0, 0], [20, "",""], [false, true, false,false,"nouse"]],
 
 ["Bandit2_DZ",["clothing","cloth"],["Bandit2_DZ","Bandit"],[30,30],[0.1,"",""],[true,false,true,false,"clothing_switch"]],
 ["CopUniDef",["clothing","cloth"],["Policeman","Policeman Uniform"],[30,30],[0.1,"",""],[true,false,true,false,"clothing_switch"]],
