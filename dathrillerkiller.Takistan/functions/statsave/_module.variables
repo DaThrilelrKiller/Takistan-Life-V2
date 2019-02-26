@@ -4,7 +4,7 @@ statsave_ranks = [
 ["Mod", "adminlevel4"],
 ["Admin", "adminlevel3"],
 ["Senior Admin", "adminlevel2"],
-["Developer", "SwagDevs"],
+["Developer", "Developer"],
 ["PMC", "PMC_id"],
 ["PMC", "PMCDivisions_id"],
 ["PMC Command", "PMCCommand_id"]
@@ -15,7 +15,7 @@ v_save_locs = [];
 adminlevel4 = false;
 adminlevel3 = false;
 adminlevel2 = false;
-SwagDevs = false;
+Developer = false;
 PMC_id = false;
 PMCDivisions_id = false;
 PMCCommand_id = false;

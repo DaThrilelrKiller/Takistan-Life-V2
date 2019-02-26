@@ -21,7 +21,7 @@ _CleanerVehicles = (allMissionObjects "LandVehicle") + (allMissionObjects "Air")
 	uids = uids + [_UID];
 	amount = amount + 1;
 } count playableUnits;
-/*publicVariable "uids"; commented out untill it is needed in another scripts*/
+
 _uidlog = format['[SERVER CLEANER] Collected %1 player UID(s)', amount];
 amount = 0;
 

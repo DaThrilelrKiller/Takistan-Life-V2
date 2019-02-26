@@ -8,7 +8,6 @@ _dir = getDir _corps;
 
 /* Sets pos of the new body */
 _unit setPos _pos;
-_corps setPos _pos;
 _unit setDir _dir;
 ["ALL",[_unit,"AdthPpneMstpSlowWrflDnon_binocular"],"network_switchmove",false,true]call network_MPExec;
 
@@ -20,7 +19,7 @@ if (_water)then {
 	
 	/* If  the shore cannot be found, go ahead and let the player respawn */
 	if ((str _pos) == '[0,0,0]')then{
-	call medical_terminate;
+		call medical_terminate;
 	};
 
 };

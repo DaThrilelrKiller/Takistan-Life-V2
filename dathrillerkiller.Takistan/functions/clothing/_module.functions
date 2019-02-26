@@ -3,5 +3,7 @@
 "init",
 "create",
 "texture",
-"respawn"
+"respawn",
+"preview",
+"menu"
 ];

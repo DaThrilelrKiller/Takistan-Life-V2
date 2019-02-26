@@ -5,7 +5,6 @@
 ["read",false],
 ["loop",false],
 ["save",false],
-["WLoadFromDB",false],
 ["write",false],
 ["jip",false],
 ["init",false]

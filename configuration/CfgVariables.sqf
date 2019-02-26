@@ -8,3 +8,8 @@ bank_steuer = 5;
 publicvariable "bank_steuer";
 INV_ItemTypenArray = [ ["Item", "Item", 5], ["vehicle", "Vehicle",5], ["Magazin","Magazine",5], ["weapon","Weapon",5]];
 publicvariable "INV_ItemTypenArray";
+
+dtk_civ = false;						
+dtk_cop = false;	
+dtk_ins = false;
+dtk_opf = false;

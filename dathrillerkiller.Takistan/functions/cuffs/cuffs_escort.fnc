@@ -9,8 +9,8 @@ if (!isNil "_escorting") exitWith {
 };
 
 _unit = cursorTarget;
+if !(isPlayer _unit)exitWith {};
 _escort = _unit getVariable "escorting";
-
 
 if (isNil "_unit")exitWith {};
 if (_unit distance player > 5) exitWith {};

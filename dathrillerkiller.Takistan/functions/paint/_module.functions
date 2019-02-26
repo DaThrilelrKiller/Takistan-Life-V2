@@ -4,5 +4,9 @@
 "preview",
 "vehicle",
 "close",
-"apply"
+"apply",
+"Zoom",
+"camera",
+"current",
+"sliders"
 ];

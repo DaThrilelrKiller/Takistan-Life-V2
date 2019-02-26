@@ -102,3 +102,29 @@ class ar_hud
 		};
 	};
 
+class dtk_logo
+{
+	idd = 200;
+	fadeout=0;
+	fadein=0;
+	duration = 1000000000;
+	name= "dtk_logo";
+	onLoad = "uiNamespace setVariable ['dtk_logo', _this select 0]";
+	
+	class ControlsBackground
+	{
+		class Control841420291 : RscPicture
+		{
+			idc = 1;
+			x = safeZoneX + safeZoneW * 0.29394532;
+			y = safeZoneY + safeZoneH * 0.22569445;
+			w = safeZoneW * 0.41210938;
+			h = safeZoneH * 0.54861112;
+			text = "data\images\ad.paa";
+		};
+		
+	};
+	class Controls 	{};
+	
+};
+

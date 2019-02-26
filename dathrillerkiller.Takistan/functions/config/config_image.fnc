@@ -18,7 +18,6 @@ _return = _item call {
 	if (_this == "medikit")exitwith {"medkit"};
 	if (_this == "geld")exitwith {"money"};
 	if (_this == "reparaturkit")exitwith {"repairkit"};
-	if (_this == "kleinesreparaturkit")exitwith {"repairkit"};
 	if (_this == "sand")exitwith {"sand"};
 	if (_this == "fuelline")exitwith {"syphon"};
 	if (_this == "treeseed")exitwith {"tree"};

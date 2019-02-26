@@ -13,9 +13,10 @@ _plate = _vcl getVariable  "dtk_plate";
 _warrants = _vcl getVariable ["cdb_warrants",[]];
 _license = _vcl getVariable ["cdb_license",[]];
 _notes = _vcl getVariable ["cdb_notes",[]];
+_textures = _vcl getVariable ["textures",[]];
 _sirens = weapons _vcl;
 
-INVVehiclesLand set [count INVVehiclesLand, [_vclClass,_trunk,_speedupgrade,_weaps,_mags,_plate,_warrants,_license,_notes,_sirens]];
+INVVehiclesLand set [count INVVehiclesLand, [_vclClass,_trunk,_speedupgrade,_weaps,_mags,_plate,_warrants,_license,_notes,_sirens,_textures]];
 deleteVehicle _vcl;
 
 _save = [player, [ [dtk_side, "VehiclesLand", INVVehiclesLand] ] ];

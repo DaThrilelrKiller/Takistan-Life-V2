@@ -1,0 +1,3 @@
+dtk_houses = [];
+dtk_locked = [];
+publicVariable "dtk_locked";

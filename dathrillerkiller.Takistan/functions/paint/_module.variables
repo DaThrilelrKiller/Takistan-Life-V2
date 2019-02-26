@@ -1,1 +1,5 @@
-﻿
+﻿paint_temp_vehicle = objNull;
+dtk_formats = [
+"color",
+"perlinNoise"
+];

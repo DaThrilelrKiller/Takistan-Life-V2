@@ -1,4 +1,7 @@
-﻿private ["_art"];
+﻿workplacejob_taxi_sperre = false;
+[0,0,0,["getajob_taxi"]]spawn {
+
+private ["_art"];
 _art = ((_this select 3) select 0);
 
 if (isNil "INV_LocalTaxiKunde" ) then {INV_LocalTaxiKunde = player};
@@ -12,20 +15,15 @@ if (_art == "getajob_taxi") then
 {
 
 if (workplacejob_taxi_sperre) exitWith 
-
-	{
-
+{
 	systemChat  format [localize "STRS_workplacemission_taxi_alreadyinuse",workplacejob_taxi_sperrzeit];
-
-	};	
+};	
 
 workplacejob_taxi_active = true;												
 workplacejob_taxi_sperre = true;
 
 while {true} do 
-
-	{
-
+{
 	_startzahl 		= (floor(random(count workplacejob_taxi_zielarray)));	
 	_zielzahl 		= (floor(random(count workplacejob_taxi_zielarray)));					
 	_start    		= (workplacejob_taxi_zielarray select _startzahl);																												
@@ -33,21 +31,21 @@ while {true} do
 	_spielerstart     	= getPos (vehicle player);
 	
 	while {true} do 
-
-		{
-
+	{
 		_startzahl 		= (floor(random(count workplacejob_taxi_zielarray)));	
 		_zielzahl 		= (floor(random(count workplacejob_taxi_zielarray)));					
 		_start    		= (workplacejob_taxi_zielarray select _startzahl);																												
 		_ziel 			= (workplacejob_taxi_zielarray select _zielzahl);
 
-		if (_zielzahl != _startzahl and ((_spielerstart distance _start)+(_start distance _ziel)) < taximaxdistance and ((_spielerstart distance _start)+(_start distance _ziel)) > taximindistance) exitWith {};
+		if (_zielzahl !=  _startzahl and ((_spielerstart distance _start)+(_start distance _ziel)) > taximaxdistance and ((_spielerstart distance _start)+(_start distance _ziel)) > taximindistance) exitWith {};
 		sleep 1;
-			
-		};
+	};
+	
+	systemchat "haha";
 
 	_taxizeit = time;
 	_civ 	  = civclassarray select round random(count civclassarray - 1);
+	systemchat str _civ;
 
 	call compile format ["'%1' createUnit [[(_start select 0),(_start select 1),0], group player, ""%2taxikunde = this; this setVehicleVarName """"%2taxikunde""""; this disableAI """"MOVE""""; this disableAI """"TARGET"""";""]; [%2taxikunde] join grpNull; processInitCommands;", _civ, player];																												
 																																																																
@@ -62,8 +60,7 @@ while {true} do
 	systemChat  localize "STRS_workplacemission_taxi_begin";
 
 	while {true} do 
-
-		{
+	{
 
 		sleep 1;
 		INV_LocalTaxiKunde = player;
@@ -118,9 +115,7 @@ while {true} do
 			};
 																																																																				
 		if (player != vehicle player and vehicle player distance _ziel < 30 and speed vehicle player < 2 and workplacejob_taxi_kundeactive and INV_LocalTaxiKunde in vehicle player) exitWith 
-
-			{
-			
+		{
 			_geld = ((500 max(round((((_spielerstart distance _start)+(_start distance _ziel))*workplacejob_taxi_multiplikator)-(time-_taxizeit))))min workplacejob_taxi_maxmoney);
 			if (_geld < 0) then {_geld = 0};
 			[player,"geld",_geld] call storage_add;	
@@ -129,8 +124,7 @@ while {true} do
 			sleep 5;
 			format["%1 doMove [(%2 select 0),(%2 select 1),0];", INV_LocalTaxiKunde, _ziel] call network_broadcast;
 			sleep ((random 10)+5);
-
-			};
+		};
 
 		if (!alive player or !alive INV_LocalTaxiKunde) exitWith {systemChat  localize "STRS_workplacemission_taxi_failure"; sleep 5;};
 		if (!workplacejob_taxi_active) 			exitWith {systemChat  localize "STRS_workplacemission_taxi_canceled";sleep 10;};
@@ -145,7 +139,7 @@ while {true} do
 	if (isNull(INV_LocalTaxiKunde)) exitWith {};										
 	if (!alive player or !workplacejob_taxi_active)exitWith{};
 
-	};
+};
 																								
 sleep ((workplacejob_taxi_sperrzeit)*60);			
 workplacejob_taxi_active = false;					
@@ -154,3 +148,4 @@ workplacejob_taxi_sperre = false;
 };
 
 if (_art == "canceljob_taxi") then {workplacejob_taxi_active = false};
+};

@@ -22,5 +22,6 @@
 "commandingMenu",
 "createMarkerLocal",
 "setFlag",
-"sideNumber"
+"sideNumber",
+"earplugs"
 ];

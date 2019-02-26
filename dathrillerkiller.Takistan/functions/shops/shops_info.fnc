@@ -13,8 +13,10 @@ lbadd [303,format ["Sell cost: %1$",_data call config_sellcost]];
 lbadd [303,format ["Illegal: %1",(_data call config_illegal)call core_convertBoolean]];
 lbadd [303,format ["Kind: %1",_data call config_kind]];
 lbadd [303,format ["Type: %1",_data call config_type]];
-lbadd [303,format ["Licence: %1",(_data call config_license1)call licenses_name]];
-lbadd [303,format ["Licence: %1",(_data call config_licence2)call licenses_name]];
+lbadd [303,format ["Licence: %1",([_data,1] call config_license)call licenses_name]];
+lbadd [303,format ["Licence: %1",([_data,2] call config_license)call licenses_name]];
+lbadd [303,format ["Licence: %1",([_data,3] call config_license)call licenses_name]];
+lbadd [303,format ["Licence: %1",([_data,4] call config_license)call licenses_name]];
 
 
 if (_type == "Item")exitWith {

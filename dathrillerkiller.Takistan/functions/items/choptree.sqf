@@ -27,10 +27,10 @@ if ((player distance getmarkerpos "forest" < 175) or (player distance getmarkerp
 			_choppedtree = ["wood","wood"] call BIS_selectRandom;/*just in case we want to add other types of trees (ash, hicery, maple)*/
 			_amountchopped = [1,2,3,4,5] call BIS_selectRandom;
 			
-			for [{_k=0}, {_k < 2}, {_k=_k+1}] do 
+			for [{_k=0}, {_k < 2}, {_k=_k+1}] do
 			{
 			["ALL",[player,"CtsDoktor_Vojak_uder1"],"network_SwitchMove",false,true]call network_MPExec;
-			["Chopping Tree...",'\data\images\items\axe']call tag_notify;
+			["Chopping Tree...",'data\images\items\axe']call tag_notify;
 			sleep 3; 	
 			["ALL",[player," "],"network_SwitchMove",false,true]call network_MPExec;
 			};

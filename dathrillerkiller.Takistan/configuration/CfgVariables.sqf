@@ -24,14 +24,6 @@ INV_FarmItemArray =
 [[["sandarea1",70]],"sand",15,5,["Man"]],
 [[["apfelfeld1",50]],"apple",10,5,["Man"]]
 ];
-Miningarray =
-[
-	[["IronArea",30],"iron",12],
-	[["GoldArea",15],"gold",12],
-	[["GoldArea1",15],"gold",12],
-	[["CopperArea",30],"copper",12],
-	[["CopperArea1",30],"copper",12]
-];
 
 /*bank Vars*/
 maxinsafe                = 300000;
@@ -39,7 +31,7 @@ rblock			 = 0;
 stolencash		 = 0;
 Maxbankrobpercentlost    = 0.1; 
 robenable              	 = true;     
-drugsellarray		 = [mdrugsell,cdrugsell,ldrugsell,hdrugsell];
+drugsellarray		 = [cdrugsell,ldrugsell,hdrugsell];
 /*Lottery*/
 playing_lotto = 0;
 
@@ -122,7 +114,7 @@ wantedamountforbank = 100000;
 oilsellpricedec          = 30;
 oilbaseprice		 = 15000;
 working=false;
-coppatrolarray  = [[4045.69,2284.16,0],[3661.66,4261.21,0],[4169.17,3648.72,0],[2918,3514.07,0],[1139.32,4564.22,0],[1112.11,3782.8,0],[3025.85,4435.61,0],[2190.9,4489.62,0],[2429.91,4768.43,0],[904.459,1176.82,0],[1578.37,4739.66,0],[1972.94,4290.42,0],[1523.08,4389.92,0],[2570.85,3779.43,0],[2846.55,1488.14,0],[1483.26,2539.71,0],[727.739,2934.53,0],[1563.24,4871.82,0],[2520.61,4665.69,0]];
+
 SigningUpForDebitCard	 = false;
 slave_cost               = 40000;
 HideoutLocationArray     = [];

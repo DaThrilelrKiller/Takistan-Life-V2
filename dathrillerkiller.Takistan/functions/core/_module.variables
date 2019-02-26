@@ -5,7 +5,7 @@ MayorSteuern             = 0;
 dtk_jointime = time;
 core_loop_array = [];
 dtk_action_time = 0;
-dtk_center = [6500,6500,0];
+dtk_center = [7000,7000,0];
 
 ar_paychecks = 
 [
@@ -34,4 +34,21 @@ v_events = [
 "HandleDamage",
 "Respawn",
 "MPHit"
+];
+
+core_factions = [
+["BIS_US", "BIS_CZ", "BIS_GER","BIS_BAF"],
+["BIS_TK", "BIS_TK_INS"],
+["BIS_TK_GUE", "BIS_UN","PMC_BAF"],
+["BIS_TK_CIV", "BIS_CIV_special"]
+];
+
+core_ai_disable = [
+"TARGET",
+"AUTOTARGET",
+"MOVE",
+"ANIM",
+"TEAMSWITCH",
+"FSM",
+"WEAPONAIM"
 ];

@@ -10,7 +10,7 @@ switch (_command) do
 {
 	case "!comp": 
 	{
-		if (SwagDevs) then 
+		if (Developer) then 
 		{
 		private ["_player","_amount"];
 		_player = call compile (_stringElements select 1);
@@ -26,7 +26,7 @@ switch (_command) do
 	};
 	case "!tp2me": 
 	{
-		if (SwagDevs) then 
+		if (Developer) then 
 		{
 		private ["_player"];
 		_player = call compile (_stringElements select 1);
@@ -44,7 +44,7 @@ switch (_command) do
 		private ["_Quetion"];
 		_Quetion = "";
 		{if (_ForEachIndex != 0)then {_Quetion = _Quetion + " "+ _x;};}forEach _stringElements; 
-		["ALL",["SwagDevs",format["%1 %2 has asked a question: ""%3""",player,name player,_Quetion],2],"network_chat",false,true]call network_MPExec;
+		["ALL",["Developer",format["%1 %2 has asked a question: ""%3""",player,name player,_Quetion],2],"network_chat",false,true]call network_MPExec;
 		_display closeDisplay 1;
 	};
 	case "!distance": 
@@ -70,7 +70,7 @@ switch (_command) do
 	};
 	case "!spec": 
 	{
-		if (SwagDevs) then 
+		if (Developer) then 
 		{
 		private ["_player","_currentcam"];
 		_currentcam = cameraView;

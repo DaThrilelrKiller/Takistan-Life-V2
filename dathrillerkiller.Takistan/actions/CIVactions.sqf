@@ -6,7 +6,8 @@
 /*ITEM PROSCESSING*/
 [player,["Process Diamond","scripts\itemprocess.sqf",["diamond rock", "diamond",5],1,false,true,"","player distance diamond_1 <= 5"]]call action_add;
 [player,["Process Meth","scripts\itemprocess1.sqf",["pharm", "meth", 2],1,false,true,"","player distance methlab <= 5"]]call action_add;
-[player,["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance Oil_1 <= 5"]]call action_add;
+[player,["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance South_oil <= 5"]]call action_add;
+[player,["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance North_oil <= 5"]]call action_add;
 [player,["Process Wheat","scripts\itemprocess.sqf",["getreide", "Bread", 2],1,false,true,"","player distance bakery <= 5"]]call action_add;
 [player,["Process Strawberries","scripts\itemprocess.sqf",["straw", "Frozens", 3],1,false,true,"","player distance bakery <= 5"]]call action_add;
 [player,["Process LSD","scripts\itemprocess.sqf",["Unprocessed_LSD", "lsd", 5],1,false,true,"","player distance gangarea1 <= 5"]]call action_add;
@@ -24,8 +25,8 @@
 [player,["Impound Vehicle","noscript.sqf",'[cursorTarget]call impound_add;',1,true,true,"",'_vcl =cursorTarget; [_vcl,["Air", "Ship", "LandVehicle"]]call core_isKindOf and player distance _vcl < 10 and player distance newimpoundlot < 15 ']]call action_add;
 
 /*OTHER*/
-[player,["Take Boar Meat","noscript.sqf",'_no = ceil(random 7); if ([player,"boar",_no] call storage_add)then {cursorTarget setvariable ["inuse", 1, true]]call action_add; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"}; deletevehicle cursorTarget; systemChat  format["you got %1 boar meat", _no]]call action_add;}',1,true,true,"",'(typeOf cursorTarget == "wildboar") && {player distance cursorTarget < 4} && {isNil {cursorTarget getVariable "inuse"}} && {!alive cursorTarget}']]call action_add;
-[player,["Take Cow Meat","noscript.sqf",'_no = ceil(random 2); if ([player,"rawcow",_no] call storage_add)then {cursorTarget setvariable ["inuse", 1, true]]call action_add; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"}; deletevehicle cursorTarget; systemChat  format["you got %1 cow meat", _no]]call action_add;}',1,true,true,"",'(typeOf cursorTarget == "cow01") && {player distance cursorTarget < 4} && {isNil {cursorTarget getVariable "inuse"}} && {!alive cursorTarget}']]call action_add;
+[player,["Take Boar Meat","noscript.sqf",'_no = ceil(random 7); if ([player,"boar",_no] call storage_add)then {cursorTarget setvariable ["inuse", 1, true]; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"}; deletevehicle cursorTarget; systemChat  format["you got %1 boar meat", _no];}',1,true,true,"",'(typeOf cursorTarget == "wildboar") && {player distance cursorTarget < 4} && {isNil {cursorTarget getVariable "inuse"}} && {!alive cursorTarget}']]call action_add;
+[player,["Take Cow Meat","noscript.sqf",'_no = ceil(random 2); if ([player,"rawcow",_no] call storage_add)then {cursorTarget setvariable ["inuse", 1, true]; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"}; deletevehicle cursorTarget; systemChat  format["you got %1 cow meat", _no];}',1,true,true,"",'(typeOf cursorTarget == "cow01") && {player distance cursorTarget < 4} && {isNil {cursorTarget getVariable "inuse"}} && {!alive cursorTarget}']]call action_add;
 
 [player,["Impound Lot","noscript.sqf",'[]call impound_open;',1,false,true,"","player distance newimpoundlot <= 5"]]call action_add;
 [player,["Get A Taxi Job","scripts\taxi.sqf", ["getajob_taxi"],1,false,true,"","player distance taxishop <= 5"]]call action_add;

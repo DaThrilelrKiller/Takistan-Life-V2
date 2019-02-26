@@ -1,6 +1,6 @@
 ﻿module_slots = true;
 
 dtk_playing_slots = 0;
-dtk_machines = [gamble1,gamble2,gamble3,gamble4];
+dtk_machines = [gamble1,gamble2,gamble3,gamble4,gamble5,gamble6,gamble7,gamble8];
 
 dtk_slots_wheel = ["staw Berry","grape","Orange","grape","Cherry","Orange","Bonouse","Grape","Bonouse","Cherry","Straw Berry","Grape","Cherry","Straw","Cherry","Bonouse","Bonouse","Grape","Bonouse","Seven","Bonouse","cherry","grape","Bonouse"];

@@ -5,7 +5,7 @@ _cursor = cursorTarget;
 _array = nearestObjects [getPos player, ["LandVehicle", "Air", "ship"], 7]select 0;
 
 if (_vehicle != player)exitWith {_vehicle};
-if (!isNull _cursor)exitWith {_cursor};
+if (!isNull _cursor && {player distance _cursor < 7})exitWith {_cursor};
 _array
 
 

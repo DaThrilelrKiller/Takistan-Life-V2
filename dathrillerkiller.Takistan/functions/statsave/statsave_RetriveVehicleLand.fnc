@@ -25,9 +25,10 @@ _warrants = _Array select 6;
 _Licences = _Array select 7;
 _notes = _Array select 8;
 _sirens = _Array select 9;
+_color = _Array select 10;
 
 [_Scriptname,nil,player,dtk_side,_plate]call shops_createVehicle;
-	[_trunk,_upgrades,_weaps,_mags,_warrants,_Licences,_notes,_sirens]spawn
+	[_trunk,_upgrades,_weaps,_mags,_warrants,_Licences,_notes,_sirens,_color,_Scriptname]spawn
 	{
 		_weaps = _this select 2;
 		_mags = _this select 3;
@@ -39,6 +40,8 @@ _sirens = _Array select 9;
 		newvehicle setVariable ['cdb_warrants',(_this select 4),true];
 		newvehicle setVariable ['cdb_license',(_this select 5),true];
 		newvehicle setVariable ['cdb_notes',(_this select 6),true];
+		newvehicle setVariable ['textures',(_this select 8),true];
+		[(_this select 9),newvehicle]call vehicle_texture;
 		clearWeaponCargo newvehicle;
 		clearMagazineCargo newvehicle;
 		removeallweapons newvehicle;

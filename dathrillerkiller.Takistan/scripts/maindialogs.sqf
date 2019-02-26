@@ -25,7 +25,7 @@ if (_art == "lawswag") then
 	if (!(createDialog "liste_1_button")) exitWith {hint "Dialog Error!";};
 	
 	lbAdd [1, _trennlinie];
-	lbAdd [1, "Emita County Mayor"];
+	lbAdd [1, "Takistan Mayor"];
 	_mayor = call goverment_govonor;
 	_mayor = if (isNull _mayor)then {"Currently no govonor"}else{name _mayor};
 	lbAdd [1, _mayor];

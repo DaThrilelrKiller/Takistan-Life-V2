@@ -8,3 +8,4 @@ _to = (call compile lbData [2100, lbCurSel 2100]select 1);
 ["ALL",_to,{_this allowDamage true;},false,true]call network_MPExec;
 ["ALL",[_to,"amovppnemsprslowwrfldf"],"network_SwitchMove",false,true]call network_MPExec;
 deleteMarker ("medical_" + name _to);
+call medical_terminate;

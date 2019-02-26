@@ -38,6 +38,16 @@ _calssname = _infos call config_class;
 				lbSetData [301, _index, format ['%1',[_item,_infos,_preisOhneTax, _preis]]];	
 			};
 		};
+		case "backpack":
+		{
+			_backpack = unitBackpack _player;
+			_backpack_type = typeOf _backpack;
+			if (_backpack_type != "") then 
+			{																																																																
+				_index = lbAdd [301, format["%1 ($%2)", _name, _preis] ];						
+				lbSetData [301, _index, format ['%1',[_item,_infos,_preisOhneTax, _preis]]];						
+			};
+		};
 		case "Item":
 		{
 			if ( (([player,_item] call storage_amount) > 0) and (_item call config_dropable) ) then

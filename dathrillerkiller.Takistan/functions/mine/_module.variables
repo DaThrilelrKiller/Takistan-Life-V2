@@ -1,0 +1,12 @@
+﻿module_mine = true;
+dtk_mining =
+[
+    [["IronArea",[8167.82,8419.95,0],15],"iron",12,"Iron Mine"],
+    [["CopperArea",[8378.92,8525.51,0],15],"copper",12,"Copper Mine"],
+    [["GoldArea",[7413.12,0.221466,0],15],"Gold",12,"Gold Mine"],
+    [["DiamondArea",[4492.22,3313.39,0],15],"Diamond rock",15,"Diamond Mine"],
+    [["SilverArea",[2059.75,353.06,0],15],"Silver",15,"Silver Mine"],
+    [["RubiesArea",[7873.08,10658.9,0],15],"Rubies",15,"Rubies Mine"],
+    [["PlatinumArea",[94.7609,5575.41,0],15],"Platinum",10,"Platinum Mine"],
+    [["CoalArea",[9347.43,10069.9,0],30],"coal",12,"Coal Mine"]
+];

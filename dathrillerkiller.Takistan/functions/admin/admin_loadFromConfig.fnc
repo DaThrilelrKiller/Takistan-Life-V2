@@ -9,8 +9,17 @@ _type = (_x call config_type);
 		_index = lbAdd [1501, format["%1", _name]];
 		lbSetData [1501, _index, format ['%1',_x]];	
 	};
+	if (_type == "vehicle")then {
+		_class = _x call config_class;
+		_image = getText (configFile >> "CfgVehicles" >> _class >> "Picture");
+		lbSetPicture [1501, _index, _image];
+	};
+	if (_type == "item")then {
+		_image = format ["data\images\items\%1.paa",[_x select 0]call config_image];
+		lbSetPicture [1501, _index, _image];
+	};
  true
-}count  dtk_master;
+}forEach  dtk_master;
 
 disableserialization;
 _ui = uiNameSpace getVariable "admin_inventory";

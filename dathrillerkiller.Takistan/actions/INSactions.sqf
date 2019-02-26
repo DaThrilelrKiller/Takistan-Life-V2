@@ -1,5 +1,4 @@
 ﻿
-[player,["Take Scuba Gear","noscript.sqf",'if ([player,"gnt_scubaw",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "gnt_scubaw") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Stop Sign","noscript.sqf",'if ([player,"glt_roadsign_octagon",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "glt_roadsign_octagon") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Concrete Barrier Short","noscript.sqf",'if ([player,"il_barrier",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "il_barrier") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Searchlight","noscript.sqf",'if ([player,"SearchLight_UN_EP1",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "SearchLight_UN_EP1") && {player distance cursorTarget < 4}']]call action_add;
@@ -18,8 +17,6 @@
 
 [player,["Role Vehicle Over","noscript.sqf",'[]spawn vehicle_unflip;',1,false,true,"",'_vcl = cursorTarget;player distance _vcl < 5 and [player,_vcl]call keys_has']]call action_add;
 [player,["Extract Victim","noscript.sqf",'cursorTarget spawn Other_pullout;',1,true,true,"",'_vcl = cursorTarget;[_vcl,["Air", "Ship", "LandVehicle"]]call core_isKindOf and player distance _vcl < 5 and count (crew _vcl) > 0']]call action_add;
-[player,["Shop 1 Export","noscript.sqf",'[ (shop1 call shops_index)]call shops_openshop; ',1,false,true,"","player distance shop1export <= 3"]]call action_add;
-[player,["Shop 4 Export","noscript.sqf",'[ (shop4 call shops_index)]call shops_openshop; ',1,false,true,"","player distance shop4export <= 3"]]call action_add;
 [player,["Impound Lot","noscript.sqf",'[]call impound_open;',1,false,true,"","player distance newimpoundlot <= 5"]]call action_add;
 [player,["Sign-Up For Debit Card","scripts\debitcardsignup.sqf",["mainbank"],1,false,true,"","player distance mainbank <= 15 and (!SigningUpForDebitCard)"]]call action_add;
 [player,["Crime Log","scripts\maindialogs.sqf",["coplog"],1,false,true,"","player distance rathaus <= 3"]]call action_add;

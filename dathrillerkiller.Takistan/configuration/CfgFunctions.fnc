@@ -25,6 +25,7 @@ _Funcitons =
 ["other","repairvehicle","vehicle"],
 ["other","pullout","vehicle"],
 ["other","putplayerincar","vehicle"],
+["other","Towing","vehicle"],
 
 ["other","getlottoarray","other"],
 

@@ -50,7 +50,7 @@
 		class Control333913750 : RscButton
 		{
 			type = 1;
-			idc = -1;
+			idc = 563;
 			x = safeZoneX + safeZoneW * 0.29;
 			y = safeZoneY + safeZoneH * 0.71888889;
 			w = safeZoneW * 0.13875;
@@ -190,6 +190,75 @@
 			wholeHeight = 0.3;
 			onLBSelChanged = "call shops_refresh";
 		};
+	};
+	
+};
+
+class store
+{
+	idd = -1;
+	
+	class ControlsBackground
+	{
+		class RscBackground_2200 : RscBackground 
+		{
+			idc = 2200;
+			x = safeZoneX + safeZoneW * 0.43;
+			y = safeZoneY + safeZoneH * 0.21111112;
+			w = safeZoneW * 0.161875;
+			h = safeZoneH * 0.56111112;
+			
+		};
+		
+	};
+	class Controls
+	{
+		class lb_information : RscListBox 
+		{
+			idc = 897;
+			x = safeZoneX + safeZoneW * 0.44;
+			y = safeZoneY + safeZoneH * 0.22222223;
+			w = safeZoneW * 0.14375;
+			h = safeZoneH * 0.53777778;
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelectBackground[] = {0.5,0,0,0.5};
+			onLBSelChanged = "[]call shops_openshop;";
+		};
+		class lable_shop : RscBackground 
+		{
+			type = 0;
+			idc = 2201;
+			x = safeZoneX + safeZoneW * 0.43;
+			y = safeZoneY + safeZoneH * 0.17666667;
+			w = safeZoneW * 0.1625;
+			h = safeZoneH * 0.03444445;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "Zeppelin32";
+			sizeEx = 0.04;
+			
+		};
+		class close : RscButton 
+		{
+			idc = 1602;
+			x = safeZoneX + safeZoneW * 0.57375;
+			y = safeZoneY + safeZoneH * 0.17555556;
+			w = safeZoneW * 0.016875;
+			h = safeZoneH * 0.03333334;
+			text = "X";
+			colorBackground[] = {1,1,1,0};
+			colorBackgroundActive[] = {1,1,1,0};
+			colorBorder[] = {1,1,1,0};
+			colorDisabled[] = {0.5,0,0,0};
+			colorFocused[] = {1,1,1,0};
+			colorShadow[] = {0,0,0,0};
+			sizeEx = 0.07;
+			action = "closeDialog 0";
+			
+		};
+		
 	};
 	
 };

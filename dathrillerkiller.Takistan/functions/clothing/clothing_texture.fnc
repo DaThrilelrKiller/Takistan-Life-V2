@@ -9,8 +9,12 @@ if (isClass _config)then {
 	_textures = getArray(_config >>  "hiddenSelectionsTextures");
 };
 
+_textures = _unit getVariable ["textures",_textures];
+
 {
-	_init = format ["%1 this setObjectTexture [%2,'%3'];",_init,_forEachIndex,_x];
+	if (_x != "")then {
+		_init = format ["%1 this setObjectTexture [%2,'%3'];",_init,_forEachIndex,_x];
+	};
 }forEach _textures;
 
 _unit setVehicleInit _init;

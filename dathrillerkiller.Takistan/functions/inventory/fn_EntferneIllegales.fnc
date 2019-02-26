@@ -16,5 +16,4 @@
 		 [player,(_x select 0),0]call storage_setAmount;
 		 };
       };
-   }
-   count INV_InventarArray;
+   }count INV_InventarArray;

@@ -5,6 +5,7 @@ if (dtk_client)then {
 	/* [0.5,core_commandingMenu]call core_AddLoop; */
 	["Surrender","ku",["3",false,false,false],core_surender]call keypress_add;
 	["Stun Player","kd",["F",true,false,false],core_hit]call keypress_add;
+	["Ear Plugs","kd",["6",false,false,false],core_earplugs]call keypress_add;
 	player disableConversation true
 };
 

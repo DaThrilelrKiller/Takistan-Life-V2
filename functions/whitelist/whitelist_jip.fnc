@@ -8,7 +8,6 @@ _return = [];
 
 {
 	_value = [format["%1 - %2","Whitelist",_uid],"Whitelist",_x select 1,false]call s_statsave_read;
-	diag_log str _value;
 	_return set [_forEachIndex,_value];
 }forEach whitelist_data;
 

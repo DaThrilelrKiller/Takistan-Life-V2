@@ -1,4 +1,4 @@
-﻿private ["_weapons","_return","_data1","_item","_info","_itemcost","_costwithTax","_amount","_cost","_itemtype","_classname","_shoparray","_fahne","_crate","_logic","_license","_license1","_license2","_invspace","_menge"];
+﻿private ["_weapons","_return","_data1","_item","_info","_itemcost","_costwithTax","_amount","_cost","_itemtype","_classname","_crate","_logic","_license","_license1","_license2","_invspace","_menge"];
 
 if(dtk_shopactive)exitWith {};
 dtk_shopactive = true;
@@ -11,15 +11,15 @@ _itemcost = _data1 select 2;
 _costwithTax = _data1 select 3;
 _amount = _this select 0;
 
- _itemtype    = _info call config_type;                
- _classname  = _info call config_class;
- _shoparray  = (INV_ItemShops select dtk_activeShopNumber);
- _fahne      = (_shoparray select 0);  
- _crate      = (_shoparray select 2);  
- _logic      = (_shoparray select 3);
- _license    = (_shoparray select 6);
- _license1   = _info call config_license1;
- _license2   = _info call config_license2;
+_itemtype    = _info call config_type;                
+_classname  = _info call config_class;
+_crate      = (shop_cache select 0);  
+_logic      = (shop_cache select 4);
+_license    = (shop_cache select 5);
+_license1   = [_info,1] call config_license;
+_license2   = [_info,2] call config_license;
+_license3   = [_info,3] call config_license;
+_license4   = [_info,4] call config_license;
 
 if (!(_amount call string_isInteger)) exitWith {systemChat  localize "STRS_inv_no_valid_number";};
 _amount = _amount call string_toInt;  
@@ -27,7 +27,23 @@ if (_amount <= 0) exitWith {};
 _cost = _amount*_costwithTax; 
  
 if !([_cost,false,_info,0] call shops_ProcessMoney)exitWith {systemChat "you do not have enought money";dtk_shopactive = false;};
-if (!(_license1 call licenses_has) and dtk_civ and _license) exitWith {systemChat  format[localize "STRS_inv_buyitems_nolicense", (_license1 call licenses_name)];dtk_shopactive = false;};
+
+if (dtk_civ && {_license} && {!(_license1 call licenses_has)}) exitWith {
+	systemChat  format[localize "STRS_inv_buyitems_nolicense", (_license1 call licenses_name)];
+	dtk_shopactive = false;
+};
+if (dtk_cop && {_license} && {!(_license2 call licenses_has)}) exitWith {
+	systemChat  format[localize "STRS_inv_buyitems_nolicense", (_license2 call licenses_name)];
+	dtk_shopactive = false;
+};
+if (dtk_opf && {_license} && {!(_license3 call licenses_has)}) exitWith {
+	systemChat  format[localize "STRS_inv_buyitems_nolicense", (_license3 call licenses_name)];
+	dtk_shopactive = false;
+};
+if (dtk_ins && {_license} && {!(_license4 call licenses_has)}) exitWith {
+	systemChat  format[localize "STRS_inv_buyitems_nolicense", (_license4 call licenses_name)];
+	dtk_shopactive = false;
+};
 
 switch(_itemtype)do
 {
@@ -45,12 +61,12 @@ switch(_itemtype)do
 	case "weapon":
 	{
 		
-		[_className, _amount,_fahne] call INV_CreateWeapon;
+		[_className, _amount, shop_object] call INV_CreateWeapon;
 		_return = true;
 	};
 	case "magazin":
 	{
-		[_className, _amount,_fahne] call INV_CreateMag;
+		[_className, _amount, shop_object] call INV_CreateMag;
 		_return = true;
 	};
 	case "vehicle":
@@ -59,7 +75,8 @@ switch(_itemtype)do
 			systemchat "you can only by one vehicle silly";
 			_return = false
 		};
-		if (not(alive player)) exitWith {};																																																										
+		if (not(alive player)) exitWith {};		
+		
 		[_item,_logic,player,dtk_side]call shops_createVehicle;
 		_return = true;
 	};
@@ -92,19 +109,21 @@ switch(_itemtype)do
 	};
 	case "maintenance":
 	{
-		if (_item == "dtk_paint")then {
+		
+		[_className,(vehicle player)]spawn garage_serviceVehicle;
 		closeDialog 0;
-			call paint_open;
-			_return = true;
-		}else {
-			[_className,(vehicle player)]spawn garage_serviceVehicle;
-			closeDialog 0;
-			_return = true;
-		};
+		_return = true;
+		
+		_return = true;
 	};
 	case "clothing":
 	{
 		_return = [_item]call clothing_switch;
+		closeDialog 0;
+	};
+	case "backpack":
+	{
+		_return = [_className, _amount, shop_object] call INV_CreatePack;
 		closeDialog 0;
 	};
 	default 
@@ -116,6 +135,5 @@ switch(_itemtype)do
 if (_return) then
 {
 	[_cost,true,_info,_amount] call shops_ProcessMoney;
-	call shops_refresh;
 };
 dtk_shopactive = false;

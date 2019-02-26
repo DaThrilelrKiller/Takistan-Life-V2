@@ -20,15 +20,39 @@ _sort = lbText [2101, (lbCurSel 2101)];
 		{
 			case "item":
 			{
-				_index = lbAdd [301, format ["%1 ($%2, %3kg)", _name, (_preis call string_intToString), (_infos call config_weight)] ]; 	
+				_index = lbAdd [301, format ["%1 ($%2, %3kg)", _name, (_preis), (_infos call config_weight)] ]; 	
+				lbSetPicture [301, _index, format ["data\images\items\%1.paa",[_item]call config_image]];
 			};
 			case "label":
 			{
 				_index = lbAdd [301, format ["%1", _name] ];
 			};
+			case "vehicle":
+			{
+				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis)] ];
+				_class = _x call config_class;
+				_image = getText (configFile >> "CfgVehicles" >> _class >> "Picture");
+				lbSetPicture [301, _index, _image];
+			};
+			
+			case "weapon":
+			{
+				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis)] ];
+				_class = _x call config_class;
+				_image = getText (configFile >> "CfgWeapons" >> _class >> "Picture");
+				lbSetPicture [301, _index, _image];
+			};
+			case "magazin":
+			{
+				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis)] ];
+				_class = _x call config_class;
+				_image = getText (configFile >> "CfgMagazines" >> _class >> "Picture");
+				lbSetPicture [301, _index, _image];
+			};
+			
 			default 
 			{
-				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis call string_intToString)] ];
+				_index = lbAdd [301, format ["%1 ($%2)", _name, (_preis)] ];
 			};
 		};
 		

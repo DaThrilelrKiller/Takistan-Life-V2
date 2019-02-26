@@ -12,37 +12,37 @@ Prams:
 	0. Player you are trying to revive
 */
 
-private ["_Deadplayer","_LifePack"];
+private ["_Deadplayer"];
 
-_Deadplayer = _this select 0;
-['ALL',player,{_this allowDamage true;},false,true]call network_MPExec;
-['ALL',player,{_this setUnconscious false;},false,true]call network_MPExec;
-_Deadplayer setUnconscious false;
-_Deadplayer allowDamage true;
+if (count _this == 1)then {
+	_Deadplayer = _this select 0;
+	['ALL',player,{_this allowDamage true;},false,true]call network_MPExec;
+	['ALL',player,{_this setUnconscious false;},false,true]call network_MPExec;
+	_Deadplayer setUnconscious false;
+	_Deadplayer allowDamage true;
 
-LifePack = "lifepak" createVehicle getPos player;
-LifePack attachTo [_Deadplayer, [-0.4, 0.9, 0.2]];
-LifePack setDir 220;
-LifePack animate ["AEDFront", 1];
+	player attachTo [_Deadplayer, [-0.666, 0.222, 0]];
+	player setDir 90;
 
-player attachTo [_Deadplayer, [-0.666, 0.222, 0]];
-player setDir 90;
+	player playMoveNow "AinvPknlMstpSnonWrflDnon_medic";
+	sleep 5;
+	player playMove format ["AinvPknlMstpSnonWrflDnon_medic%1", floor random 6];
+	sleep 5;
+	player playMove format ["AinvPknlMstpSnonWrflDnon_medic%1", floor random 6];
+	sleep 5;
+	player playMoveNow "AinvPknlMstpSnonWrflDnon_medicEnd";
 
-player playMoveNow "AinvPknlMstpSnonWrflDnon_medic";
-sleep 5;
-player playMove format ["AinvPknlMstpSnonWrflDnon_medic%1", floor random 6];
-sleep 5;
-player playMove format ["AinvPknlMstpSnonWrflDnon_medic%1", floor random 6];
-sleep 5;
-player playMoveNow "AinvPknlMstpSnonWrflDnon_medicEnd";
+	detach _Deadplayer;
+	detach player;
 
-detach _Deadplayer;
-detach _LifePack;
-detach player;
+	["ALL",[_Deadplayer,"amovppnemsprslowwrfldf"],"network_SwitchMove",false,true]call network_MPExec;
+	["ALL",[_Deadplayer,player],"medical_remove",false,false]call network_MPExec;
+	[_Deadplayer,[_Deadplayer,player],"medical_revive",false,false]call network_MPExec;
+	deleteMarker ("medical_" + name _Deadplayer);
+}else{
+	closeDialog 0;
+	call medical_terminate;
+	systemchat format ["%1 you where revived by %2",name player,name (_this select 1)];
+	player setUnconscious false;
 
-["ALL",[_Deadplayer,"amovppnemsprslowwrfldf"],"network_SwitchMove",false,true]call network_MPExec;
-deleteMarker ("medical_" + name _Deadplayer);
-
-LifePack animate ["AEDFront", 0];;
-waitUntil {LifePack animationPhase "AEDFront" == 0};
-deleteVehicle LifePack;
+};

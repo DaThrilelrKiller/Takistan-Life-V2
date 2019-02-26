@@ -18,7 +18,7 @@ INV_apps = [
 ["app_laws","data\images\ipad\LAWS.PAA","[0,0,0,[""lawswag""]] execVM 'scripts\maindialogs.sqf';"],
 ["app_gangs","data\images\ipad\gangs.PAA","closeDialog 0;call gang_open"],
 ["app_stockmarket","data\images\ipad\stockmarket.PAA","[0,0,0,[""fundsswag""]] execVM ""scripts\maindialogs.sqf"";"],
-["app_store","data\images\ipad\store.PAA","[(BuildingCollapesLogic call shops_index)]call shops_openshop; "],
+["app_store","data\images\ipad\store.PAA","[(BuildingCollapesLogic call shops_index)]call shops_open; "],
 ["app_settings","data\images\ipad\controls.PAA","call keypress_menu"],
 ["app_background","data\images\ipad\background.PAA","call ipad_background"],
 ["app_vote","data\images\ipad\vote.PAA","call goverment_vote"]
@@ -36,3 +36,5 @@ AppStoreArray = {
 "app_stockmarket"
 ];
 };
+
+coppatrolarray = [];

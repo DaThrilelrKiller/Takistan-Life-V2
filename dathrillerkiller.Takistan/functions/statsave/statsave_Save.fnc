@@ -22,7 +22,12 @@ _save =
 		["Main", "lifestate", (lifeState player)],
 		[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],
 		["Main", "Side", [dtk_side,s_seasion]],
-		[dtk_side, "Clothing",player getVariable ["type",typeOf player]]
+		[dtk_side, "Clothing",player getVariable ["type",typeOf player]],
+		[dtk_side, "Texture",player getVariable ["textures",[]]],
+		[dtk_side, "Kills",player getVariable ["dtk_kills",[0,0,0,0,0]]],
+		
+		[dtk_side, "House_storage", BuildingCollapesLogic getVariable "dtk_storage"], 
+		[dtk_side, "House_gear", BuildingCollapesLogic getVariable ['Gear',[[[],[]],[[],[]]]]]
 	]
 ];
 

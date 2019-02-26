@@ -36,6 +36,10 @@ switch(_SortBy)do
 	{
 	
 	};
+	case "prefix":
+	{
+	
+	};
 	case "colorName":
 	{
 		_handler = ["HideAll",""]spawn gps_sort;

@@ -30,3 +30,6 @@ _locations = [];
 		v_oil_loc set [count v_oil_loc,_marker];
 	};
 }ForEach (nearestobjects [dtk_center, ["Land_Ind_Oil_Pump_EP1","Land_Ind_Oil_Tower_EP1"], (dtk_center select 0)]);
+
+["North_oil",getPos North_oil,nil,nil,"ColorBlack","mil_dot",[1, 1],"North Oil Refinery"]call core_createMarkerLocal;
+["Sount_oil",getPos South_oil,nil,nil,"ColorBlack","mil_dot",[1, 1],"South Oil Refinery"]call core_createMarkerLocal;

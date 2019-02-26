@@ -36,6 +36,7 @@ player setVariable ["x26",(_stats select 9),true];
 player setVariable ["cdb_warrants",(_stats select 10),true];
 player setVariable ["cdb_notes",(_stats select 11),true];
 player setVariable ["cdb_bounty",(_stats select 12),true];
+player setVariable ["dtk_kills",(_stats select 21),true];
 
 INVAppsInstalled = (_stats select 13);
 if ((_stats select 14) == "UNCONSCIOUS")then {
@@ -47,8 +48,14 @@ dtk_seasion = (_stats select 17);
 _side = (_stats select 18);
 _name = _stats select 19;
 _clothing = (_stats select 20);
+
+BuildingCollapesLogic setVariable ["dtk_storage",(_stats select 22)];
+BuildingCollapesLogic setVariable ["Gear",(_stats select 23)];
+
 if (_clothing != "")then {
 	[_clothing]call clothing_switch;
+	player setVariable ["textures",(_stats select 24)];
+	player call clothing_texture;
 };
 
 if ((_side select 0) != dtk_side && {(_side select 1) == s_seasion})then {

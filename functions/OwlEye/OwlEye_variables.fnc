@@ -1,4 +1,4 @@
-if (isServer) exitWith {};
+if (dtk_server) exitWith {};
 
 _code = {
 

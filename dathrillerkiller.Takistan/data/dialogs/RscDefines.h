@@ -84,7 +84,6 @@ class RLRPG_MainHUD_RscText {
 };
 class DD_RscText
 {
-	access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};

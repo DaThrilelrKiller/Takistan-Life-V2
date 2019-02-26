@@ -3,7 +3,13 @@ _name = _vehicle call vehicle_name;
 
 if !(isNil "_vehicle")then {
 systemChat  format["You are rolling over (%1) stay within 10m",_name];	
-sleep 5;
+	
+	for "_i" from 1 to 100 step 1 do {
+		[format['Unfliping... %1%2',_i,"%"],'',true]call tag_notify;
+		uiSleep 0.01;
+		if(!alive player)exitWith {};
+	};
+
 	if (player distance _vehicle < 10)then {
 		_pos = getPos _vehicle;
 		_vehicle setvectorup [0,0,1];

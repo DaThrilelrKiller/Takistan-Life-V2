@@ -1,4 +1,4 @@
-﻿private ["_return","_data","_item","_info","_itemcost","_costwithTax","_amount","_cost","_itemtype","_classname","_shoparray","_fahne","_crate","_logic","_license","_license1","_license2","_invspace","_menge"];
+﻿private ["_return","_data","_item","_info","_itemcost","_costwithTax","_amount","_cost","_itemtype","_classname","_fahne","_crate","_logic","_license","_license1","_license2","_invspace","_menge"];
 
 if(dtk_shopactive)exitWith {};
 dtk_shopactive = true;
@@ -13,11 +13,10 @@ _amount = _this select 0;
 
  _itemtype    = _info call config_type;                
  _classname  = _info call config_class;
- _shoparray  = (INV_ItemShops select dtk_activeShopNumber);
- _fahne      = (_shoparray select 0);  
- _crate      = (_shoparray select 2);  
- _logic      = (_shoparray select 3);
- _license    = (_shoparray select 6);
+ _fahne      = (shop_cache select 0);  
+ _crate      = (shop_cache select 2);  
+ _logic      = (shop_cache select 4);
+ _license    = (shop_cache select 5);
  _license1   = _info call config_license1;
  _license2   = _info call config_license2;
 

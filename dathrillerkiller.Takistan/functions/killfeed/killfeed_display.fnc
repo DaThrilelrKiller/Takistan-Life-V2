@@ -2,6 +2,10 @@
 _unit = _this select 0;
 _killer = _this select 1;
 
+systemchat str _this;
+
+if (_unit == _killer)exitWith {};
+
 if (dtk_server)exitWith {};
 if !(isPlayer _unit)exitWith {};
 

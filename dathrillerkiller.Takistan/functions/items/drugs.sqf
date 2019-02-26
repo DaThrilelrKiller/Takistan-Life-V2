@@ -80,7 +80,6 @@ if (_item == "Cocaine") then
 
 		{
         _player = player;
-		["ALL",[_player,"coke",15],"network_say3d",false,true]call network_MPExec;
 
 		_force = random 10;
 		"chromAberration" ppEffectEnable true;
@@ -105,7 +104,6 @@ if (_item == "marijuana") then
 
 	{
     _player = player;
-	["ALL",[_player,"weed",15],"network_say3d",false,true]call network_MPExec;
 	drug_flare = "SmokeShellGreen" createVehicle position player;
 	if (vehicle player != player) then { drug_flare attachTo [vehicle player,[0,0,0.]];}
 		else {drug_flare attachTo [player,[0,0,0.]];};

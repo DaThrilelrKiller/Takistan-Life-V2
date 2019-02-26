@@ -1,5 +1,7 @@
 ﻿private ["_mode"];
 
+if ((vehicle player) == player)exitWith {};
+
 _mode = call siren_mode;
 if (_mode == "Automatic")then {
 	(vehicle player) setVariable ["ar_siren_mode","Manual",true];

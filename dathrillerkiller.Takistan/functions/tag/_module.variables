@@ -2,7 +2,7 @@
 
 dtk_motd = 
 [
-	["Teamspeak: 162.248.241.130","data\images\tags\ts3"],
+	["Teamspeak: ts.tlx-gaming.com","data\images\tags\ts3"],
 	["Invite a buddy, make some money","data\images\tags\people"],
 	["Consider Donating, to help keep our server up","data\images\tags\donate"],
 	["Need help? Just ask","data\images\tags\help"],

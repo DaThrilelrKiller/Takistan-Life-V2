@@ -23,10 +23,12 @@ if !(lifeState player == "UNCONSCIOUS")then {
 
 		if ((dtk_seasion select 0) == s_seasion)then {
 			if ((dtk_seasion select 1) - time < 120)then {
-				_name = "Last logged in possion";
+				_name = "Last logged in position";
 				_index = lbAdd [1401, _name];
 				lbSetData [1401, _index,str (dtk_seasion select 2)];
 			};
 		};
 	};
 };
+
+call house_gather;

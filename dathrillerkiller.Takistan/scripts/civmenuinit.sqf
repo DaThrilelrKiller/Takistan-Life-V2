@@ -60,14 +60,10 @@ systemChat  format [localize "STRS_civmenu_disarm", _civmenu_civ];
 };
 
 if (_art == 3) exitWith 
-
 {
-
-_dauer = round(_this select 1);
-format ["if (player == %1) then {[""arrest"", %2, %3] execVM ""scripts\civmenu.sqf"";};", _civmenu_civ, _dauer, player,dtk_side] call network_broadcast;
-
-systemChat  format[localize "STRS_civmenu_arrested", _civmenu_civ];
-
+	_dauer = round(_this select 1);
+	format ["if (player == %1) then {[""arrest"", %2, %3,'%4'] execVM ""scripts\civmenu.sqf"";};", _civmenu_civ, _dauer, player,dtk_side] call network_broadcast;
+	systemChat  format[localize "STRS_civmenu_arrested", _civmenu_civ];
 };
 
 if (_art == 4) exitWith 

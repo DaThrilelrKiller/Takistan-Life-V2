@@ -20,6 +20,7 @@ dtk_active_modules =
 "Music",
 "Network",
 "Zone",
+"Whitelist",
 "Core",
 "Action",
 "Keypress",
@@ -31,11 +32,11 @@ dtk_active_modules =
 "Goverment",
 "Border",
 "Licenses",
-"Roads",
 "ID",
 "Bike",
 "Chat",
 "Impound",
+"Mine",
 "Markers",
 "Siren",
 "Checkpoint",
@@ -78,6 +79,10 @@ dtk_active_modules =
 "Paint",
 "Bank",
 "Radar",
+"Service",
+"Safezone",
+"House",
+"Roads",
 "Spawn"
 ];
 

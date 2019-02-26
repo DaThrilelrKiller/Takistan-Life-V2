@@ -14,8 +14,9 @@ dtk_server_modules =
 "Core",
 "Disconnect",
 "Hunting",
-"War",
-"Zone"
+"Zone",
+"Whitelist",
+"House"
 ];
 
 /*loads module functions*/ 

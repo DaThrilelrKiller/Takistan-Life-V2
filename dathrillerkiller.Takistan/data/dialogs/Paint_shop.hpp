@@ -2,16 +2,26 @@ class Paint_shop
 {
 	idd = 489;
 	onUnload = "call paint_close";
+	onLoad = "_this call display_keypress";
 	
 	class ControlsBackground
 	{
 		class RscBackground_2200 : RscBackground 
 		{
 			idc = 2200;
-			x = safeZoneX + safeZoneW * 0.805;
+			x = safeZoneX + safeZoneW * 0.53;
 			y = safeZoneY + safeZoneH * 0.06444445;
-			w = safeZoneW * 0.168125;
-			h = safeZoneH * 0.75666667;
+			w = safeZoneW * 0.243125;
+			h = safeZoneH * 0.10444445;
+			
+		};
+		class RscBackground_Camera : RscBackground 
+		{
+			idc = -1;
+			x = safeZoneX+safeZoneW*0.805;
+			y = safeZoneY+safeZoneH*0.06444445;
+			w = safeZoneW*0.168125;
+			h = safeZoneH*0.75666667;
 			
 		};
 	};
@@ -229,7 +239,7 @@ class Paint_shop
 			h = safeZoneH * 0.19777778;
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelectBackground[] = {0.5,0,0,0.5};
-			onLBSelChanged = "_this call admin_exec1;";
+			onLBSelChanged = "_this call paint_sliders;";
 			
 		};
 		class RscButton_1601 : RscButton 
@@ -286,6 +296,91 @@ class Paint_shop
 			w = safeZoneW * 0.15125;
 			h = safeZoneH * 0.03444445;
 			colorDisabled[] = {0.2,0.2,0.2,1};
+		};
+		
+		class RscBackground_Camera : RscBackground 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.53;
+			y = safeZoneY + safeZoneH * 0.03;
+			w = safeZoneW * 0.243125;
+			h = safeZoneH * 0.03444445;
+			text = "Camera";
+			colorBackground[] = {0.5,0,0,1};
+			
+		};
+		
+		class Button_ZoomIn : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.54;
+			y = safeZoneY + safeZoneH * 0.08111112;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Zoom +";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[1] call paint_Zoom;";
+			
+		};
+		class Button_ZoomOut : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.54;
+			y = safeZoneY + safeZoneH * 0.13;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Zoom -";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[2] call paint_Zoom;";
+			
+		};
+		class Button_Front : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.615;
+			y = safeZoneY + safeZoneH * 0.08111112;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Font";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[1] call paint_camera;";
+			
+		};
+		class Button_Back : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.615;
+			y = safeZoneY + safeZoneH * 0.13;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Back";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[2] call paint_camera;";
+			
+		};
+		class Button_Right : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.69;
+			y = safeZoneY + safeZoneH * 0.13;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Right";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[4] call paint_camera;";
+			
+		};
+		class Button_Left : RscButton 
+		{
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.69;
+			y = safeZoneY + safeZoneH * 0.08111112;
+			w = safeZoneW * 0.06625;
+			h = safeZoneH * 0.02777778;
+			text = "Left";
+			colorBackground[] = {0.5,0,0,1};
+			action = "[3] call paint_camera;";
+			
 		};
 		
 	};

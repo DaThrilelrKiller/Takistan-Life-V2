@@ -1,10 +1,10 @@
-private ["_color","_side"];
-/* Check if the killer is a vehicle and if so then select gunner or driver */
+private ["_color","_side","_name"];
 if ([_this,["Air", "Ship", "LandVehicle"]]call core_isKindOf)then {
-	if (_this emptyPositions 'Gunner' == 0)then {
-		_this = gunner _this;
+	if (_this emptyPositions 'Gunner' == 1)then {
+		_this = gunner _this;w
 	}else{
 		_this = driver _this;
+
 	};
 };
 

@@ -58,5 +58,6 @@ if (!isNil "_direction")then {
 	_direction = "any";
 };
 
+
 PureGamingMarkerArray set[count PureGamingMarkerArray,["",_position,_size,_name,_text,_type,_color]];
 _marker

@@ -2,10 +2,8 @@
 _geld    = 'geld' call INV_GetItemAmount;
 
 if (_loopart == "disarm") then 
-
 {
-		
-call INV_EntferneIllegales;		
+			
 systemChat  localize "STRS_civmenucheck_beendisarmed";				
 
 };
@@ -61,7 +59,8 @@ if (_loopart == "arrest")  then
 {
 
 _prisondauer = (_this select 1)*60; 													
-_copobj      = _this select 2;															
+_copobj      = _this select 2;	
+_side = _this select 3;														
 _exitart     = "";
 
 if (!(player call ISSE_IsVictim)) exitwith {(format ["if (AR_playerString == ""%1"") then {systemChat  localize ""STRS_inventory_checknohands""};", _copobj]) call network_broadcast;}; 
@@ -78,11 +77,13 @@ if (_civkopfgeld != 0) then
 
 (format ["systemChat format [localize ""STRS_civmenucheck_arrested_global"", name %1, name %3, %2]; %1 setVariable ['cdb_bounty',(%2*10000),true];%1_arrest = 1;", player, ((_prisondauer/60) call string_intToString), _copobj]) call network_broadcast;																	
 
-if (_side == "PD")then {
-	player setpos [6170.67,11195.6,0.0014534];
+_postion = if (_side == "PD")then {
+	[6170.67,11195.6,0.0014534];
 }else{
-	player setpos [8195.08,1794.78,0.00143433];
+	[8195.08,1794.78,0.00143433];
 };
+
+player setPos _postion;
 
 
 
@@ -119,7 +120,7 @@ while {true} do
 	if (!(alive player))                     exitWith {_exitart = "tot"};																												
 	if (_counter >= _prisondauer)             exitWith {_exitart = "frei"};														
 	if (_freigelassen == 0)                   exitWith {_exitart = "freigelassen"};																
-	if (player Distance [5978,7499,0] >= 50) exitWith {_exitart = "ausbruch"};
+	if (player Distance _postion >= 50) exitWith {_exitart = "ausbruch"};
 	if (_bounty <= 0)			  exitwith {_exitart = "freigelassen"};
 
 	_counter = _counter + 1;

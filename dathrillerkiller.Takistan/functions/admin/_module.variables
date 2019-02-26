@@ -18,5 +18,7 @@ admin_actions = [
 "Live Code Update"
 ];
 
+admin_vehicle_current = objNull;
+
 
 v_admin_recents = profileNameSpace getVariable ["v_admin_recents",[]];

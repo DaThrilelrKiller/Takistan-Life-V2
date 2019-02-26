@@ -5,9 +5,19 @@ if (isNil "_location")then {
 	_location = call roads_near; 
 };
 
-_pos = if (typeName _location != "ARRAY")then {getPos _location}else{_location};
-_dir = if (typeName _location != "ARRAY")then {getDir _location}else{getDir player};
 
+
+_pos = call{
+	if (typeName _location == "ARRAY")exitWith {_location};
+	if (typeName _location == "OBJECT")exitWith {getPos _location};
+	if (typeName _location == "STRING")exitWith {getPos (missionnamespace getVariable _location)};
+};
+
+_dir = call{
+	if (typeName _location == "ARRAY")exitWith {getDir player};
+	if (typeName _location == "OBJECT")exitWith {getDir _location};
+	if (typeName _location == "STRING")exitWith {getDir (missionnamespace getVariable _location)};
+};
 
 
 _data = [[getPlayerUID (_this select 2)],_name,(_this select 3),name player];
@@ -30,7 +40,7 @@ _classname =  _name call config_class;
 	_vehicle setDir _dir;
 	_vehicle setVariable ["DTK_OwnerUID",_data, true];
 	_vehicle setVariable ["dtk_storage",[[],[]], true];
-	_vehicle setvariable ["tuning",1.004, true];
+	_vehicle setvariable ["tuning",1.002, true];
 	_vehicle addeventhandler ["HandleDamage",'_this call vehicle_handleDamage' ];
 
 	
@@ -42,12 +52,16 @@ _classname =  _name call config_class;
 	};
 	
 	
-if (dtk_cop || {dtk_ins}) then {
+if (dtk_cop || {dtk_opf}) then {
 	if !(_classname isKindOf "Air")then 
 	{
 	_vehicle setVariable ["dtk_sirens",["dtk_HighWail","dtk_Yelp","dtk_LowPhasser"],true];
 	};
-};					
+};	
+if (_classname in ["MtvrRefuel_DES_EP1"])then {
+	_vehicle setVariable["towing","",true];
+};
+				
 
 [_name,_vehicle]call vehicle_texture;														
 

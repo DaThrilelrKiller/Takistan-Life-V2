@@ -42,7 +42,7 @@ class atm_menu
 			idc = -1;
 			action = "call atm_depositeAll";
 
-			text = "Deposite All"; 
+			text = "Deposit All"; 
 			x = 0.387993 * safezoneW + safezoneX;
 			y = 0.669988 * safezoneH + safezoneY;
 			w = 0.200013 * safezoneW;
@@ -64,7 +64,7 @@ class atm_menu
 			idc = -1;
 			action = "call atm_deposite";
 
-			text = "Deposite"; 
+			text = "Deposit"; 
 			x = 0.387993 * safezoneW + safezoneX;
 			y = 0.618991 * safezoneH + safezoneY;
 			w = 0.200013 * safezoneW;

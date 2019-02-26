@@ -25,10 +25,8 @@ class Header
 	 maxPlayers = 80;           
 };
 
-class MissionSQM
-{
-	#include "mission.sqm"
-};
+
+#include "mission.sqm"
 #include "data\sounds\cfgSounds.hpp"
 
 #include "data\dialogs\rscdefines.h"
@@ -56,6 +54,9 @@ class MissionSQM
 #include "data\dialogs\interaction_menu.hpp"
 #include "data\vehicles\cfgvehicles.hpp"
 #include "data\dialogs\Paint_shop.hpp"
+#include "data\dialogs\medic_dialog.hpp"
+#include "data\dialogs\house_diaglog.hpp"
+#include "data\dialogs\clothing_dialog.hpp"
 
 class RscTitles
 {

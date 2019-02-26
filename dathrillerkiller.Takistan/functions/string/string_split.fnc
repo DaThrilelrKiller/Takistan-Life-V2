@@ -1,13 +1,13 @@
 ﻿private ["_Array","_temp","_split","_return","_splitwhere"];
 _Array = toArray (_this select 0);
-_splitwhere = toArray (_this select 1)select 0;
-_Array set [count _Array,_splitwhere];
+_splitwhere = toArray (_this select 1);
+_Array set [count _Array,_splitwhere select 0];
 _temp = [];
 _split = [];
 _return = [];
 
 {
-	if (_x == _splitwhere)then
+	if (_x in _splitwhere)then
 	{
 	_temp set [count _temp,_forEachIndex];
 	};

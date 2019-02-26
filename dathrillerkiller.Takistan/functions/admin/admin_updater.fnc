@@ -1,4 +1,4 @@
-if !(SwagDevs) exitWith {true};
+if !(Developer) exitWith {true};
 
 systemchat "test";
 createDialog "admin_update";

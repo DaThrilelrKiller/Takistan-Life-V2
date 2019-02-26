@@ -12,20 +12,19 @@ if (isnil ("_vcl")) exitwith {systemChat  "Not near any vehicles"};
 if (!(player == vehicle player)) exitWith {systemChat  "You must be outside the vehicle"};
 if (player distance _vcl <= 6) then 
 {
-systemChat  "REPAIRING";
-[player,_item,-1] call storage_add;
-player playMove "ainvpknlmstpslaywrfldnon_medic";
-sleep 2;
-playsound "Drill";
-sleep 5;
-player playMove "ainvpknlmstpslaywrfldnon_medic";
-sleep 2;
-playsound "Drill";
-sleep 5;
-_vcl setDamage 0;
-systemChat  "REPAIRED";
+	systemChat  "REPAIRING";
+	[player,_item,-1] call storage_add;
+	
+	for "_i" from 1 to 100 step 1 do {
+		if (animationState player != "ainvpknlmstpslaywrfldnon_medic")then {
+			player playMove "ainvpknlmstpslaywrfldnon_medic";
+		};
+		[format['Repairing... %1%2',_i,"%"],'data\images\items\repairkit',true]call tag_notify;
+		uiSleep 0.1;
+		if(!alive player)exitWith {};
+	};
+	
+	_vcl setDamage 0;
 };
-
-
 
 };

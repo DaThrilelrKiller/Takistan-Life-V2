@@ -49,10 +49,15 @@ IF NOT DEFINED _ARMA2OAPATH (GOTO ENDfailA2OA) ELSE (GOTO run)
 rem this file copy, copiles, and starts the mission
 rem compileing the mission reduces size and helps prevent theft and hacking
 
-
 for %%I in ("%cd%\..") do set "dir=%%~fI"
 
 xcopy /s/e /y %dir% "%_ARMA2OAPATH%\MPMissions"
+
+SET /P _inputname= Compile (y/n):
+IF "%_inputname%"=="y" (GOTO compile) ELSE (GOTO launch)
+
+
+:compile
 
 FART -r --c-style "%_ARMA2OAPATH%\MPMissions\*.fnc" "\t" " "
 FART -r --c-style "%_ARMA2OAPATH%\MPMissions\*.sqf" "\t" " "
@@ -75,7 +80,11 @@ FART -r --c-style "%_ARMA2OAPATH%\MPMissions\*.hpp" "\n" " "
 FART -r --c-style "%_ARMA2OAPATH%\MPMissions\*.functions" "\n" " "
 FART -r --c-style "%_ARMA2OAPATH%\MPMissions\*.variables" "\n" " "
 
-call "%_ARMA2OAPATH%\arma2oaserver.exe" "-mod=%_ARMA2OAPATH%\MPMissions\@inidbi;" "-mod=%_ARMA2%;EXPANSION;ca"  -port=2302 "-config=%_ARMA2OAPATH%\MPMissions\TADST\default\TADST_config.cfg" "-cfg=%_ARMA2OAPATH%\MPMissions\TADST\default\TADST_basic.cfg" "-profiles=%_ARMA2OAPATH%\MPMissions\TADST\default" -name=default
+GOTO launch
+
+:launch
+
+call "%_ARMA2OAPATH%\arma2oaserver.exe" "-mod=%_ARMA2OAPATH%\MPMissions\@inidbi;" "-mod=%_ARMA2%;EXPANSION;ca"  -port=2302 "-config=%_ARMA2OAPATH%\MPMissions\TADST\default\server.cfg" "-cfg=%_ARMA2OAPATH%\MPMissions\TADST\default\basic.cfg" "-profiles=%_ARMA2OAPATH%\MPMissions\TADST\default" -name=default
 
 echo Server is launching
 timeout /t 10
