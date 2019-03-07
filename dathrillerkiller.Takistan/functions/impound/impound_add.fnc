@@ -2,6 +2,10 @@
 
 _vehicle = _this select 0;
 
+if ((count crew _vehicle) > 0) exitWith {
+	systemchat "The vehicle is not empty!"
+};
+
 _data = (_vehicle getVariable "DTK_OwnerUID");
 _owners = _data select 0;
 _owner = _owners select 0;
@@ -18,17 +22,18 @@ _plate = _vehicle getVariable  "dtk_plate";
 _warrants = _vehicle getVariable ["cdb_warrants",[]];
 _license = _vehicle getVariable ["cdb_license",[]];
 _notes = _vehicle getVariable ["cdb_notes",[]];
+_textures = _vehicle getVariable ["textures",[]];
 _sirens = weapons _vehicle;
 _displayname = _vehicle call vehicle_name;
 
-v_impound set [count v_impound, [_name,_trunk,_upgrade,_weapons,_magazines,_plate,_warrants,_license,_notes,_sirens,_owner,_side]];
+v_impound set [count v_impound, [_name,_trunk,_upgrade,_weapons,_magazines,_plate,_warrants,_license,_notes,_sirens,_owner,_side,_textures]];
 publicvariable "v_impound";
 deleteVehicle _vehicle;
 ["SERVER",[],"s_impound_save",false,false]call network_MPExec;
 
 if !([player,_vehicle]call keys_has)then {
-[player,"geld",2000] call storage_add; 
-systemchat format ["you have been paid 2000$ for impound (%1)",_displayname];
+	[player,"geld",2000] call storage_add; 
+	systemchat format ["you have been paid 2000$ for impound (%1)",_displayname];
 };
 
 

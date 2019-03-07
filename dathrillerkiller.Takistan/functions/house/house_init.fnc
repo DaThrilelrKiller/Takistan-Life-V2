@@ -9,7 +9,7 @@ if (dtk_server)exitWith {};
 	
 	
 	_x addaction ["","noscript.sqf",format["['%1',%2]call house_buy;",_marker,_pice], 25, false, true, "LeanRight",format["!(['%3']call house_own) && {!([_target,'Buy %1 (%2$) (E)','data\images\misc\bank']call tag_show)}",_name,_pice,_marker]];
-	_x addaction ["","noscript.sqf",format["[%1,'%2']call house_menu;",BuildingCollapesLogic,_marker], 25, false, true, "LeanRight",format["(['%2']call house_own) && {!([_target,'Access %1 (E)','data\images\misc\bank']call tag_show)}",_name,_marker]];
+	_x addaction ["","noscript.sqf",format["[%1,'%2']call house_menu;",dtk_home,_marker], 25, false, true, "LeanRight",format["(['%2']call house_own) && {!([_target,'Access %1 (E)','data\images\misc\bank']call tag_show)}",_name,_marker]];
 
 }forEAch dtk_house_list;
 

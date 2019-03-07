@@ -1,6 +1,7 @@
 ﻿private ["_unit"];
 if((vehicle player == player) && INV_isArmed) then 
 {
+	if (dtk_stunning)exitWith {};
 	_unit = nearestobjects [getposatl player, ["Man"], 2] - [player];
 	_unit spawn 
 	{
@@ -10,8 +11,11 @@ if((vehicle player == player) && INV_isArmed) then
 		{
 			_unit = _this select 0;
 			if(_unit distance player > 2 or !isPlayer _unit)exitwith{};
+			dtk_stunning = true;
 			[_unit,[player],{["hit", (_this select 0), "Melee", 1] execVM "scripts\stun.sqf"},false,false]call network_MPExec;
 			systemChat  "you stunned this player!";			 
-		}; 
+		};
+		sleep 5;
+		dtk_stunning = false;
 	}; 
 };

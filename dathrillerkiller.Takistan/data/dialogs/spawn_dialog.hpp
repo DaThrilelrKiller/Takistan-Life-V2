@@ -7,21 +7,20 @@
 	class controls
 	{	
 
-		class RscPicture_1200: RscPicture
+		class RscPicture_1200: RscBackground
 		{
 			idc = 33333;
 
-			text = "#(argb,8,8,3)color(1,1,1,1)";
+			text = "";
 			x = 0.00206971;
 			y = 0.00354552;
 			w = 0.99539;
 			h = 0.992435;
 		};
-		class RscPicture_1201: RscPicture
+		class RscPicture_1201: Rsc_lable
 		{
 			idc = 1201;
-
-			text = "#(argb,8,8,3)color(0.5098,0.0000,0.0000,1.0000)";
+			text = "";
 			x = 0.00206971;
 			y = -0.000395358;
 			w = 0.998345;
@@ -36,7 +35,6 @@
 			y = 0.848699;
 			w = 0.4487;
 			h = 0.10197;
-			colorBackground[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class SpawnList: RscListBox
 		{
@@ -45,14 +43,10 @@
 			y = 0.100001;
 			w = 0.437499;
 			h = 0.85;
-			colorText[] = {0.0000,0.0000,0.0000,1.0000};
-			colorBackground[] = {0.051,0.4353,0.1765,1};
-			colorBackgroundActive[] = {0.051,0.4353,0.1765,1};
 			onLBSelChanged = "[]spawn spawn_animatemap;";
 		};
 		class kndr_MapControl 
 		{ 
-			access = 0; 
 			idc = 10023; 
 			type = CT_MAP_MAIN; 
 			style = ST_PICTURE; 
@@ -368,7 +362,6 @@
 			y = 0.712766;
 			w = 0.4487;
 			h = 0.10197;
-			colorBackground[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 	};
 };
@@ -383,7 +376,6 @@ class test_map
 	{	
 		class kndr_MapControl 
 		{ 
-			access = 0; 
 			idc = 10023; 
 			type = CT_MAP_MAIN; 
 			style = ST_PICTURE; 

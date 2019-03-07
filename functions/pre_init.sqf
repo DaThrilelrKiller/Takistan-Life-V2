@@ -5,6 +5,7 @@ PG_SSF = [];
 
 dtk_server_modules = 
 [
+"Map",
 "Statsave",
 "OwlEye",
 "Robbery",

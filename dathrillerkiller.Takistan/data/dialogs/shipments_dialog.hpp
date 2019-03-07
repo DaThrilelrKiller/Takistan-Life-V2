@@ -8,7 +8,6 @@
 	{
 		class dtk_map01 : dtkMap 
 			{ 
-				access = 0; 
 				idc = 56; 
 				type = CT_MAP_MAIN; 
 				style = ST_PICTURE; 
@@ -31,7 +30,7 @@
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 
@@ -39,10 +38,9 @@
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 
@@ -50,7 +48,6 @@
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -82,7 +79,6 @@
 			y = 0.72101 * safezoneH + safezoneY;
 			w = 0.207966 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscListbox_1501: RscListbox
 		{

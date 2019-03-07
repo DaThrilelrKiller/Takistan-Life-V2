@@ -8,13 +8,13 @@ _data = call {
 	if (_chkTeamOwn == "CIV")exitWith {
 		["ColorYellow","\ca\ca_e\data\flag_white_co.paa","Empty"]
 	};
-	if (_chkTeamOwn == "INS")exitWith {
+	if (_chkTeamOwn == "GUER")exitWith {
 		["ColorBlack","\ca\ca_e\data\flag_tkm_co.paa","Faction_TKM_EP1"]
 	};
-	if (_chkTeamOwn == "OPF")exitWith {
+	if (_chkTeamOwn == "EAST")exitWith {
 		["ColorRed","\ca\data\Flag_chdkz_co.paa","Faction_INS"]
 	};
-	if (_chkTeamOwn == "PD")exitWith {
+	if (_chkTeamOwn == "WEST")exitWith {
 		["ColorBlue","\ca\ca_e\data\flag_nato_co.paa","Faction_NATO_EP1"]
 	};
 };

@@ -15,7 +15,7 @@ class atm_menu
 			w = 0.264018 * safezoneW;
 			h = 0.577959 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 
@@ -24,7 +24,6 @@ class atm_menu
 			y = 0.177023 * safezoneH + safezoneY;
 			w = 0.264018 * safezoneW;
 			h = 0.0339976 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscButton_1644: RscButton
 		{

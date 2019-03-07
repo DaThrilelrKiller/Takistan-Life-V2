@@ -1,6 +1,7 @@
 ﻿private ["_return","_data","_item","_info","_itemcost","_costwithTax","_amount","_cost","_itemtype","_classname","_fahne","_crate","_logic","_license","_license1","_license2","_invspace","_menge"];
-
-if(dtk_shopactive)exitWith {};
+if(dtk_shopactive)exitWith {
+	systemchat "Shop script is still active";
+};
 dtk_shopactive = true;
 
 _return = false;
@@ -35,9 +36,9 @@ switch(_itemtype)do
 				
 		if (_info call config_illegal and _info call config_kind == "drug") then
 		{
-			_list = _fahne getvariable "druglist";
-			if(isnil "_list")then{_list = [[player, _amount, _cost/_amount]]}else{_list = _list + [[player, _amount, _cost/_amount]]};
-			_fahne setvariable["druglist", _list, true];
+			_list = (shop_object getvariable["druglist",[]]);
+			_list set [count _list,[player, _amount, _cost/_amount]];
+			shop_object setvariable["druglist", _list, true];
 		};
 
 		if (_item in (v_questitems select 1))then 

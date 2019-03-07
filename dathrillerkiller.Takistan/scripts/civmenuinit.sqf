@@ -61,6 +61,17 @@ systemChat  format [localize "STRS_civmenu_disarm", _civmenu_civ];
 
 if (_art == 3) exitWith 
 {
+	private ["_postion"];
+	_postion = if (dtk_side == "WEST")then {
+		[6087.95,11508,0.00143433];
+	}else{
+		[8195.08,1794.78,0.00143433];
+	};
+	
+	if ((player distance _postion) > 15)exitWith{
+		systemchat format ["%1 you are to far away from jail to perform a arrest!",name player];
+	};
+
 	_dauer = round(_this select 1);
 	format ["if (player == %1) then {[""arrest"", %2, %3,'%4'] execVM ""scripts\civmenu.sqf"";};", _civmenu_civ, _dauer, player,dtk_side] call network_broadcast;
 	systemChat  format[localize "STRS_civmenu_arrested", _civmenu_civ];

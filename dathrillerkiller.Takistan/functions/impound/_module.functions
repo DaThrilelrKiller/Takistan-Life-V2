@@ -3,5 +3,6 @@
 "info",
 "nofity",
 "open",
-"remove"
+"remove",
+"init"
 ];

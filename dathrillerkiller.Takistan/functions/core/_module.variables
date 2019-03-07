@@ -6,6 +6,7 @@ dtk_jointime = time;
 core_loop_array = [];
 dtk_action_time = 0;
 dtk_center = [7000,7000,0];
+dtk_stunning = false;
 
 ar_paychecks = 
 [
@@ -25,6 +26,12 @@ v_core_prones = [
 "amovppnemstpsnonwnondnon",
 "amovppnemstpsraswrfldnon",
 "amovppnemsprslowwrfldf"
+];
+
+dtk_ladder = [
+"laddercivilstatic",
+"ladderciviluploop",
+"laddercivildownloop"
 ];
 
 v_events = [

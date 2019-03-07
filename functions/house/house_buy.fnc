@@ -1,3 +1,4 @@
+private ["_unit","_house","_building"];
 
 _unit = _this select 0;
 _house = _this select 1;

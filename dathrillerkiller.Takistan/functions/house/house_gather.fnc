@@ -8,6 +8,6 @@ if !(dtk_civ)exitWith {};
 		_name = format["House #%1",_ForEachINdex];
 		_index = lbAdd [1401, _name];
 		_building  = nearestBuilding (getMarkerPos _marker);
-		lbSetData [1401, _index,str (_building buildingPos 1)];
+		lbSetData [1401, _index,str(([_building]call core_buildingPos)call bis_selectRandom)];
 	};
 }forEAch dtk_house_list;

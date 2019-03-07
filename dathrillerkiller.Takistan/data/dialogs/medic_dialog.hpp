@@ -51,21 +51,14 @@ class medic_respawn
 			colorSelectBackground[] = {0.5,0,0,0.5};
 			onLBSelChanged = "";
 		};
-		class lable_shop : RscBackground 
+		class lable_shop : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.43;
 			y = safeZoneY + safeZoneH * 0.34777778;
 			w = safeZoneW * 0.1625;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
-			
 		};
 		class close : RscButton 
 		{

@@ -6,21 +6,16 @@ whitelist_data = [
 ["Senior Administrator","isSnAdmin",{Developer or isSnAdmin}],
 ["Administrator","isAdmin",{Developer or isSnAdmin}],
 ["Moderator","isMod",{Developer or isSnAdmin}],
-["Supporter #1","supporters1",{Developer or isSnAdmin}],
-["Supporter #2","supporters2",{Developer or isSnAdmin}],
-["Supporter #3","supporters3",{Developer or isSnAdmin}],
-["Supporter #4","supporters4",{Developer or isSnAdmin}],
-["Supporter VIP","supportersVIP",{Developer or isSnAdmin}],
-
 
 ["Colonel","Colonel",{Developer}],
 ["Major","Major",{Developer or Colonel}],
 ["Captain","Captain",{Developer or Colonel or Major}],
 ["Lieutenant","Lieutenant",{Developer or Colonel or Major}],
 ["Sergeant Major","Sergeant_Major",{Developer or Colonel or Major}],
-["Staff_Sergeant","Staff_Sergeant",{Developer or Colonel or Major or Captain}],
+["Staff Sergeant","Staff_Sergeant",{Developer or Colonel or Major or Captain}],
 ["Sergeant","Sergeant",{Developer or Colonel or Major or Captain or Lieutenant}],
 ["Corporal","Corporal",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Specilaist","Specilaist",{Developer or Colonel or Major or Captain or Lieutenant}],
 ["Private","Private1",{Developer or Colonel or Major or Captain or Lieutenant}],
 ["Recruit","Recruit",{Developer or Colonel or Major or Captain or Lieutenant}],
 
@@ -41,3 +36,18 @@ whitelist_data = [
 ];
 
 tag_default = "data\images\tags\member";
+tag_default_icon = "member";
+dtk_tags = [
+"Developer",
+"Administrator",
+"Moderator",
+"Major",
+"Captain",
+"Lieutenant",
+"Sergeant Major",
+"Staff Sergeant",
+"Sergeant",
+"Corporal",
+"Private",
+"Recruit"
+];

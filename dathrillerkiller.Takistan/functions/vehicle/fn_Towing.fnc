@@ -59,8 +59,7 @@ switch (_action) do
 			
 			if (_tower isKindOf "MtvrRefuel_DES_EP1") then 
 			{
-				_Object setPos (_tower modelToWorld [0,-1.5,-0.5]);
-				_Object attachTo [_tower];
+				_Object attachTo [_tower,[0,-1.5,1]];
 			};
 			
 			

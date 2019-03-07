@@ -210,7 +210,7 @@ class Paint_shop
 			idc = 4;
 			
 		};
-		class RscBackground_2201 : RscBackground 
+		class RscBackground_2201 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.805;
@@ -218,7 +218,6 @@ class Paint_shop
 			w = safeZoneW * 0.168125;
 			h = safeZoneH * 0.03444445;
 			text = "Selection";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscCombo_2100 : RscCombo 
@@ -250,7 +249,6 @@ class Paint_shop
 			w = safeZoneW * 0.140625;
 			h = safeZoneH * 0.03777778;
 			text = "Close Shop";
-			colorBackground[] = {0.5,0,0,1};
 			action = "call paint_close";
 			
 		};
@@ -262,11 +260,10 @@ class Paint_shop
 			w = safeZoneW * 0.140625;
 			h = safeZoneH * 0.03777778;
 			text = "Buy Texture";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[]call paint_apply";
 			
 		};
-		class RscBackground_2201_copy1 : RscBackground 
+		class RscBackground_2201_copy1 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.805;
@@ -274,10 +271,9 @@ class Paint_shop
 			w = safeZoneW * 0.168125;
 			h = safeZoneH * 0.03444445;
 			text = "Paint Shop";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
-		class RscBackground_2201_copy2 : RscBackground 
+		class RscBackground_2201_copy2 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.805;
@@ -285,7 +281,6 @@ class Paint_shop
 			w = safeZoneW * 0.168125;
 			h = safeZoneH * 0.03444445;
 			text = "Change Color";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscCombo_2100_copy1 : RscCombo 
@@ -298,7 +293,7 @@ class Paint_shop
 			colorDisabled[] = {0.2,0.2,0.2,1};
 		};
 		
-		class RscBackground_Camera : RscBackground 
+		class RscBackground_Camera : Rsc_lable 
 		{
 			idc = -1;
 			x = safeZoneX + safeZoneW * 0.53;
@@ -306,7 +301,6 @@ class Paint_shop
 			w = safeZoneW * 0.243125;
 			h = safeZoneH * 0.03444445;
 			text = "Camera";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		
@@ -318,7 +312,6 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Zoom +";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[1] call paint_Zoom;";
 			
 		};
@@ -330,7 +323,6 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Zoom -";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[2] call paint_Zoom;";
 			
 		};
@@ -342,8 +334,7 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Font";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[1] call paint_camera;";
+			action = "[4] call paint_camera;";
 			
 		};
 		class Button_Back : RscButton 
@@ -354,8 +345,7 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Back";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[2] call paint_camera;";
+			action = "[3] call paint_camera;";
 			
 		};
 		class Button_Right : RscButton 
@@ -366,8 +356,7 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Right";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[4] call paint_camera;";
+			action = "[2] call paint_camera;";
 			
 		};
 		class Button_Left : RscButton 
@@ -378,8 +367,7 @@ class Paint_shop
 			w = safeZoneW * 0.06625;
 			h = safeZoneH * 0.02777778;
 			text = "Left";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[3] call paint_camera;";
+			action = "[1] call paint_camera;";
 			
 		};
 		

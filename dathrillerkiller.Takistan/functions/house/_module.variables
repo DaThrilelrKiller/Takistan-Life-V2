@@ -1,5 +1,5 @@
 ﻿dtk_house_actions = [
-["Storage",{[dtk_home]call storage_trunk;}],
+["Storage",{[dtk_home]call house_storage;}],
 ["Gear",{[dtk_home]call gear_open}],
 ["Garage",{call statsave_RetriveVehicleLand}],
 ["Lock/Unlock",{[player,dtk_home_mrk]call house_lock}]

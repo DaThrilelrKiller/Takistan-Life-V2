@@ -49,23 +49,12 @@
 		};
 		class Control333913750 : RscButton
 		{
-			type = 1;
 			idc = 563;
 			x = safeZoneX + safeZoneW * 0.29;
 			y = safeZoneY + safeZoneH * 0.71888889;
 			w = safeZoneW * 0.13875;
 			h = safeZoneH * 0.03666667;
-			style = 0+2;
 			text = "Buy/Sell";
-			borderSize = 0;
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.01;
-			offsetY = 0.01;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			colorSelectBackground[] = {0.5,0,0,0.5};
 			action = "call shops_button";
 			
 		};
@@ -76,11 +65,6 @@
 			y = safeZoneY+safeZoneH*0.22777778;
 			w = safeZoneW*0.14375;
 			h = safeZoneH*0.03444445;
-			colorBackground[] = {0,0,0,0.9};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {1,1,1,1};
-			colorSelectBackground[] = {0,0,0,0.9};
-			colorText[] = {1,1,1,1};
 			onLBSelChanged = "call shops_refresh";
 		};
 		class lb_information : RscListBox 
@@ -90,45 +74,24 @@
 			y = safeZoneY + safeZoneH * 0.26444445;
 			w = safeZoneW * 0.26875;
 			h = safeZoneH * 0.49555556;
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelectBackground[] = {0.5,0,0,0.5};
 		};
 		class lb_items : RscListBox 
 		{
-			type = 5;
 			idc = 301;
 			x = safeZoneX + safeZoneW * 0.288125;
 			y = safeZoneY + safeZoneH * 0.32777778;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.33333334;
-			style = 0;
-			colorBackground[] = {0.8,0.8,0.8,0.3};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {0,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			maxHistoryDelay = 1.000000;
-			rowHeight = 0.04;
-			sizeEx = 0.025;
-			soundSelect[] = {"",0.1,1.0};
-			colorSelectBackground[] = {0.5,0,0,0.5};
 			onLBSelChanged = "call shops_lbChanged";
-			period = 1.200000;	
 		};
-		class lable_shop : RscBackground 
+		class lable_shop : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.28;
 			y = safeZoneY + safeZoneH * 0.17666667;
 			w = safeZoneW * 0.4375;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		class close : RscButton 
@@ -139,30 +102,17 @@
 			w = safeZoneW*0.016875;
 			h = safeZoneH*0.03333334;
 			text = "X";
-			colorBackground[] = {1,1,1,0};
-			colorBackgroundActive[] = {1,1,1,0};
-			colorBorder[] = {1,1,1,0};
-			colorDisabled[] = {0.5,0,0,0};
-			colorFocused[] = {1,1,1,0};
-			colorShadow[] = {0,0,0,0};
-			sizeEx = 0.07;
 			action = "closeDialog 0";
 			
 		};
-		class lable_info_copy1 : RscBackground 
+		class lable_info_copy1 : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX+safeZoneW*0.44;
 			y = safeZoneY+safeZoneH*0.23111112;
 			w = safeZoneW*0.26875;
 			h = safeZoneH*0.03444445;
-			style = 0;
 			text = "Information";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		class select_storage_copy1 : RscCombo 
@@ -173,21 +123,6 @@
 			y = safeZoneY+safeZoneH*0.27666667;
 			w = safeZoneW*0.14375;
 			h = safeZoneH*0.03444445;
-			style = 0;
-			arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-			arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
-			colorBackground[] = {0,0,0,0.9};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {1,1,1,1};
-			colorSelectBackground[] = {0,0,0,0.9};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			maxHistoryDelay = 1.000000;
-			sizeEx = 0.025;
-			soundCollapse[] = {"",0.15,1.0};
-			soundExpand[] = {"",0.15,1.0};
-			soundSelect[] = {"",0.15,1.0};
-			wholeHeight = 0.3;
 			onLBSelChanged = "call shops_refresh";
 		};
 	};
@@ -220,24 +155,16 @@ class store
 			y = safeZoneY + safeZoneH * 0.22222223;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.53777778;
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelectBackground[] = {0.5,0,0,0.5};
 			onLBSelChanged = "[]call shops_openshop;";
 		};
-		class lable_shop : RscBackground 
+		class lable_shop : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.43;
 			y = safeZoneY + safeZoneH * 0.17666667;
 			w = safeZoneW * 0.1625;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		class close : RscButton 
@@ -255,8 +182,6 @@ class store
 			colorFocused[] = {1,1,1,0};
 			colorShadow[] = {0,0,0,0};
 			sizeEx = 0.07;
-			action = "closeDialog 0";
-			
 		};
 		
 	};

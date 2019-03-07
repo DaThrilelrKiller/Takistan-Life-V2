@@ -1,6 +1,6 @@
 createdialog "house_menu";
 
-dtk_home =  _this select 0;
+dtk_home =  call (_this select 0);
 dtk_home_mrk = _this select 1;
 
 {

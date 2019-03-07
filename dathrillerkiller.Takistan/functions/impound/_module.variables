@@ -1,1 +1,6 @@
 ﻿module_impound = true;
+dtk_impound_points = [
+impound1,
+impound2,
+impound3
+];

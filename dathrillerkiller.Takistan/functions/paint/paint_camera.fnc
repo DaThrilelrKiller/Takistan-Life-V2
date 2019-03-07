@@ -32,6 +32,6 @@ switch _choice do {
 	};
 };
 
-paint_cam camSetTarget [(getPosATL paint_temp_vehicle select 0) + dtk_CamOffsetX, (getPosATL paint_temp_vehicle select 1) + dtk_CamOffsetY, 1];
-paint_cam camSetRelPos [dtk_CamZoomX, dtk_CamZoomY, 0];
+paint_cam camSetTarget [(getPos paint_temp_vehicle select 0) + dtk_CamOffsetX, (getPos paint_temp_vehicle select 1) + dtk_CamOffsetY, 31];
+paint_cam camSetRelPos [dtk_CamZoomX, dtk_CamZoomY, 0.5];
 paint_cam camCommit 0.5;

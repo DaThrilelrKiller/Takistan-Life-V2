@@ -32,23 +32,28 @@ if (_art == "hit") then
 	{
 	["ALL",[player,"adthppnemstpsraswpstdnon_2"],"network_SwitchMove",false,true]call network_MPExec;
 	};
-_weapons = weapons player - nonlethalweapons;
+	_weapons = weapons player - nonlethalweapons;
 	if (count _weapons > 0) then 
 	{
-	{player removeWeapon _x} count _weapons;																														
-	call compile format ['waffenhalter%1 = "weaponholder" createVehicle getpos player; waffenhalter%1 setVehicleInit "this setVehicleVarName ""waffenhalter%1""; waffenhalter%1 = this;"; processInitCommands;', AR_playerString];
-	sleep 0.5;																		
-	(format ["{waffenhalter%2 ADDWEAPONCARGO [_x, 1];} count %3; waffenhalter%2 setpos %4;", player, AR_playerString, _weapons, (getpos player)]) call network_broadcast;			
-	sleep 0.5;	
+		{player removeWeapon _x} count _weapons;																														
+		call compile format ['waffenhalter%1 = "weaponholder" createVehicle getpos player; waffenhalter%1 setVehicleInit "this setVehicleVarName ""waffenhalter%1""; waffenhalter%1 = this;"; processInitCommands;', AR_playerString];
+		sleep 0.5;																		
+		(format ["{waffenhalter%2 ADDWEAPONCARGO [_x, 1];} count %3; waffenhalter%2 setpos %4;", player, AR_playerString, _weapons, (getpos player)]) call network_broadcast;			
+		sleep 0.5;	
 	};
-while{StunActiveTime > 0} do {if(StunActiveTime > MaxStunTime)then{StunActiveTime = MaxStunTime}; StunActiveTime = StunActiveTime - 1; sleep 1;};
-StunActiveTime = 0;
+	while{StunActiveTime > 0} do {
+		if(StunActiveTime > MaxStunTime)then{
+			StunActiveTime = MaxStunTime
+		}; 
+		StunActiveTime = StunActiveTime - 1; sleep 1;
+	};
+	StunActiveTime = 0;
 	if (animationstate player != "civillying01" and animationstate player != "civilsitting" and animationstate player != "civillying01" and animationstate player != "civilsitting02" and animationstate player != "civilsitting03") then  
 	{
-	isstunned = false;	
-	if(player call ISSE_IsVictim)then{
-	["ALL",[player,"amovppnemstpsnonwnondnon"],"network_SwitchMove",false,true]call network_MPExec;
-	};																						
+		isstunned = false;	
+		if(player call ISSE_IsVictim)then{
+			["ALL",[player,"amovppnemstpsnonwnondnon"],"network_SwitchMove",false,true]call network_MPExec;
+		};																						
 	};
 																							
 };

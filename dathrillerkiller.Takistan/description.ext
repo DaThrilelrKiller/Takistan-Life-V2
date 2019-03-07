@@ -57,6 +57,7 @@ class Header
 #include "data\dialogs\medic_dialog.hpp"
 #include "data\dialogs\house_diaglog.hpp"
 #include "data\dialogs\clothing_dialog.hpp"
+#include "data\dialogs\Whitelist.hpp"
 
 class RscTitles
 {

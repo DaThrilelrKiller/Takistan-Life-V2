@@ -7,5 +7,6 @@
 "time",
 "update_map",
 "defent",
-"init"
+"init",
+"getTime"
 ];

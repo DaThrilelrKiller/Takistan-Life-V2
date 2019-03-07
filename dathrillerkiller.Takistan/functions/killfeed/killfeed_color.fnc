@@ -12,9 +12,9 @@ _side = _this call core_side;
 
 _color = call{
 	if (_side == "CIV")exitWith {"#a8a6a6"};
-	if (_side == "INS")exitWith {"#338c00"};
-	if (_side == "OPF")exitWith {"#b50000"};
-	if (_side == "PD")exitWith {"#002f8e"};
+	if (_side == "GUER")exitWith {"#338c00"};
+	if (_side == "EAST")exitWith {"#b50000"};
+	if (_side == "WEST")exitWith {"#002f8e"};
 	"#a8a6a6"
 };
 

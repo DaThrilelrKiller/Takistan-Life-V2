@@ -50,23 +50,17 @@ class Clothing
 			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {1,1,1,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
-			
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 		};
-		class Control673134996_copy1
+		class lable_preview : RscText
 		{
-			type = 0;
-			idc = -1;
 			x = safeZoneX+safeZoneW*0.815;
 			y = safeZoneY+safeZoneH*0.66333334;
 			w = safeZoneW*0.08875;
 			h = safeZoneH*0.02555556;
-			style = 0;
 			text = "Preview";
-			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {1,1,1,1};
-			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class Control673134996_copy1_copy1
@@ -82,7 +76,7 @@ class Clothing
 			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {0,1,0,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class Control2069652979
@@ -98,7 +92,7 @@ class Clothing
 			colorBackground[] = {0.6078,0.3725,0.6745,1};
 			colorText[] = {0.3922,0.6275,0.3255,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class Control673134996_copy1_copy2
@@ -114,7 +108,7 @@ class Clothing
 			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {0,0,1,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class Control673134996_copy2
@@ -130,7 +124,7 @@ class Clothing
 			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {1,0,0,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class Control673134996_copy3
@@ -146,7 +140,7 @@ class Clothing
 			colorBackground[] = {0.5098,0.3255,0.3255,0};
 			colorText[] = {1,1,1,1};
 			font = "TahomaB";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class slider_blue : RscSliderH 
@@ -206,7 +200,7 @@ class Clothing
 			offsetPressedY = 0.01;
 			offsetX = 0.01;
 			offsetY = 0.01;
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			action = "call paint_close";
 			
 		};
@@ -215,7 +209,7 @@ class Clothing
 			idc = 4;
 			
 		};
-		class RscBackground_2201 : RscBackground 
+		class RscBackground_2201 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX+safeZoneW*0.805;
@@ -223,7 +217,6 @@ class Clothing
 			w = safeZoneW*0.168125;
 			h = safeZoneH*0.03444445;
 			text = "Selection";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscCombo_2100 : RscCombo 
@@ -256,7 +249,6 @@ class Clothing
 			w = safeZoneW*0.140625;
 			h = safeZoneH*0.03777778;
 			text = "Close Shop";
-			colorBackground[] = {0.5,0,0,1};
 			action = "call paint_close";
 			
 		};
@@ -268,11 +260,10 @@ class Clothing
 			w = safeZoneW*0.140625;
 			h = safeZoneH*0.03777778;
 			text = "Buy Texture";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[]call paint_apply";
 			
 		};
-		class Clothing_lable : RscBackground 
+		class Clothing_lable : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.005;
@@ -280,10 +271,9 @@ class Clothing
 			w = safeZoneW * 0.168125;
 			h = safeZoneH * 0.03444445;
 			text = "Clothing List";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
-		class RscBackground_2201_copy2 : RscBackground 
+		class RscBackground_2201_copy2 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX+safeZoneW*0.805;
@@ -291,7 +281,6 @@ class Clothing
 			w = safeZoneW*0.168125;
 			h = safeZoneH*0.03444445;
 			text = "Change Color";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscCombo_2100_copy1 : RscCombo 
@@ -303,7 +292,7 @@ class Clothing
 			h = safeZoneH*0.03444445;
 			colorDisabled[] = {0.2,0.2,0.2,1};
 		};
-		class RscBackground_Camera : RscBackground 
+		class RscBackground_Camera : Rsc_lable 
 		{
 			idc = -1;
 			x = safeZoneX+safeZoneW*0.53;
@@ -311,7 +300,6 @@ class Clothing
 			w = safeZoneW*0.243125;
 			h = safeZoneH*0.03444445;
 			text = "Camera";
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class Button_ZoomIn : RscButton 
@@ -322,7 +310,6 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Zoom +";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[1] call paint_Zoom;";
 			
 		};
@@ -334,7 +321,6 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Zoom -";
-			colorBackground[] = {0.5,0,0,1};
 			action = "[2] call paint_Zoom;";
 			
 		};
@@ -346,8 +332,7 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Font";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[1] call paint_camera;";
+			action = "[4] call paint_camera;";
 			
 		};
 		class Button_Back : RscButton 
@@ -358,8 +343,7 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Back";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[2] call paint_camera;";
+			action = "[3] call paint_camera;";
 			
 		};
 		class Button_Right : RscButton 
@@ -370,8 +354,7 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Right";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[4] call paint_camera;";
+			action = "[2] call paint_camera;";
 			
 		};
 		class Button_Left : RscButton 
@@ -382,11 +365,10 @@ class Clothing
 			w = safeZoneW*0.06625;
 			h = safeZoneH*0.02777778;
 			text = "Left";
-			colorBackground[] = {0.5,0,0,1};
-			action = "[3] call paint_camera;";
+			action = "[1] call paint_camera;";
 			
 		};
-		class RscBackground_2201_copy1_copy1 : RscBackground 
+		class RscBackground_2201_copy1_copy1 : Rsc_lable 
 		{
 			idc = 2201;
 			x = safeZoneX+safeZoneW*0.805;
@@ -394,8 +376,6 @@ class Clothing
 			w = safeZoneW*0.168125;
 			h = safeZoneH*0.03444445;
 			text = "Paint";
-			colorBackground[] = {0.5,0,0,1};
-			
 		};
 		class RscListbox_1500_copy1 : RscListBox 
 		{

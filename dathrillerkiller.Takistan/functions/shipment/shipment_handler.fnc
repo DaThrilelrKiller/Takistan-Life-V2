@@ -14,4 +14,7 @@ while {alive player} do
 };
 
 /* shipment failed becuse player was killed */
-if !(alive player)exitWith {};
+if !(alive player)exitWith {
+	deleteWaypoint shipment_wp;
+	deleteMarker format["%1_shipment",player];
+};

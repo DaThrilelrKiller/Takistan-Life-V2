@@ -1,6 +1,24 @@
 ﻿
-shipment_defend_time = time + 90;
-["true","Weapon Shipment","Defend The Shipment For 1:30 Minutes!"]call Main_Notification;
+_time = (shipment_item call shipment_getTime);
+
+shipment_defend_time = time + _time;
+["true","Weapon Shipment",format["Defend The Shipment For %1 Seconds!",_time]]call Main_Notification;
+
+_side = [Shipment_destination]call border_side;
+
+if (_side == "North")then {
+	['ALL',["dtk_cop","Take down a weapon Shipment","The weapon shipment has been marked on the map, find and take them down!"],'Main_Notification',false,false]call network_MPExec;
+}else{
+	['ALL',["dtk_opf","Take down a weapon Shipment","The weapon shipment has been marked on the map, find and take them down!"],'Main_Notification',false,false]call network_MPExec;
+};
+
+_marker = createMarker [format["%1_shipment",player],[0,0]];																																																	
+_marker setMarkerShape "ICON";								
+_marker setMarkerType "Warning";										
+_marker setMarkerColor "ColorRed";																														
+_marker setMarkerText "Weapon Shipment Here!";	
+_marker setMarkerPos getMarkerPos Shipment_destination;
+
 
 while {true} do {
 
@@ -20,3 +38,5 @@ while {true} do {
 		call shipment_payout;
 	};
 };
+
+deleteMarker format["%1_shipment",player];

@@ -16,14 +16,8 @@ startLoadingScreen ["","dtk_loading"];
 
 /* Go ahead and figure out what side the player is on */
 if (dtk_client)then {
-	dtk_side = call {
-		if (playerSide == civilian)exitWith {"CIV"};
-		if (playerSide == resistance)exitWith {"INS"};
-		if (playerSide == west)exitWith {"PD"};
-		if (playerSide == east)exitWith {"OPF"};
-		"unknown"
-	};
-call compile preprocessFile format ['configuration\sidevariables\%1variables.sqf',dtk_side];
+	dtk_side = str playerSide;
+	call compile preprocessFile format ['configuration\sidevariables\%1variables.sqf',dtk_side];
 };
 
 call compile preprocessFile  "configuration\CfgVariables.sqf";	

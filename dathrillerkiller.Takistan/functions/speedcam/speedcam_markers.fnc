@@ -1,9 +1,5 @@
 ﻿private ["_marker"];
 
 {
-	_marker = createMarkerLocal [("speedcam_" + str _ForEachIndex), getPos _x];
-	_marker setMarkerTypeLocal "mil_dot";
-	_marker setMarkerColorLocal "colorBlack";
-	_marker setMarkerTextlocal format ["Speedcam %1",_ForEachIndex];
-	_marker setMarkerAlphaLocal 1;
+	[("speedcam_" + str _ForEachIndex),getPos _x,nil,nil,"colorBlack","mil_dot",nil,format ["Speedcam %1",_ForEachIndex]]call core_createMarkerLocal;
 }forEach speedcam_array;

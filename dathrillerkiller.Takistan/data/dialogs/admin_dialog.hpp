@@ -22,14 +22,13 @@
 			h = 0.561026*safezoneH;
 			
 		};
-		class RscBackground_2201 : RscBackground 
+		class RscBackground_2201 : Rsc_lable 
 		{
 			idc = 2201;
 			x = 0.180053*safezoneW+safezoneX;
 			y = 0.176985*safezoneH+safezoneY;
 			w = 0.167972*safezoneW;
 			h = 0.0340016*safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscBackground_2202 : RscBackground 
@@ -41,14 +40,13 @@
 			h = 0.561026*safezoneH;
 			
 		};
-		class RscBackground_2203 : RscBackground 
+		class RscBackground_2203 : Rsc_lable 
 		{
 			idc = 2203;
 			x = 0.356024*safezoneW+safezoneX;
 			y = 0.176985*safezoneH+safezoneY;
 			w = 0.463923*safezoneW;
 			h = 0.0340016*safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 			
 		};
 		class RscCombo_2100 : RscCombo 
@@ -138,7 +136,7 @@ class admin_teleport
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -146,12 +144,10 @@ class admin_teleport
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		
 		class dtk_map01 : dtkMap 
 		{ 
-			access = 0; 
 			idc = 10023; 
 			type = CT_MAP_MAIN; 
 			style = ST_PICTURE; 
@@ -162,14 +158,13 @@ class admin_teleport
 			onMapSingleClick =  "(vehicle player) setpos [_pos select 0, _pos select 1, 0];"; 
 		};	
 		
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -209,7 +204,7 @@ class admin_console
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -217,7 +212,6 @@ class admin_console
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -227,14 +221,13 @@ class admin_console
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -324,7 +317,7 @@ class admin_logs
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -332,7 +325,6 @@ class admin_logs
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -342,14 +334,13 @@ class admin_logs
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -366,8 +357,6 @@ class admin_logs
 			y = 0.27899 * safezoneH + safezoneY;
 			w = 0.143976 * safezoneW;
 			h = 0.476022 * safezoneH;
-			colorSelectBackground[] = {0.5,0,0,0.5};
-			onLBSelChanged = "_this call admin_exec1;";
 		};
 		class RscListbox_1501: RscListbox
 		{
@@ -409,7 +398,7 @@ class admin_licenses
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -417,7 +406,6 @@ class admin_licenses
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -427,14 +415,13 @@ class admin_licenses
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -516,7 +503,7 @@ class admin_inventory
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -524,7 +511,6 @@ class admin_inventory
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -534,14 +520,13 @@ class admin_inventory
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -630,7 +615,7 @@ class admin_vehicles
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			text = ""; 
@@ -638,7 +623,6 @@ class admin_vehicles
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -648,14 +632,13 @@ class admin_vehicles
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -741,7 +724,7 @@ class admin_update
 			w = 0.167972 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2201: RscBackground
+		class RscBackground_2201: Rsc_lable
 		{
 			idc = 2201;
 			
@@ -749,7 +732,6 @@ class admin_update
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.167972 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscBackground_2202: RscBackground
 		{
@@ -759,14 +741,13 @@ class admin_update
 			w = 0.463923 * safezoneW;
 			h = 0.561026 * safezoneH;
 		};
-		class RscBackground_2203: RscBackground
+		class RscBackground_2203: Rsc_lable
 		{
 			idc = 2203;
 			x = 0.356024 * safezoneW + safezoneX;
 			y = 0.176985 * safezoneH + safezoneY;
 			w = 0.463923 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			colorBackground[] = {0.5,0,0,1};
 		};
 		class RscCombo_2100: RscCombo
 		{

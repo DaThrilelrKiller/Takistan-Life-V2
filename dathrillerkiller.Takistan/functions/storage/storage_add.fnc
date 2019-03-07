@@ -49,9 +49,9 @@ else
 };
 
 if (!isNil "_array")then {
-[_object,_array] call storage_set;
-_return = true;
-_name = _itemarray call config_displayname;
+	[_object,_array] call storage_set;
+	_return = true;
+	_name = _itemarray call config_displayname;
 };
 
 _return

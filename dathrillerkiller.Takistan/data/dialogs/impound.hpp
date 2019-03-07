@@ -46,21 +46,14 @@
 			};
 			
 		};
-		class lable_shop : RscBackground 
+		class lable_shop : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.26;
 			y = safeZoneY + safeZoneH * 0.17666667;
 			w = safeZoneW * 0.4825;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
-			
 		};
 		class lb_other : RscListBox 
 		{
@@ -90,20 +83,14 @@
 			};
 			
 		};
-		class lable_Others : RscBackground 
+		class lable_Others : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.5875;
 			y = safeZoneY + safeZoneH * 0.52444445;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "Other Infomation";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		class close : RscButton 
@@ -118,7 +105,6 @@
 			colorBackgroundActive[] = {1,1,1,0};
 			colorBorder[] = {1,1,1,0};
 			sizeEx = 0.07;
-			action = "";
 			
 		};
 		class btn_take : RscButton 
@@ -132,14 +118,6 @@
 			style = 2;
 			text = "Retrive Vehicle";
 			borderSize = 0;
-			colorBackground[] = {0.5,0,0,1};
-			colorBackgroundActive[] = {0.5,0,0,1};
-			colorBackgroundDisabled[] = {1,1,1,0.5};
-			colorBorder[] = {1,1,1,0.1};
-			colorDisabled[] = {0.5,0,0,0};
-			colorFocused[] = {0.5,0,0,1};
-			colorShadow[] = {0,0,0,0.1};
-			colorText[] = {1,1,1,1};
 			font = "Zeppelin32";
 			offsetPressedX = 0;
 			offsetPressedY = 0;
@@ -154,20 +132,14 @@
 			default = false;
 			
 		};
-		class lable_siren : RscBackground 
+		class lable_siren : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.5875;
 			y = safeZoneY + safeZoneH * 0.23111112;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.03444445;
-			style = 0;
-			text = "Sirens";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
+			text = "Weapons";
 			
 		};
 		class lb_siren : RscListBox 
@@ -226,20 +198,14 @@
 			};
 			
 		};
-		class lable_storage : RscBackground 
+		class lable_storage : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.4375;
 			y = safeZoneY + safeZoneH * 0.23111112;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "Storage";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		class lb_gear : RscListBox 
@@ -270,20 +236,14 @@
 			};
 			
 		};
-		class lable_gear : RscBackground 
+		class lable_gear : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.4375;
 			y = safeZoneY + safeZoneH * 0.52444445;
 			w = safeZoneW * 0.14375;
 			h = safeZoneH * 0.03444445;
-			style = 0;
 			text = "Gear";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
 			
 		};
 		

@@ -8,5 +8,6 @@
 "gather",
 "price",
 "loop",
-"doors"
+"doors",
+"storage"
 ];

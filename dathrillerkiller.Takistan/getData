@@ -1,0 +1,112 @@
+
+test = {
+private ["_config","_main","_values","_count","_x","_item","_grab","_name","_cfg"];
+_config = missionConfigFile >> "Mission" >> "Groups";
+_find = "";
+
+{
+	_config = if (typename _x == "CONFIG")then{_x}else{_config};
+	_find = if (typename _x == "STRING")then{_x}else{_find};
+}forEAch _this;
+
+_main = _config;
+_text = "";
+
+while {isclass _config} do
+{
+	_count= count _config;
+	for "_x" from 0 to _count-1 do
+	{
+		_item = _config select _x;
+		if (isclass _item) then
+		{
+			_item =_main >> configname( _item);
+			_cfg = _item;
+			[_item,_find] call test;
+		};
+		_name = configname _item;
+		if (_name == "text" && {getText _item == _find})exitWith {
+			systemchat str _item
+		};
+		
+		if (istext _item) then {_text=format["%1 = ""%2"";",_name,gettext _item];};
+		if (isnumber _item) then {_text=format["%1 = %2;",_name,getnumber _item]; };
+		if (isarray _item) then {_text=format["%1 = %2;",_name,getarray _item];};
+	};
+	_config= inheritsFrom  _config;
+};
+
+};
+
+["Cop8"]call test;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test = {
+private ["_config","_main","_values","_count","_x","_item","_grab","_name","_cfg"];
+_config = missionConfigFile >> "Mission" >> "Groups";
+
+_config = if (isNil {_this select 0})then {_config}else{_this select 0};
+_find = if !(isNil {_this select 1})then {_this select 1};
+_cfg = if !(isNil {_this select 2})then {_this select 2};
+
+_main = _config;
+_text = "";
+
+while {isclass _config} do
+{
+	_count= count _config;
+	for "_x" from 0 to _count-1 do
+	{
+		_item = _config select _x;
+		if (isclass _item) then
+		{
+			_item =_main >> configname( _item);
+			_cfg = _item;
+			[_item,_find,_cfg] call test;
+		};
+		_name = configname _item;
+		if (_name == "text" && {getText _item == _find})exitWith {
+			[_cfg,_find] call test;
+		};
+		
+		if (istext _item) then {_text=format["%1 = ""%2"";",_name,gettext _item];};
+		if (isnumber _item) then {_text=format["%1 = %2;",_name,getnumber _item]; };
+		if (isarray _item) then {_text=format["%1 = %2;",_name,getarray _item];};
+	};
+	_config= inheritsFrom  _config;
+};
+
+};
+
+[nil,"Cop8"]call test;
+
+

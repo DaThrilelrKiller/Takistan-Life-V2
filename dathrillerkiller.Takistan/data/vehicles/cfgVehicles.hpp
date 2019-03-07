@@ -7,8 +7,13 @@ class SUV_UN_EP1;
 class SUV_TK_EP1;
 class LandRover_TK_CIV_EP1;
 class MtvrRefuel_DES_EP1;
+class Soldier_Crew_PMC;
 
 class CfgVehicles {
+	class copUni0 : Soldier_Crew_PMC {
+		displayName = "Traffic Cop Uniform";
+		hiddenSelectionsTextures[] = {"data\vehicles\textures\cop_traffic.paa"};
+	};
 	class inmate : Worker2 {
 		displayName = "Jail Inmate";
 		hiddenSelectionsTextures[] = {"data\vehicles\textures\prisonor.paa"};

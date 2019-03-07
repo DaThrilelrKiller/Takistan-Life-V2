@@ -30,21 +30,14 @@ class house_menu
 			colorSelectBackground[] = {0.5,0,0,0.5};
 			onLBSelChanged = "[]call house_handler;";
 		};
-		class lable_shop : RscBackground 
+		class lable_shop : Rsc_lable 
 		{
-			type = 0;
 			idc = 2201;
 			x = safeZoneX + safeZoneW * 0.43;
 			y = safeZoneY + safeZoneH * 0.17666667;
 			w = safeZoneW * 0.1625;
 			h = safeZoneH * 0.03444445;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.5,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "Zeppelin32";
-			sizeEx = 0.04;
-			
+			text = "";	
 		};
 		class close : RscButton 
 		{

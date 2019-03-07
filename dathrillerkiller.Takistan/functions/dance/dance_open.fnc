@@ -1,4 +1,5 @@
 ﻿if (dialog)exitWith {closeDialog 0};
+if (StunActiveTime != 0)exitWith{};
 if (animationstate player == "actspercmstpsnonwrfldnon_interrogate02_forgoten")exitWith {};
 if (lifeState player == "UNCONSCIOUS")exitWith{};
 

@@ -11,7 +11,7 @@ if ([_killer,["Air", "Ship", "LandVehicle","Tank"]]call core_isKindOf)then {
 };
 
 
-_distance = _unit distance _killer;
+_distance = round (_unit distance _killer);
 _weapon = currentWeapon _killer;
 if (isNil "_image")then {
 	_image = getText (configFile >> "CfgWeapons" >> _weapon >> "Picture");

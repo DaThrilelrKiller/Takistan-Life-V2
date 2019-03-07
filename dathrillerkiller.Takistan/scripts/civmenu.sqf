@@ -77,13 +77,14 @@ if (_civkopfgeld != 0) then
 
 (format ["systemChat format [localize ""STRS_civmenucheck_arrested_global"", name %1, name %3, %2]; %1 setVariable ['cdb_bounty',(%2*10000),true];%1_arrest = 1;", player, ((_prisondauer/60) call string_intToString), _copobj]) call network_broadcast;																	
 
-_postion = if (_side == "PD")then {
-	[6170.67,11195.6,0.0014534];
+_postion = if (_side == "WEST")then {
+	[6087.95,11508,0.00143433];
 }else{
 	[8195.08,1794.78,0.00143433];
 };
 
 player setPos _postion;
+player setVariable ["ar_cuffed",false,true];
 
 
 
@@ -102,53 +103,52 @@ player setdamage 0;
 _counter = 0;
 _tBounty = (_prisondauer/60)*10000;
 
-while {true} do 
-
+	while {true} do 
 	{
+			
+		_freigelassen = call compile format ["%1_arrest", player]; 
+		_bounty       = (player getvariable "cdb_bounty");
+		_frac 	      = _bounty/_tBounty;
+		_timetotake   = round(_prisondauer*_frac);
+		_testka = (player getvariable "cdb_bounty");
+		_testka = _testka - (10000/60);
+		player setVariable ['cdb_bounty',_testka,true]; 
+
+		hintsilent format["Time until release: %1 seconds\nBail left to pay: $%2", _timetotake, round(_bounty)];
+
+		if (isNull(player))                      exitWith {_exitart = ""};								
+		if (!(alive player))                     exitWith {_exitart = "tot"};																												
+		if (_counter >= _prisondauer)             exitWith {_exitart = "frei"};														
+		if (_freigelassen == 0)                   exitWith {_exitart = "freigelassen"};																
+		if (player distance _postion >= 120) exitWith {_exitart = "ausbruch"};
+		if (_bounty <= 0)			  exitwith {_exitart = "freigelassen"};
+
+		_counter = _counter + 1;
+		sleep 1;
+
+		if (animationState player in dtk_ladder)then {
+			_ladder  = nearestBuilding (getPos player);
+			player action ["ladderOff", _ladder];
+		};
 		
-	_freigelassen = call compile format ["%1_arrest", player]; 
-	_bounty       = (player getvariable "cdb_bounty");
-	_frac 	      = _bounty/_tBounty;
-	_timetotake   = round(_prisondauer*_frac);
-	_testka = (player getvariable "cdb_bounty");
-	_testka = _testka - (10000/60);
-	player setVariable ['cdb_bounty',_testka,true]; 
-
-	hintsilent format["Time until release: %1 seconds\nBail left to pay: $%2", _timetotake, round(_bounty)];
-
-	if (isNull(player))                      exitWith {_exitart = ""};								
-	if (!(alive player))                     exitWith {_exitart = "tot"};																												
-	if (_counter >= _prisondauer)             exitWith {_exitart = "frei"};														
-	if (_freigelassen == 0)                   exitWith {_exitart = "freigelassen"};																
-	if (player Distance _postion >= 50) exitWith {_exitart = "ausbruch"};
-	if (_bounty <= 0)			  exitwith {_exitart = "freigelassen"};
-
-	_counter = _counter + 1;
-	sleep 1;												
 
 	};	
 																									
-if ((_exitart == "frei") or (_exitart == "freigelassen")) then 
-{
-	if (_side == "PD")then {
-		player setpos [6158.1,11210.9,0.00143051];
-	}else{
-		player setpos [8173.13,1813.4,0.00143433];
-	};
-	player setdamage 0;	
-	(format ["if (player == %1) then { systemChat  localize ""STRS_civmenucheck_free_self"";}; systemChat format [localize ""STRS_civmenucheck_free_global"", name %1];", player]) call network_broadcast;
-	player call cdb_clear_warrants;
-	[dtk_clothing]call clothing_switch;
-	dtk_disabledkeys = [];
-};
-
-if (_exitart == "ausbruch") then 
-
+	if ((_exitart == "frei") or (_exitart == "freigelassen")) then 
 	{
+		call spawn_openMenu;
+		player setdamage 0;	
+		(format ["if (player == %1) then { systemChat  localize ""STRS_civmenucheck_free_self"";}; systemChat format [localize ""STRS_civmenucheck_free_global"", name %1];", player]) call network_broadcast;
+		player call cdb_clear_warrants;
+		["CIV_FUNC1"]call clothing_switch;
+		dtk_disabledkeys = [];
+	};
 
-	(format ["%1_arrest = 0; systemChat format [localize ""STRS_civmenucheck_breakout"", name %1];", player]) call network_broadcast;								
-	[player,"escaping from jail",20000]call cdb_addWarrant;
-	dtk_disabledkeys = [];
+	if (_exitart == "ausbruch") then 
+	{
+		(format ["%1_arrest = 0; systemChat format [localize ""STRS_civmenucheck_breakout"", name %1];", player]) call network_broadcast;								
+		[player,"escaping from jail",20000]call cdb_addWarrant;
+		dtk_disabledkeys = [];
 	};
 
 };

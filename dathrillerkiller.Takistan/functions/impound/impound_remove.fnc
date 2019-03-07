@@ -1,5 +1,4 @@
-﻿private ["_index","_vehicle","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
-
+﻿private ["_index","_vehicle","_textures","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
 
 _index = parseNumber (lbData [1,(lbCurSel 1)]);
 _data = v_impound select _index;
@@ -15,8 +14,11 @@ _warrants = _data select 6;
 _license = _data select 7;
 _notes = _data select 8;
 _sirens = _data select 9;
+_textures =_data select 12;
 
-_vehicle = [_name,impoundarea2,player,dtk_side,_plate]call shops_createVehicle;
+systemchat str _data;
+
+_vehicle = [_name,nil,player,dtk_side,_plate]call shops_createVehicle;
 
 clearWeaponCargo _vehicle;
 clearMagazineCargo _vehicle;
@@ -26,6 +28,8 @@ _vehicle setVariable ["tuning",_upgrade,true];
 _vehicle setVariable ["cdb_warrants",_warrants,true];
 _vehicle setVariable ["cdb_license",_license,true];
 _vehicle setVariable ["cdb_notes",_notes,true];
+_vehicle setVariable ['textures',_textures,true];
+[typeOf _vehicle,_vehicle]call vehicle_texture;
 
 {_vehicle addWeaponCargo [_x, (_weapons select 1 select _forEachIndex)];}forEach (_weapons select 0);
 {_vehicle addMagazineCargo [_x, (_magazines select 1 select _forEachIndex)];}forEach (_magazines select 0);

@@ -1,6 +1,5 @@
 ﻿		class dtkMap 
 		{ 
-			access = 0; 
 			idc = 56; 
 			type = CT_MAP_MAIN; 
 			style = ST_PICTURE; 

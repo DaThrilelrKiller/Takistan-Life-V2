@@ -66,13 +66,13 @@ if(_doWar) then {
 			_bluZone = ["bluforZone"] call zone_Owner;
 			_opfZone = ["opforZone"] call zone_Owner;
 			_resZone = ["indepZone"] call zone_Owner;
-			if (_bluZone == "PD" || _bluZone == "OPF") then {
+			if (_bluZone == "WEST" || _bluZone == "EAST") then {
 				["bluforZone", "CIV", bluforZoneFlag,"bluforFlag"] call zone_setOwner;
 			};
-			if (_opfZone == "PD" || _opfZone == "OPF") then {
+			if (_opfZone == "WEST" || _opfZone == "EAST") then {
 				["opforZone", "CIV", opforZoneFlag,"opforFlag"] call zone_setOwner;
 			};
-			if (_resZone == "PD" || _resZone == "OPF") then {
+			if (_resZone == "WEST" || _resZone == "EAST") then {
 				["indepZone", "CIV", indepZoneFlag,"indepFlag"] call zone_setOwner;
 			};
 		};

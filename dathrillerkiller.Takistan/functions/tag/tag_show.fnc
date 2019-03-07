@@ -1,5 +1,7 @@
 ﻿private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_name","_target"];
 
+if (dialog)exitWith{false};
+
 disableSerialization;
 _target = _this select 0;
 _text = _this select 1;

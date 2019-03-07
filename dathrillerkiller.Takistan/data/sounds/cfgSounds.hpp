@@ -23,25 +23,25 @@ class CfgSounds {
 		sound[]		= {"data\sounds\bankalarm.ogg", 1, 1};
 		titles[]	= {};
 	};
-	class intro
+	class CIVintro
 	{
 		name = "intro";                     
 		sound[] = {\data\sounds\intro.ogg, .7, 1};
 		titles[] = {};
 	};
-	class copintro
+	class WESTintro
 	{
 		name = "copintro";
-		sound[] = {\data\sounds\copintro.ogg, .6, 1};
+		sound[] = {\data\sounds\copintro.ogg, .5, 1};
 		titles[] = {};
 	};
-	class opfintro
+	class EASTintro
 	{
 		name = "opfintro";
 		sound[] = {\data\sounds\opfintro.ogg, .5, 1};
 		titles[] = {};
 	};
-	class indintro
+	class GUERintro
 	{
 		name = "indintro";
 		sound[] = {\data\sounds\indintro.ogg, .6, 1};

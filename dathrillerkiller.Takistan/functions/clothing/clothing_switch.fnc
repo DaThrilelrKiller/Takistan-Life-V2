@@ -1,8 +1,7 @@
-﻿private ["_old","_oldweapons","_oldmags","_skin","_pos","_skinsold","_camera","_actions"];
+﻿private ["_old","_oldweapons","_oldmags","_skin","_pos","_skinsold","_camera","_actions","_clothing"];
 
 
 _skin = (_this select 0);
-dtk_clothing = player getVariable ["type",typeOf player];
 
 _old = player;
 _oldweapons = weapons _old;

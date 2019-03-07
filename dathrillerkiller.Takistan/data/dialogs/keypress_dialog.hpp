@@ -7,21 +7,19 @@
 	onUnload = "";
 	class controls
 	{	
-		class RscPicture_1200: RscPicture
+		class RscPicture_1200: RscBackground
 		{
 			idc = 33363;
-
-			text = "#(argb,8,8,3)color(1,1,1,1)";
+			text = "";
 			x = 0.261366;
 			y = 0.00479847;
 			w = 0.5;
 			h = 1;
 		};
-		class RscPicture_1201: RscPicture
+		class RscPicture_1201: Rsc_lable
 		{
 			idc = 1201;
-
-			text = "#(argb,8,8,3)color(0.5098,0.0000,0.0000,1.0000)";
+			text = "";
 			x = 0.261838;
 			y = 3.89758e-007;
 			w = 0.5;
@@ -35,9 +33,6 @@
 			y = 0.105556;
 			w = 0.422349;
 			h = 0.424495;
-			colorText[] = {0.0000,0.0000,0.0000,1.0000};
-			colorBackground[] = {0.051,0.4353,0.1765,1};
-			colorBackgroundActive[] = {0.051,0.4353,0.1765,1};
 			onLBSelChanged = "[]call keypress_refresh;";
 		};
 		class selectKey: RscCombo
@@ -47,7 +42,6 @@
 			y = 0.575;
 			w = 0.1875;
 			h = 0.05;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class selectShift: RscCombo
 		{
@@ -56,7 +50,6 @@
 			y = 0.65;
 			w = 0.1875;
 			h = 0.05;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class selectCtrl: RscCombo
 		{
@@ -65,7 +58,6 @@
 			y = 0.725;
 			w = 0.1875;
 			h = 0.05;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class selectAlt: RscCombo
 		{
@@ -74,7 +66,6 @@
 			y = 0.8;
 			w = 0.1875;
 			h = 0.05;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class lableKeys: RscText
 		{
@@ -94,7 +85,6 @@
 			y = 0.625;
 			w = 0.1;
 			h = 0.1;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class lablectrl: RscText
 		{
@@ -104,7 +94,6 @@
 			y = 0.7;
 			w = 0.1;
 			h = 0.1;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class lablealt: RscText
 		{
@@ -114,7 +103,6 @@
 			y = 0.775;
 			w = 0.1;
 			h = 0.1;
-			colorText[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class btnSave: RscButton
 		{
@@ -125,7 +113,6 @@
 			w = 0.164394;
 			h = 0.0747475;
 			action = "call keypress_update";
-			colorBackground[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 		class BtnReset: RscButton
 		{
@@ -136,7 +123,6 @@
 			y = 0.9;
 			w = 0.164394;
 			h = 0.0747475;
-			colorBackground[] = {0.5098,0.0000,0.0000,1.0000};
 		};
 	};
 };

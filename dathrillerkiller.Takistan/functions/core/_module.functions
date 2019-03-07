@@ -23,5 +23,6 @@
 "createMarkerLocal",
 "setFlag",
 "sideNumber",
-"earplugs"
+"earplugs",
+"buildingPos"
 ];

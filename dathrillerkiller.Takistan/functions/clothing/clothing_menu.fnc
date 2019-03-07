@@ -8,6 +8,9 @@ if !(call _condition)exitWith {
 
 paint_unit = player;
 
+paint_cam = "Camera" camCreate [0, 0, 0];
+paint_cam cameraEffect ["internal", "front"];
+
 createDialog "Clothing";
 
 sliderSetRange [11, 0, 1];

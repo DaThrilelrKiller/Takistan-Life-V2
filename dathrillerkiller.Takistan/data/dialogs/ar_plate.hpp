@@ -1,7 +1,6 @@
 ﻿class ar_plate
 {
 	idd = 8943;
-	Access = ReadAndWrite;
 	movingEnable = false;
 	duration = 10;
 	fadein = 0;

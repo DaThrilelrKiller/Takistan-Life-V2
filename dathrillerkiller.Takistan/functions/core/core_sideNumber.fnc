@@ -5,9 +5,9 @@ _side = _unit call core_side;
 	
 _return = call{
 	if (_side == "CIV")exitWith {0};
-	if (_side == "INS")exitWith {1};
-	if (_side == "OPF")exitWith {2};
-	if (_side == "PD")exitWith {3};
+	if (_side == "GUER")exitWith {1};
+	if (_side == "EAST")exitWith {2};
+	if (_side == "WEST")exitWith {3};
 	4
 };
 

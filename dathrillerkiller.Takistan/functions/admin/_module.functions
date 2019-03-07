@@ -29,5 +29,6 @@
 "update",
 "update_handler",
 "update_functions",
-"updater"
+"updater",
+"camera"
 ];

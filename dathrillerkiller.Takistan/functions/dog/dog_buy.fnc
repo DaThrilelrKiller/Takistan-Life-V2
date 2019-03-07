@@ -6,7 +6,7 @@ systemChat  "You dont have enough money";
 
 systemChat  format["%1 bought a dog for %2", player, (dog_cost call string_intToString)];
 
-_type = "CLAY_Dog";
+_type = "Pastor";
 _grp = group player;
 _name = format ["CLAY_tmpDog%1", round (random 1000)];
 
@@ -16,4 +16,3 @@ _dog = call compile format ["%1", _name];
 _dog setDir getDir player;
 player setVariable ["CLAY_DogUnit", _dog];
 player setVariable ["CLAY_DogStatus", "Waiting"];
-	

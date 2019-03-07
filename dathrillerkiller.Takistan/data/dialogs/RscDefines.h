@@ -329,36 +329,33 @@ text              = "dbg.pac";
 };
 
 class RscButton
-
 {
-
-type                      = CT_BUTTON;
-idc                       = -1;
-style                     = ST_CENTER;
-colorText[]               = {1, 1, 1, 1};
-font                      = FontHTML;
-sizeEx                    = 0.025;
-soundPush[]               = {"", 0.2, 1};
-soundClick[] = {"\ca\ui\data\sound\mouse3", 0.07, 1};
-soundEscape[] = {"\ca\ui\data\sound\mouse1", 0.09, 1};
-default                   = false;
-text                      = "";
-colorActive[]             = {0, 0, 0, 0};
-colorDisabled[]           = {0.5,0,0,0};
-colorBackground[]         = {0.5,0,0,0};
-colorBackgroundActive[]   = {0.5,0,0,1};
-colorBackgroundDisabled[] = {1,1,1,0.5};
-colorFocused[]            = {0.5,0,0,1};
-colorShadow[]             = {0, 0, 0, 0.1};
-colorBorder[]             = {1, 1, 1, 0.1};
-offsetX                   = 0;
-offsetY                   = 0;
-offsetPressedX            = 0;
-offsetPressedY            = 0;
-borderSize                = 0;
-soundEnter[]              = {"", 0.15, 1};
-action = "closeDialog 0;";
-
+	type                      = CT_BUTTON;
+	idc                       = -1;
+	style                     = ST_CENTER;
+	colorText[]               = {1, 1, 1, 1};
+	font                      = FontHTML;
+	sizeEx                    = 0.025;
+	soundPush[]               = {"", 0.2, 1};
+	soundClick[] = {"\ca\ui\data\sound\mouse3", 0.07, 1};
+	soundEscape[] = {"\ca\ui\data\sound\mouse1", 0.09, 1};
+	default                   = false;
+	text                      = "";
+	colorActive[]             = {0, 0, 0, 0};
+	colorDisabled[]           = {0,0,0,0};
+	colorBackground[]         = {0,0,0,0};
+	colorBackgroundActive[]   = {0,0,0,1};
+	colorBackgroundDisabled[] = {0,0,0,0};
+	colorFocused[]            = {0,0,0,1};
+	colorShadow[]             = {0, 0, 0, 0.1};
+	colorBorder[]             = {1, 1, 1, 0};
+	offsetX                   = 0;
+	offsetY                   = 0;
+	offsetPressedX            = 0;
+	offsetPressedY            = 0;
+	borderSize                = 0;
+	soundEnter[]              = {"", 0.15, 1};
+	action = "closeDialog 0;";
 };
 
 class RscDummy : RscButton
@@ -418,50 +415,42 @@ autocomplete = false;text = "";
 };
 
 class RscLB_C
-
 {
+	style                   = ST_LEFT;
+	idc                     = -1;
+	colorSelect[]           = {1, 1, 1, 1};
+	colorSelectBackground[] = {0, 0, 0, 0.5};
+	colorText[]             = {1, 1, 1, 1};
+	colorBackground[]       = {0, 0, 0, 0.5};
+	colorScrollbar[] 	= {Dlg_Color_White,1};
+	font                    = FontHTML;
+	sizeEx                  = 0.025;
+	rowHeight               = 0.04;
+	period 			= 1.200000;
+	maxHistoryDelay 	= 1.000000;
+	autoScrollSpeed 	= -1;
+	autoScrollDelay 	= 5;
+	autoScrollRewind 	= 0;
 
-style                   = ST_LEFT;
-idc                     = -1;
-colorSelect[]           = {0, 0, 0, 1.0};
-colorSelectBackground[] = {0.7, 0.7, 0.7, 1};
-colorText[]             = {1, 1, 1, 1};
-colorBackground[]       = {0.8, 0.8, 0.8, 0.3};
-colorScrollbar[] 	= {Dlg_Color_White,1};
-font                    = FontHTML;
-sizeEx                  = 0.025;
-rowHeight               = 0.04;
-period 			= 1.200000;
-maxHistoryDelay 	= 1.000000;
-autoScrollSpeed 	= -1;
-autoScrollDelay 	= 5;
-autoScrollRewind 	= 0;
-
-class ScrollBar {};
-
+	class ScrollBar {};
 };
 
 class RscListBox: RscLB_C
-
 {
-
-soundSelect[] = {"", 0.1, 1};
-type          = CT_LISTBOX;
-
+	soundSelect[] = {"", 0.1, 1};
+	type          = CT_LISTBOX;
 };
 
 class RscCombo: RscLB_C
 
 {
-
-type            = CT_COMBO;
-wholeHeight     = 0.3;
-soundSelect[]   = {"", 0.15, 1};
-soundExpand[]   = {"", 0.15, 1};
-soundCollapse[] = {"", 0.15, 1};
-arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
-
+	type            = CT_COMBO;
+	wholeHeight     = 0.3;
+	soundSelect[]   = {"", 0.15, 1};
+	soundExpand[]   = {"", 0.15, 1};
+	soundCollapse[] = {"", 0.15, 1};
+	arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
+	arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
 };
 
 class RscSliderH
@@ -490,9 +479,24 @@ colorActive[] = {1, 1, 1, 1};
 
 };
 
+class Rsc_lable 
+{
+	type = 0;
+	style = 0;
+	idc = -1;
+	x = 0;
+	y =0;
+	w = 0;
+	h = 0;
+	text = "";
+	colorBackground[] = {0,0,0,1};
+	colorText[] = {1,1,1,1};
+	font = "Zeppelin32";
+	sizeEx = 0.04;
+};
+
 class RscListNBox
 {
-access = 0; 
 
 type = 102;
 style =ST_MULTI;

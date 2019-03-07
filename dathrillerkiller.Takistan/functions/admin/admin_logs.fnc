@@ -5,11 +5,10 @@ createDialog "admin_logs";
 call admin_load;
 
 
-/* Adds lables to the collums */
+
 _name = ["names",18]call string_setLegth;
 _index = lbAdd [1501, format["%1  %2", _name,"logs"]];
 
-/* Loads all the logs  to list box */
 {	
 	_name = [(_x select 0),18]call string_setLegth;
 	_log = _x select 1;

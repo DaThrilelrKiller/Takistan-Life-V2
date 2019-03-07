@@ -6,6 +6,7 @@ SpawnPoints = [
 ["Insurgent Spawn",[1388.56,3506.27,0.00132751],"dtk_ins"],
 
 ["Police Base (North)",[5905.56,11891.5,0.00144958],"dtk_cop"],
+["Prison (North)",[6062.17,11512.9,0.00144958],"dtk_cop"],
 
 ["Air Field",[6000.44,11534.8,0.00144196],"dtk_nation == 'North' && {dtk_civ}"],
 ["North Civilain Spawn",[5656.24,8892.89,0.00144196],"dtk_nation == 'North' && {dtk_civ}"],
