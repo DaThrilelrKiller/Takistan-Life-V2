@@ -59,3 +59,10 @@ core_ai_disable = [
 "FSM",
 "WEAPONAIM"
 ];
+
+dtk_border = 0;
+dtk_control = [
+"checkpoint_alpha",
+"checkpoint_bravo",
+"checkpoint_delta"
+];

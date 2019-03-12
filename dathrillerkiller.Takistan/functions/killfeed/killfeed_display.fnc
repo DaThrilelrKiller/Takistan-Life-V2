@@ -21,7 +21,7 @@ _message = _this call killfeed_message;
 kill_feed set [count kill_feed,_message];
 
 {_text = _text + _x}forEach kill_feed;
-["kill_feed",5]call array_trim;
+["kill_feed",3]call array_trim;
 
 _control ctrlSetStructuredText parseText _text;
 _control ctrlCommit 0;

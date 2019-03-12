@@ -1,6 +1,12 @@
 ﻿module_quest = true;
 v_questitems = [];
 v_questtime = 0;
+dtk_quest = [
+quest1,
+quest2,
+quest3
+];
+
 v_quest = 
 [
 	[

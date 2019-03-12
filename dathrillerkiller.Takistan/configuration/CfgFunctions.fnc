@@ -7,7 +7,6 @@ _Funcitons =
 ["events","onpause","events"],
 ["events","sethit","events"],
 
-["inv","entferneillegales","inventory"],
 ["inv","getobjectsteuer","inventory"],
 ["inv","addprozent","inventory"],
 ["inv","isarmed","inventory"], 

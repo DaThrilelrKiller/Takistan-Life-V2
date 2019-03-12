@@ -3,7 +3,7 @@
 _hud = uiNameSpace getVariable "ar_hud";
 _playhud = _hud displayCtrl 154;
 
-_hunger = round(dtk_hunger);
+_hunger = round(100-dtk_hunger);
 _invmoney = [[player,"geld"] call storage_amount] call Main_FormatMoney;
 _bankmoney = [(dtk_bank)] call Main_FormatMoney;
 _health = 100 - (round ((damage player)*100));

@@ -8,5 +8,7 @@
 "tweet",
 "send",
 "emojis",
-"show"
+"show",
+"add",
+"load_emojis"
 ];

@@ -906,7 +906,6 @@ dtk_items = [
 ["OilBarrel", ["Item", "service"],["cl_petroleum", "Petroleum"], [35000, 35000], [10, "", ""],[true,true,true, false, "refuelveh"] ],
 ["schluesselbund",["Item", "carobjects"],["schluesselbund", "Key chain"],[0, 0], [0, "",""], [false,false, false,false,"keys_list"] ],
 ["idcard",["Item", "misc"],["idcard", "ID"],[0, 0], [0, "",""], [false,false, false,false,"id_show"] ],
-["weaponBag",["Item", "misc"],["weaponBag", "weapon Bag"],[1000, 750], [0.5, "", ""], [true, true, true,false,"Scripts\Misc\HolsterPweapon"]],
 ["Itembag",["Item", "misc"],["Itembag", "Evidence Bag"],[800, 750], [0.5, "", ""], [true, true, true,false,"itembag"]],
 ["bankversicherung", ["Item", "misc"], ["bankversicherung", "Bank insurance"],[2000, 1500], [0, "",""],[true,true,true, false, "nouse"]],
 ["tcgmp",["Item", "food"],["tcgmp", "TCG moon pie"],[1500, 1500], [.5, "",""], [true, true, true,false,"hunger_Eat"]], 
@@ -1114,7 +1113,7 @@ dtk_items = [
 ["camera_basic",["Item", "misc"],["camera_basic", "Basic Camera"],[20000, 20000], [20, "",""], [false, true, false,false,"camera_place"]],
 ["camera_advanced",["Item", "misc"],["camera_advanced", "Advanced Camera"],[60000, 60000], [20, "",""], [false, true, false,false,"camera_place"]],
 ["camera_laptop",["Item", "misc"],["camera_laptop", "CCTV Laptop"],[10000, 10000], [20, "",""], [false, true, false,false,"camera_laptop"]],
-["brush",["Item", "misc"],["Suitcase", "Detective Brush"],[1200, 1200], [20, "",""], [false, true, false,false,"fingerprints_gather"]],
+["brush",["Item", "misc"],["Suitcase", "Detective Brush"],[1200, 1200], [5, "",""], [false, true, false,false,"fingerprints_gather"]],
 ["evidence",["Item", "misc"],["Suitcase", "Evidence"],[0, 0], [20, "",""], [false, true, false,false,"nouse"]],
 
 ["copUni0",["clothing","cloth"],["copUni0","Traffic Cop Uniform"],[30,30],[0.1,"","patrol_training"],[true,false,true,false,"clothing_switch"]],

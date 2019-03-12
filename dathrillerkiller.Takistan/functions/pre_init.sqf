@@ -50,6 +50,7 @@ dtk_active_modules =
 "String",
 "Shipment",
 "Quest",
+"Well",
 "Locations",
 "Setup",
 "ATM",

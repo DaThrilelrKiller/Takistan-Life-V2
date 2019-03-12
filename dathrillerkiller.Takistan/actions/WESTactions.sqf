@@ -12,6 +12,7 @@
 [player,["Remove Road Barrier","noscript.sqf",'if ([player,"RoadBarrier_light",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "RoadBarrier_light") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Caution Tape","noscript.sqf",'if ([player,"10mTape",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "10mTape") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Body Bag","noscript.sqf",'[player,"geld",1000] call storage_add; deletevehicle cursorTarget',1,true,true,"",'(typeOf cursorTarget == "body") && {player distance cursorTarget < 4}']]call action_add;
+[player,["Remove Spike Strips","noscript.sqf",'deletevehicle (nearestobjects [getpos player, ["Fort_RazorWire"],  10] select 0);',1,true,true,"",'_spikes = (nearestobjects [getpos player, ["Fort_RazorWire"],  10] select 0); player distance _spikes < 7 && {damage _spikes == 1}']]call action_add;
 
 /*OTHER*/
 [player,["Get Patrol Mission","scripts\coppatrol.sqf",["start"],1,false,true,"","player distance copbank <= 4 and !pmissionactive and !patrolwaittime"]]call action_add;

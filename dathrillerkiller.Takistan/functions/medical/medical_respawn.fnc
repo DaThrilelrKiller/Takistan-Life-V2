@@ -1,5 +1,8 @@
 ﻿private ["_unit","_corps","_time"];
 
+if (dtk_respawn)exitWith {};
+dtk_respawn = true;
+
 _unit = _this select 0;
 _corps = _this select 1;
 _time = time;
@@ -23,4 +26,5 @@ _this call medical_setPos;
 [_unit,_corps,_time] spawn medical_timer;
 
 dtk_hunger = 25;
+dtk_respawn = false;
 

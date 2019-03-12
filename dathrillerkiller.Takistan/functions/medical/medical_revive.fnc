@@ -1,23 +1,9 @@
-﻿/*
-File: fn_revive.sqf
-Desc: Used to revive players that are down
-Author: DaThrillerKiller -PureGaming Founder
-Youtube: https://www.youtube.com/channel/UCY-d_qX9l2ABnJ3cDO7VUIQ
-Email: dathrillerkiller@gmail.com 
-Instagram: https://www.instagram.com/tuckeeeee
-
-	Use Without Permission is prohibited
-
-Prams: 
-	0. Player you are trying to revive
-*/
-
-private ["_Deadplayer"];
+﻿private ["_Deadplayer"];
 
 if (count _this == 1)then {
 	_Deadplayer = _this select 0;
-	['ALL',player,{_this allowDamage true;},false,true]call network_MPExec;
-	['ALL',player,{_this setUnconscious false;},false,true]call network_MPExec;
+	['ALL',_Deadplayer,{_this allowDamage true;},false,true]call network_MPExec;
+	['ALL',_Deadplayer,{_this setUnconscious false;},false,true]call network_MPExec;
 	_Deadplayer setUnconscious false;
 	_Deadplayer allowDamage true;
 
@@ -40,7 +26,7 @@ if (count _this == 1)then {
 	[_Deadplayer,[_Deadplayer,player],"medical_revive",false,false]call network_MPExec;
 	deleteMarker ("medical_" + name _Deadplayer);
 }else{
-	closeDialog 0;
+	[]call core_close;
 	call medical_terminate;
 	systemchat format ["%1 you where revived by %2",name player,name (_this select 1)];
 	player setUnconscious false;

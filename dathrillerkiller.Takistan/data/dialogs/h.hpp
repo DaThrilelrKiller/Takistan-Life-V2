@@ -18,7 +18,7 @@ class button_arrest : RscButton          {idc = 5;x = 0.41; y = 0.48;w = 0.20; h
 class button_restrain : RscButton        {idc = 6;x = 0.41; y = 0.53;w = 0.20; h = 0.04;text = "Handcuff/Release";                 action = "[civmenuciv]call cuffs_cuff; closedialog 0";};
 class ticket_eingabe : RscEdit          {idc = 11;x = 0.41; y = 0.58;w = 0.20; h = 0.03;text = "0";};
 class button_ticket : RscButton                  {x = 0.41; y = 0.63;w = 0.20; h = 0.04;text = $STRD_description_civmenu_ticket;   action = "[4, ctrlText 11] execVM ""scripts\civmenuinit.sqf""; closedialog 0";};
-class warning_eingabe : RscEdit          {idc = 69;x = 0.41; y = 0.68;w = 0.20; h = 0.03;text = "Breaking An Emita County Law!";};
+class warning_eingabe : RscEdit          {idc = 69;x = 0.41; y = 0.68;w = 0.20; h = 0.03;text = "Breaking an Takistan County Law!";};
 class button_arrestMax : RscButton                  {x = 0.41; y = 0.73;w = 0.20; h = 0.04;text = "Arrest Suspect (Max)";   action = "closedialog 0";};
 class cancel : RscButton                         {x = 0.41; y = 0.93;w = 0.20; h = 0.04;text = $STRD_description_cancel;           action = "closedialog 0";};
 class button_heal : RscButton           {idc = 13;x = 0.41; y = 0.83;w = 0.20; h = 0.04;text = $STRD_description_civmenu_heal;     action = "[5] execVM ""scripts\civmenuinit.sqf""; closedialog 0";};

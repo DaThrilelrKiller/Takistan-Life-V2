@@ -1,6 +1,8 @@
 ﻿private ["_to"];
 _to = _this select 0;
 
+["ALL",[player,format ["Excuted %1 on %2",name _to,ctrlText 1400]],"admin_log",false,true]call network_MPExec;
+
 if (typeName _to == "STRING" && {_to == "ALL"})then
 {
 	[_to,[],compile ctrlText 1400,false,true]call network_MPExec;

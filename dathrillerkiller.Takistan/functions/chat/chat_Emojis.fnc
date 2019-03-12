@@ -2,17 +2,12 @@
 _text = _this;
 
 {
-	_emojis = _x select 0;
-	_images = _x select 1;
-	{
-		if (_x in _emojis)then {
-		_text set [_forEachIndex,format ["<img image='data\images\emoji\%1'/>",_images call bis_selectRandom]];
-		};
-	}forEach _text;
-}forEach chat_emojis_list;
+	if (_x in chat_emojis_array)then {
+		_text set [_forEachIndex,format ["<img image='data\images\emoji\%1.paa'/>",_x]];
+	};
+}forEach _text;
 
 {
 	_return = _return + format ["%1 ",_x];
 }forEach _text;
-
 _return

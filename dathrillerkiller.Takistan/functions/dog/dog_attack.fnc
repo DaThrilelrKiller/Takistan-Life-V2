@@ -1,22 +1,21 @@
 ﻿private ["_target","_dog","_sound"];
 
 _target = _this select 0;
-_dog = player getVariable "CLAY_DogUnit";
 player setVariable ["CLAY_DogStatus", "Attacking"];
 
-_sound = createSoundSource ["Sound_BadDog", getpos _dog, [], 0];
-_sound attachTo [_dog, [0,0,0]];
+_sound = createSoundSource ["Sound_BadDog", getpos dtk_dog, [], 0];
+_sound attachTo [dtk_dog, [0,0,0]];
 
-while {alive _dog && alive _target && player getVariable "CLAY_DogStatus" == "Attacking"} do
+while {alive dtk_dog && alive _target && player getVariable "CLAY_DogStatus" == "Attacking"} do
 {
-	_dog doMove getPos _target;
-	If (_dog distance _target < 3 && vehicle _target == _target) Then
+	dtk_dog doMove getPos _target;
+	If (dtk_dog distance _target < 3 && vehicle _target == _target) Then
 	{
-		_dog doTarget _target;
-		_dog lookAt _target;
+		dtk_dog doTarget _target;
+		dtk_dog lookAt _target;
 
-		_dog switchMove "CLAY_DogAttack";
-		_dog setVelocity [0, 0, 5];
+		dtk_dog switchMove "CLAY_DogAttack";
+		dtk_dog setVelocity [0, 0, 5];
 		
 		_target setHit ["legs", 1];
 		_target setHit ["hands", 1];

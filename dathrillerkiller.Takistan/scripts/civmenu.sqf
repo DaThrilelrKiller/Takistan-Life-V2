@@ -2,10 +2,8 @@
 _geld    = 'geld' call INV_GetItemAmount;
 
 if (_loopart == "disarm") then 
-{
-			
-systemChat  localize "STRS_civmenucheck_beendisarmed";				
-
+{		
+	systemChat  localize "STRS_civmenucheck_beendisarmed";				
 };
 
 
@@ -80,7 +78,7 @@ if (_civkopfgeld != 0) then
 _postion = if (_side == "WEST")then {
 	[6087.95,11508,0.00143433];
 }else{
-	[8195.08,1794.78,0.00143433];
+	[8225.11,1826.63,0.00143433];
 };
 
 player setPos _postion;
@@ -93,7 +91,7 @@ dtk_disabledkeys = [44,47];
 
 
 (format ["%1 switchmove ""%2"";", player, "normal"]) call network_broadcast;
-call INV_EntferneIllegales;		
+[]call police_disarm;		
 dtk_hunger      = 0;					
 CivTimeInPrison = (_this select 1);
 systemChat  format [localize "STRS_civmenucheck_arrested_self", (CivTimeInPrison call string_intToString)];

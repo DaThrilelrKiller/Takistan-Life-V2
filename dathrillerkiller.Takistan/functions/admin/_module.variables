@@ -14,8 +14,7 @@ admin_actions = [
 "Spectate",
 "Camera",
 "Revive",
-"Clothing",
-"Live Code Update"
+"Clothing"
 ];
 
 admin_vehicle_current = objNull;

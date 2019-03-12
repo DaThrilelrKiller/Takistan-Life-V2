@@ -1,5 +1,9 @@
 ﻿private ["_player","_cuffed"];
 
+if (player getVariable ["ar_cuffed",false])exitWIth {
+	systemchat format["%1 you can not use cuffs while your cuffed",name player];
+};
+
 _player = (nearestObjects [getpos player,["Man"],2] select 1);
 _cuffed = _player getVariable ["ar_cuffed",false];
 

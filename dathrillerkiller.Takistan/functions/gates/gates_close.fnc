@@ -1,8 +1,8 @@
 private ["_pos"];
 
-sleep 10;
+sleep (_this select (count _this)-1);
 
 {
-	_pos = _x getVariable "dtk_pos";
-	_x setPos _pos;
+	_pos = getPosATL _x;
+	_x setPosATL [_pos select 0,_pos select 1,0];
 }forEach _this;

@@ -541,7 +541,6 @@ _copshop =
 	"reparaturkit",
 	"kanister",
 	"medikit",
-	"weaponbag",
 	"Itembag",
 	"defuser",
 	"vclammo",
@@ -2538,15 +2537,15 @@ INV_ItemShops = [
 	[["PD","Police Shop"], _copshop, _copshop, {dtk_cop},'dummyobj', true],
 	
 	[["Recruit","Recruit"], _Recruit, _Recruit, {dtk_cop},nil, true],
-	[["Private","Private"], _Private1, _Private1, {dtk_cop},nil, true],
-	[["PD","Specilaist"], _Specilaist, _Specilaist, {dtk_cop},nil, true],
-	[["Corporal","Corporal"], _Corporal, _Corporal, {dtk_cop},nil, true],
-	[["Sergeant","Sergeant"], _Sergeant, _Sergeant, {dtk_cop},nil, true],
-	[["Staff Sergeant","Staff Sergeant"], _Staff_Sergeant, _Staff_Sergeant, {dtk_cop},nil, true],
-	[["Lieutenant","Lieutenant"], _Lieutenant, _Lieutenant, {dtk_cop},nil, true],
-	[["Captain","Captain"], _Captain, _Captain, {dtk_cop},nil, true],
-	[["Major","Major"], _Major, _Major, {dtk_cop},nil, true],
-	[["Colonel","Colonel"], _Colonel, _Colonel, {dtk_cop},nil, true]
+	[["Private","Private"], _Private1, _Private1, {Private1},nil, true],
+	[["PD","Specilaist"], _Specilaist, _Specilaist, {Specilaist},nil, true],
+	[["Corporal","Corporal"], _Corporal, _Corporal, {Corporal},nil, true],
+	[["Sergeant","Sergeant"], _Sergeant, _Sergeant, {Staff_Sergeant},nil, true],
+	[["Staff Sergeant","Staff Sergeant"], _Staff_Sergeant, _Staff_Sergeant, {Staff_Sergeant},nil, true],
+	[["Lieutenant","Lieutenant"], _Lieutenant, _Lieutenant, {Lieutenant},nil, true],
+	[["Captain","Captain"], _Captain, _Captain, {Captain},nil, true],
+	[["Major","Major"], _Major, _Major, {Major},nil, true],
+	[["Colonel","Colonel"], _Colonel, _Colonel, {Colonel},nil, true]
 ]],
 
 [supporterboxshopciv,["car","Civilian Supporter Shop"], [

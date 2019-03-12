@@ -14,3 +14,6 @@ private ["_name","_price","_condition","_lic","_index"];
 	}count (_x select 1);
 	true
 }forEach dtk_licenses;
+
+["licenseflag2",getPos licenseflag2,nil,nil,"ColorBlack","mil_box",nil,"Weapon Licensing"]call core_createMarkerLocal;
+["licenseflag3",getPos licenseflag3,nil,nil,"ColorBlack","mil_box",nil,"Passport & Licensing"]call core_createMarkerLocal;

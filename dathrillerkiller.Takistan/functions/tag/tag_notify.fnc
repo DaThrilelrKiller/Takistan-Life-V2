@@ -19,5 +19,4 @@ if (_img != "")then
 };
 				
 _control ctrlShow true;
-_control ctrlSetPosition [safezonex* 0.8,safezoney * -2.5];
 _control ctrlCommit 0;

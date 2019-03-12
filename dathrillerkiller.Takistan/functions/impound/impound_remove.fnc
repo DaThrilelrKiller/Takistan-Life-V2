@@ -16,8 +16,6 @@ _notes = _data select 8;
 _sirens = _data select 9;
 _textures =_data select 12;
 
-systemchat str _data;
-
 _vehicle = [_name,nil,player,dtk_side,_plate]call shops_createVehicle;
 
 clearWeaponCargo _vehicle;

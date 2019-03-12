@@ -48,15 +48,12 @@ if (_art == 1) exitWith
 };
 
 if (_art == 2) exitWith 
-
 {
-
-if(!(_civmenuciv call ISSE_IsVictim))exitwith{hint localize "STRS_inventory_checknohands"};
-
-(format ["if (player == %1) then {[""disarm""] execVM ""scripts\civmenu.sqf"";};", _civmenuciv]) call network_broadcast;
-
-systemChat  format [localize "STRS_civmenu_disarm", _civmenu_civ];
-
+	if(!(_civmenuciv call ISSE_IsVictim))exitwith{
+		hint localize "STRS_inventory_checknohands"
+	};
+	(format ["if (player == %1) then {[]call police_disarm};", _civmenuciv]) call network_broadcast;
+	systemChat  format [localize "STRS_civmenu_disarm", _civmenu_civ];
 };
 
 if (_art == 3) exitWith 
@@ -68,7 +65,7 @@ if (_art == 3) exitWith
 		[8195.08,1794.78,0.00143433];
 	};
 	
-	if ((player distance _postion) > 15)exitWith{
+	if ((player distance _postion) > 50)exitWith{
 		systemchat format ["%1 you are to far away from jail to perform a arrest!",name player];
 	};
 

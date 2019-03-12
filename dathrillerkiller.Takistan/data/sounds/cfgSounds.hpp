@@ -32,19 +32,19 @@ class CfgSounds {
 	class WESTintro
 	{
 		name = "copintro";
-		sound[] = {\data\sounds\copintro.ogg, .5, 1};
+		sound[] = {\data\sounds\copintro.ogg, .3, 1};
 		titles[] = {};
 	};
 	class EASTintro
 	{
 		name = "opfintro";
-		sound[] = {\data\sounds\opfintro.ogg, .5, 1};
+		sound[] = {\data\sounds\opfintro.ogg, .3, 1};
 		titles[] = {};
 	};
 	class GUERintro
 	{
 		name = "indintro";
-		sound[] = {\data\sounds\indintro.ogg, .6, 1};
+		sound[] = {\data\sounds\indintro.ogg, .3, 1};
 		titles[] = {};
 	};
 };

@@ -24,5 +24,7 @@
 "setFlag",
 "sideNumber",
 "earplugs",
-"buildingPos"
+"buildingPos",
+"close",
+"control"
 ];

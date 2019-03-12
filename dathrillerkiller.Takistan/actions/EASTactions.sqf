@@ -1,5 +1,6 @@
-﻿
+﻿[player,["Take Criminal Evidence","noscript.sqf",'deletevehicle cursorTarget',1,true,true,"",'(typeOf cursorTarget == "weaponholder") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Stop Sign","noscript.sqf",'if ([player,"glt_roadsign_octagon",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "glt_roadsign_octagon") && {player distance cursorTarget < 4}']]call action_add;
+[player,["Remove Spike Strips","noscript.sqf",'deletevehicle (nearestobjects [getpos player, ["Fort_RazorWire"],  10] select 0);',1,true,true,"",'player distance (nearestobjects [getpos player, ["Fort_RazorWire"],  10] select 0) < 7']]call action_add;
 [player,["Remove Concrete Barrier Short","noscript.sqf",'if ([player,"il_barrier",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "il_barrier") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Searchlight","noscript.sqf",'if ([player,"SearchLight_UN_EP1",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "SearchLight_UN_EP1") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Remove Roadblock","noscript.sqf",'if ([player,"roadblock",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "Land_CncBlock_Stripes") && {player distance cursorTarget < 4}']]call action_add;

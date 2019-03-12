@@ -18,15 +18,13 @@ player setUnconscious false;
 player allowDamage true;
 ['ALL',[player,' '],'network_SwitchMove',false,true]call network_MPExec;
 ['ALL',player,{_this allowDamage true;},false,true]call network_MPExec;
-closeDialog 0;
+[]call core_close;
 
 if (isNil "dtk_loaded")then {
 	65 cutRsc ["dtk_logo", "PLAIN"];
 
 	dtk_cam camSetPos [(spawn_grid select 0),((spawn_grid select 1)+10),(spawn_grid select 2)+300];
 	dtk_cam camSetTarget spawn_grid;
-	enableCamShake true;
-	addCamShake [5, 5, 25];
 	_distance = dtk_cam distance  spawn_grid;
 	_time = _distance*0.002;
 	dtk_cam camCommit _time;

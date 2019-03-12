@@ -10,5 +10,7 @@ _name = (_data call config_displayname);
 [_to,["true",format ["%1 removed %2 %3 from your inventory", name player, _amount, _name],3],"network_chat",false,false]call network_MPExec;
 [player,format['removed %1 %2(s) from %3`s storage',_amount,_name,name _to],[0.94,0.61,0,1]]call admin_logs_add;
 
+["ALL",[player,format ["Removed %1 %2 from %3",_amount,_item call config_displayname,name _to]],"admin_log",false,true]call network_MPExec;
+
 lbClear 1502;
 [1502,(call compile lbData [2100, lbCurSel 2100]select 1),true]call storage_toDialog;

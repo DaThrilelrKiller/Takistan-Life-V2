@@ -129,7 +129,6 @@ if (_item == "meth") then
 
 	{
      _player = player;
-	["ALL",[_player,"coke",15],"network_say3d",false,true]call network_MPExec;
 	drug_flare = "SmokeShellred" createVehicle position player;
 	if (vehicle player != player) then { drug_flare attachTo [vehicle player,[0,0,0.]];}
 		else {drug_flare attachTo [player,[0,0,0.]];};

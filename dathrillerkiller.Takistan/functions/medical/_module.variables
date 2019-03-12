@@ -1,6 +1,7 @@
 ﻿module_medical = true;
 role = player;
 medical_draging = false;
+dtk_respawn = false;
 
 
 /*

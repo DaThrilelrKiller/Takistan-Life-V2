@@ -1,6 +1,8 @@
 ﻿/*set variable of inventoy*/
-private ["_object","_array"];
+private ["_object","_array","_public"];
 
 _object = _this select 0;
 _array = _this select 1;
-_object setVariable ["dtk_storage",_array,true];
+_public = if (_object in dtk_storage_local)then {false}else{true};
+
+_object setVariable ["dtk_storage",_array,_public];

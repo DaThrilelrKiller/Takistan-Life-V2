@@ -1,0 +1,19 @@
+﻿dtk_wishes = [
+[["geld",1000000]],
+[["Debit_Card",1]],
+[["Donut",15]],
+[["bjerk",20]],
+[["Gold",round random 10 + 10]],
+[["Oil",round random 10 + 10]],
+[["Rubies",round random 10 + 10]],
+[["beer",round random 3 + 1]],
+[["beer2",round random 3 + 1]],
+[["vodka",round random 3 + 1]],
+[["smirnoff",round random 3 + 1]],
+[["wiskey",round random 3 + 1]],
+[["Stone",1]],
+
+[["glock17_EP1",1],["Rnd_9x19_glock17",round random 5 + 1]],
+[["M9",1],["Rnd_9x19_M9",round random 5 + 1]],
+[["FN_FAL",1],["Rnd_762x51_FNFAL",round random 5 + 1]]
+];

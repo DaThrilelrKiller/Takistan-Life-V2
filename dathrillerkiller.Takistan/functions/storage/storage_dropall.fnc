@@ -1,17 +1,19 @@
 ﻿private ["_weps","_mags","_holder","_i","_item","_amount","_object","_array","_items","_amounts"];
 
-_weps = weapons _this;
-_mags = magazines _this;
+if (dtk_civ)then {
+	_weps = weapons _this;
+	_mags = magazines _this;
 
-_holder = createVehicle ["weaponholder", getPosATL _this, [], 0, "CAN_COLLIDE" ];
-{
-	_holder addWeaponCargoGlobal [_x,1];
-} count _weps;
-{
-	_holder addMagazineCargoGlobal [_x,1];
-} count _mags;
+	_holder = createVehicle ["weaponholder", getPosATL _this, [], 0, "CAN_COLLIDE" ];
+	{
+		_holder addWeaponCargoGlobal [_x,1];
+	} count _weps;
+	{
+		_holder addMagazineCargoGlobal [_x,1];
+	} count _mags;
 
-removeAllWeapons _this;
+	removeAllWeapons _this;
+};
 
 _array = _this getVariable ["dtk_storage",[[],[]]];
 _items = _array select 0;
