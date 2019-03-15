@@ -1,9 +1,0 @@
-﻿module_chat = true;
-
-chat_messages = [];
-dtk_active_chat = 0;
-chat_emojis_array = [];
-
-for "_i" from 0 to 106 step 1 do {
-	chat_emojis_array set[count chat_emojis_array,format ["#%1",_i]];
-};

@@ -1,13 +1,12 @@
 title Server Launcher
 SETLOCAL ENABLEEXTENSIONS
+@echo off
 
-if "%ComputerName%" == "DESKTOP-MCM9QR0"(GOTO Tucker) ELSE (GOTO run)
-
-:Tucker
-set _ARMA2OAPATH=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead
-set _ARMA2=S:\Steam\steamapps\common\Arma 2
-set _PBOMan=C:\Program Files (x86)\PBO Manager v.1.4 beta
+set _ARMA2OAPATH=C:\Program Files (x86)\Steam\steamapps\common\Arma 2 Operation Arrowhead
+set _ARMA2=C:\Program Files (x86)\Steam\steamapps\common\Arma 2
+set _PBOMan=C:\Program Files\PBO Manager v.1.4 beta
 GOTO run
+
 
 :run
 for %%I in ("%cd%\..") do set "dir=%%~fI"
@@ -46,8 +45,5 @@ xcopy /s/e /y %temp%\TLX\tlx_server "%_ARMA2OAPATH%\MPMissions\tlx_server"
 
 call "%_ARMA2OAPATH%\arma2oaserver.exe" "-mod=%_ARMA2OAPATH%\@TLX;" "-mod=%_ARMA2%;EXPANSION;ca"  -port=2302 "-config=%_ARMA2OAPATH%\TADST\default\server.cfg" "-cfg=%_ARMA2OAPATH%\TADST\default\basic.cfg" "-profiles=%_ARMA2OAPATH%\TADST\default" -name=default
 
-echo Server is launching
-timeout /t 10
-
-
+pause
 

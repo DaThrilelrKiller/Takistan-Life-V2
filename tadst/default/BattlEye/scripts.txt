@@ -1,6 +1,0 @@
-//new2
-7 createDialog !"chat_emjio" !"admin_update" !"whitelist" !"RscMiniMap" !"Clothing" !"house_menu" !"admin_console" !"liste_1_button" !"admin_teleport" !"whitelist" !"Paint_shop" !"store" !"ja_nein" !"baildialog" !"gesetzdialog" !"steuerdialog" !"civmenu" !"civinteraktion" !"itemkaufdialog" !"AR_SpawnMenu" !"shipment_open" !"schluessel" !"keypress_dialog" !"USBW_Interation" !"ipad" !"impound" !"wahldialog" !"gang_menu1" !"animationsdialog" !"AM_CheckpointBuilder" !"cdb_search" !"camera_dialog" !"atm_menu" !"admin_gear" !"admin_vehicles" !"admin_spectate" !"admin_monitor" !"admin_logs" !"admin_licenses" !"admin_inventory" !"admin_clothes" !"cdb_warrant" !"cdb_note" !"shopping" !"lotto" !"medic_respawn"      
-7 setUnitRecoilCoefficient
-3 isDedicated
-3 isServer
-7 eyepos
