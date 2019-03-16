@@ -10,7 +10,7 @@ _config = call compile preprocessFile "\MPMissions\tlx_server\mission.template";
 {
 	_object = createVehicle [(_x select 1), [0,0,0], [], 0, "CAN_COLLIDE"];
 	_object setDir (_x select 3);
-	_object setPosATL(_x select 2); 
+	_object setPos(_x select 2); 
 	
 	if (_x select 0 != '')then {
 		_object setVehicleInit format['this setVehicleVarName ''%1'';%1 = this; clearWeaponCargo this; clearMagazineCargo this; this allowDamage false; this enableSimulation false;',(_x select 0)];

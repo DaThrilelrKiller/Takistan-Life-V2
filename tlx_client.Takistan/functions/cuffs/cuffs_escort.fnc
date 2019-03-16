@@ -2,6 +2,10 @@
 
 _escorting = player getVariable "escorting";
 
+if (!isNil {player getVariable "escorting"})exitWith {
+	systemchat "You cannot escort while being escorted";
+};
+
 if (!isNil "_escorting") exitWith {
 	detach _escorting;
 	_escorting setVariable ["escorting",nil,true];
@@ -16,7 +20,7 @@ if (isNil "_unit")exitWith {};
 if (_unit distance player > 5) exitWith {};
 
 if (!isNil "_escort") exitWith {
-systemchat format ["%1 is already being escorted by %2",name _unit,name _escort];
+	systemchat format ["%1 is already being escorted by %2",name _unit,name _escort];
 };
 
 _unit attachTo [player,[0.6,0.3,0]]; 

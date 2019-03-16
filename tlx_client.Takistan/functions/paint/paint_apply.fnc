@@ -1,7 +1,12 @@
 private ["_cost"];
 
 if ([paint_unit,["Man"]]call core_isKindOf)then {
-	_cost = ((lbData[150,lbCurSel 150]) call config_buycost);
+	_cost = if ((lbCurSel 150) == -1)then {
+		20000
+	}else{
+		((lbData[150,lbCurSel 150]) call config_buycost)
+	};
+	
 	if ([player,"geld",-_cost] call storage_add)then {
 		[paint_type] call clothing_switch;
 		player setVariable ["textures",dtk_paint];

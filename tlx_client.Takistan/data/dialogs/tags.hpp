@@ -47,7 +47,7 @@ class tag_notify {
 			idc = 54;
 			type = 13;
 			style = 0x01;
-			x = safeZoneX + safeZoneW * 0.06875;
+			x = safeZoneX + safeZoneW * 0.71875;
 			y = safeZoneY + safeZoneH * 0.70333334;
 			w = safeZoneW * 0.2075;
 			h = safeZoneH * 0.19333334;
@@ -82,7 +82,7 @@ class tag_notify_nodelay {
 			idc = 54;
 			type = 13;
 			style = 0x01;
-			x = safeZoneX + safeZoneW * 0.06875;
+			x = safeZoneX + safeZoneW * 0.71875;
 			y = safeZoneY + safeZoneH * 0.70333334;
 			w = safeZoneW * 0.2075;
 			h = safeZoneH * 0.19333334;

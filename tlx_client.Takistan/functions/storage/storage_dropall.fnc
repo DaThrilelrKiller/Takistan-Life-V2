@@ -1,10 +1,13 @@
 ﻿private ["_weps","_mags","_holder","_i","_item","_amount","_object","_array","_items","_amounts"];
 
-if (dtk_civ)then {
-	_weps = weapons _this;
-	_mags = magazines _this;
+_unit = _this select 0;
+_corps = _this select 1;
 
-	_holder = createVehicle ["weaponholder", getPosATL _this, [], 0, "CAN_COLLIDE" ];
+if (dtk_civ)then {
+	_weps = weapons _corps;
+	_mags = magazines _corps;
+
+	_holder = createVehicle ["weaponholder", getPosATL _corps, [], 0, "CAN_COLLIDE" ];
 	{
 		_holder addWeaponCargoGlobal [_x,1];
 	} count _weps;
@@ -12,10 +15,13 @@ if (dtk_civ)then {
 		_holder addMagazineCargoGlobal [_x,1];
 	} count _mags;
 
-	removeAllWeapons _this;
+	removeAllWeapons _corps;
+}else{
+	{_unit addWeapon _x}foreach (weapons _corps);
+	{_unit addMagazine _x}foreach (magazines _corps);
 };
 
-_array = _this getVariable ["dtk_storage",[[],[]]];
+_array = _corps getVariable ["dtk_storage",[[],[]]];
 _items = _array select 0;
 _amounts = _array select 1;
 
@@ -24,7 +30,7 @@ _amounts = _array select 1;
 	{
 		_amount = _amounts select _ForEachIndex;
 		_class = if(_x == "geld")then{"EvMoney"}else{"Suitcase"};
-		_object = _class createvehicle position _this;
+		_object = _class createvehicle position _corps;
 		_name13 = _x call config_displayname;
 		_image = format ["data\images\items\%1",[_x]call config_image];
 

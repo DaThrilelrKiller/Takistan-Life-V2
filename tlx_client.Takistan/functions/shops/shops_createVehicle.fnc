@@ -40,7 +40,10 @@ _classname =  _name call config_class;
 	_vehicle setDir _dir;
 	_vehicle setVariable ["DTK_OwnerUID",_data, true];
 	_vehicle setVariable ["dtk_storage",[[],[]], true];
-	_vehicle setvariable ["tuning",1.002, true];
+	
+	if !(_vehicle isKindOf "Tank")then {
+		_vehicle setvariable ["tuning",1.002, true];
+	};
 	_vehicle addeventhandler ["HandleDamage",'_this call vehicle_handleDamage' ];
 
 	

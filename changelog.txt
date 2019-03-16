@@ -1,0 +1,16 @@
+3/16/2019
+Added - Marksmand,Heavy Machine Gun,Launcher Shops
+Change - Location of the chat
+Change - Location of the notifications
+Change - Loading in music volume
+Fixed - Multi escorting
+Change - Goverment actions "Change Taxes" to the new goverment complex
+Change - Only Civliains can buy house now
+Change - Police and opfor no longer drop weapons apon dealth
+Fixed - Medical markers not deleting
+Fixed - Bodies not deleting
+Fixed - paint not being applie unless you select a uniform
+Fixed - Radar scan distance
+Fixed - Police Air spawn point
+Added - New blufor whitelist
+Fixed - way objects where placed on map

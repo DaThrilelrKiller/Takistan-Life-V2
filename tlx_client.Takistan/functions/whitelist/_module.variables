@@ -17,7 +17,15 @@ whitelist_data = [
 ["Corporal","Corporal",{Developer or Colonel or Major or Captain or Lieutenant}],
 ["Specilaist","Specilaist",{Developer or Colonel or Major or Captain or Lieutenant}],
 ["Private","Private1",{Developer or Colonel or Major or Captain or Lieutenant}],
-["Recruit","Recruit",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Recruit","Recruit",{Developer or Colonel or Major or Captain or Lieutenant}], 
+
+["Advanced Vehicle Training","AVT",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Marksman","Marksman",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Avation","Avation",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Advanced Avation","Advanced_Avation",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Heavy Machine Gunner","Heavy_Machine_Gunner",{Developer or Colonel or Major or Captain or Lieutenant}],
+["Launcher","Launcher",{Developer or Colonel or Major or Captain or Lieutenant}],
+
 
 ["Polkovnik","Polkovnik",{Developer}],
 ["Mayor","Mayor",{Developer}],

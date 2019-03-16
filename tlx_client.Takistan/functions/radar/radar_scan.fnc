@@ -42,7 +42,7 @@ for "_a" from 0 to 1 step 0 do {
 		deleteMarkerLocal ("Radar_Vehicle" + (str _forEachIndex));
 	} forEach _vehicles;
 	{
-		if (_radPos distance _x > 4000) then { 
+		if (_postion distance _x > 4000) then { 
 			deleteMarkerLocal ("Radar_artillery" + (str _forEachIndex));
 		};
 	} forEach _artillery;

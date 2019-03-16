@@ -5,6 +5,8 @@ _deathTime = _this select 2;
 _medics = call medical_online;
 
 waitUntil {lifeState player == "UNCONSCIOUS"};
+deleteVehicle _corps;
+deleteMarker ("medical_" + name _unit);
 
 if (count _medics > 0)then {
 	createDialog "medic_respawn";
@@ -13,4 +15,3 @@ if (count _medics > 0)then {
 	player call cdb_clear_warrants;
 	call medical_terminate;
 };
-

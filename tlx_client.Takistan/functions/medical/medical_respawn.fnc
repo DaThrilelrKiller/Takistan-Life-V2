@@ -15,7 +15,7 @@ _corps setDamage 0;
 player setVariable ["id",dtk_id,true];
 
 removeAllWeapons _unit;
-_corps call storage_dropall;
+_this call storage_dropall;
 
 []spawn medical_Effect; 
  
