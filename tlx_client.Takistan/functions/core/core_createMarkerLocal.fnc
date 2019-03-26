@@ -10,7 +10,7 @@ _text = _this select 7;
 _direction = _this select 8;
 
 if (isNil "_name" or isNil "_position")exitWith {
-	systemchat  "CreateMarkerError invalid pramerters";
+	"CreateMarkerError invalid pramerters"call chat_system;
 };
 
 _marker = createMarkerLocal [_name, _position];

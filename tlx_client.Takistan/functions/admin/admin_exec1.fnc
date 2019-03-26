@@ -6,9 +6,9 @@ switch (_text) do
 	{
 		closeDialog 0;
 		_object = cursorTarget;
-		if (_object in INV_ServerBuildingArray)exitWith {systemChat "that object cannot be deleted"};
+		if (_object in INV_ServerBuildingArray)exitWith {"that object cannot be deleted"call chat_system;};
 		deleteVehicle _object;
-		systemChat format ["%1 deleted",_object];
+		format ["%1 deleted",_object]call chat_system;
 	};
 	case "Teleport": 
 	{

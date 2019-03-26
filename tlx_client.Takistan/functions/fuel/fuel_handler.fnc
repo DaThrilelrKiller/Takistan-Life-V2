@@ -11,12 +11,12 @@ while {((fuel _vehicle) < 0.99)} do
 	
 	if (!([player,'geld',-v_fuel_cost] call storage_add)) exitWith 
 	{
-	systemChat  "You currently dont have enough money to refuel the vehicle completly";    
+		"You currently dont have enough money to refuel the vehicle completly"call chat_system;   
 	};
 
 	if (_vehicle distance _pos > 3) exitWith 
 	{
-	systemChat  "refueling stoped; the vehicle has been moved"; 
+	  "refueling stoped; the vehicle has been moved"call chat_system; 
 	};
 	
 	[_vehicle,[_vehicle,((fuel _vehicle)+0.05)],{(_this select 0) setFuel (_this select 1)},false,false]call network_MPExec;

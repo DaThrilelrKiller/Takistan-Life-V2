@@ -1,14 +1,7 @@
 ﻿[
 "init",
 "commands",
-"tag",
 "keyUp",
-"Lable",
 "handler",
-"tweet",
-"send",
-"emojis",
-"show",
-"add",
-"load_emojis"
+"system"
 ];

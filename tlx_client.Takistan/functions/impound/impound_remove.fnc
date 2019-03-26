@@ -34,7 +34,7 @@ _vehicle setVariable ['textures',_textures,true];
 {_vehicle removeWeapon _x;}forEach (weapons _vehicle);
 {_vehicle addWeapon _x;}forEach _sirens;
 
-systemchat format ["(%1) has been retrived from your garage,you can find it on a nearby road",lbText [1, (lbCurSel 1)]];
+format ["(%1) has been retrived from your garage,you can find it on a nearby road",lbText [1, (lbCurSel 1)]]call chat_system;
 closeDialog 0;
 
 v_impound set [_index,""];

@@ -28,6 +28,7 @@ _text =  (ctrlText _display);
 if (_text != "")then 
 {
 	_vehicle = _text call gear_grabVehicle;
+	if (isNull _vehicle)exitWith {};
 	
 	if  (!([player,_vehicle]call keys_has) && {vehicle player != _vehicle} && {!(_text in _allowed)} && {!(_vehicle isKindof "Man")})then 
 	{

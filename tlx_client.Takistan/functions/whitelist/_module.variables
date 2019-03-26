@@ -43,7 +43,7 @@ whitelist_data = [
 
 ];
 
-tag_default = "data\images\tags\member";
+tag_default = "data\images\tags\member.paa";
 tag_default_icon = "member";
 dtk_tags = [
 "Developer",

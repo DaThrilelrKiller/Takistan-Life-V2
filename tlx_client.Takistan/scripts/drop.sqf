@@ -1,6 +1,6 @@
 ﻿_item   = _this select 0; 
 _amount = _this select 1;
-_image = format ["data\images\items\%1",[_item]call config_image];
+_image = format ["data\images\items\%1.paa",[_item]call config_image];
 
 if (_amount <= 0) exitwith {};
 

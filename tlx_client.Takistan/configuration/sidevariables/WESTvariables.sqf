@@ -11,7 +11,7 @@ INV_apps = [
 ["app_laws","data\images\ipad\laws.PAA","[0,0,0,[""lawswag""]] execVM 'scripts\maindialogs.sqf';"],
 ["app_gangs","data\images\ipad\gangs.PAA","[0,0,0,[""gangsswag""]] execVM 'scripts\maindialogs.sqf';"],
 ["app_stockmarket","data\images\ipad\stockmarket.PAA","[0,0,0,[""fundsswag""]] execVM ""scripts\maindialogs.sqf"";"],
-["app_computer","data\images\ipad\Computer.PAA","if(vehicle player != player)then{call cdb_open}else {systemChat 'You Must Be In A Vehicle To Access Your ECPD Computer!';};"],
+["app_computer","data\images\ipad\Computer.PAA","if(vehicle player != player)then{call cdb_open}else {'You Must Be In A Vehicle To Access Your ECPD Computer!'call chat_system;};"],
 ["app_store","data\images\ipad\store.PAA"," [(BuildingCollapesLogic call shops_index)]call shops_open; "],
 ["app_settings","data\images\ipad\controls.PAA","call keypress_menu"],
 ["app_background","data\images\ipad\background.PAA","call ipad_background"],
@@ -32,9 +32,10 @@ AppStoreArray = {
 };
 
 USBW_Interactions = [
-["'Give Ticket'",'isPlayer cursorTarget && {player distance cursorTarget < 5}','["request",cursorTarget]call ticket_ticket;'],
 ["'Enable License Plate'",'!ar_plates','[]spawn plates_plate'],
-["'Disable License Plate'",'ar_plates','[]spawn plates_plate']
+["'Disable License Plate'",'ar_plates','[]spawn plates_plate'],
+["'Enable Radar'",'!dtk_speed','[]spawn speed_open'],
+["'Disable Radar'",'dtk_speed','[]spawn speed_open']
 ];
 
 coppatrolarray = [

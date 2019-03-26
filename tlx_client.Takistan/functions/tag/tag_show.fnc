@@ -30,7 +30,7 @@ if( _maxDist > _dist &&  {alive _target} && {count _pos > 0})then{
 		_name = 
 		if (_img != "")then 
 		{
-			_control ctrlSetStructuredText parseText format["<t size='%2' align='center' color='%4' shadowColor='#000000'><img size='3' image='%5.paa'/><br/>%1</t>",_text,2, '#dfd7a5','#DDDDDD',_img];
+			_control ctrlSetStructuredText parseText format["<t size='%2' align='center' color='%4' shadowColor='#000000'><img size='3' image='%5'/><br/>%1</t>",_text,2, '#dfd7a5','#DDDDDD',_img];
 		}else{
 			_control ctrlSetStructuredText parseText format["<t size='%2' align='center' color='%4' shadowColor='#000000'>%1</t>",_text,2, '#dfd7a5','#DDDDDD'];
 		};

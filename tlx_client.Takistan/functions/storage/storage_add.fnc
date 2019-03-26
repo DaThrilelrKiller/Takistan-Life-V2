@@ -40,7 +40,7 @@ if (_amount > 0) then
 	} 
 	else 
 	{
-		systemchat format ["%1's storage is full",_object];
+		format ["%1's storage is full",_object]call chat_system;
 	};
 } 
 else 

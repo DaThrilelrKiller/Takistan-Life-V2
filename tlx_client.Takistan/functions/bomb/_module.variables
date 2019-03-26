@@ -1,0 +1,27 @@
+﻿
+dtk_bomb_cases = [
+"Shovel",
+"Pickaxe",
+"JackHammer",
+"copper",
+"sand",
+"Diamond",
+"Gold",
+"medikit",
+"Debit_Card",
+"reparaturkit",
+"lighter",
+"bjerk",
+"Apple",
+"Coconut",
+"Bread",
+"beer",
+"meth",
+"cocaine",
+"lsd",
+"heroin",
+"emptywine",
+"emptybeer",
+"emptyVodka",
+"emptywiskey"
+];

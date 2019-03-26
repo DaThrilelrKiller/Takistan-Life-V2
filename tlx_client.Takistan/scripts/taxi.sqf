@@ -16,7 +16,7 @@ if (_art == "getajob_taxi") then
 
 if (workplacejob_taxi_sperre) exitWith 
 {
-	systemChat  format [localize "STRS_workplacemission_taxi_alreadyinuse",workplacejob_taxi_sperrzeit];
+	format [localize "STRS_workplacemission_taxi_alreadyinuse",workplacejob_taxi_sperrzeit]call chat_system;
 };	
 
 workplacejob_taxi_active = true;												
@@ -40,12 +40,9 @@ while {true} do
 		if (_zielzahl !=  _startzahl and ((_spielerstart distance _start)+(_start distance _ziel)) > taximaxdistance and ((_spielerstart distance _start)+(_start distance _ziel)) > taximindistance) exitWith {};
 		sleep 1;
 	};
-	
-	systemchat "haha";
 
 	_taxizeit = time;
 	_civ 	  = civclassarray select round random(count civclassarray - 1);
-	systemchat str _civ;
 
 	call compile format ["'%1' createUnit [[(_start select 0),(_start select 1),0], group player, ""%2taxikunde = this; this setVehicleVarName """"%2taxikunde""""; this disableAI """"MOVE""""; this disableAI """"TARGET"""";""]; [%2taxikunde] join grpNull; processInitCommands;", _civ, player];																												
 																																																																
@@ -57,7 +54,7 @@ while {true} do
 	"taxikundenmarker" setMarkerTextLocal localize "STRS_workplacemission_taxi_marker_kunde";								
 	_markername SetMarkerPosLocal _start;
 																
-	systemChat  localize "STRS_workplacemission_taxi_begin";
+	localize "STRS_workplacemission_taxi_begin"call chat_system;
 
 	while {true} do 
 	{
@@ -70,7 +67,7 @@ while {true} do
 
 			{
 		
-			systemChat  localize "STRS_workplacemission_taxi_wannagetin";
+				localize "STRS_workplacemission_taxi_wannagetin"call chat_system;
 																																
 			if (((vehicle player) emptyPositions "cargo") > 0) then 
 
@@ -94,14 +91,14 @@ while {true} do
 
 					{
 
-					systemChat  localize "STRS_workplacemission_taxi_target";
+					localize "STRS_workplacemission_taxi_target"call chat_system;
 					workplacejob_taxi_kundebeginn = true;																																																																					
 					_markername setMarkerPosLocal _ziel;																																																																																				
 					"taxikundenmarker" setMarkerTextLocal localize "STRS_workplacemission_taxi_marker_ziel";
 
 					}; 
 
-				}else{systemChat  localize "STRS_workplacemission_taxi_nospace";};
+				}else{localize "STRS_workplacemission_taxi_nospace"call chat_system;};
 																					
 			};
 																																																																																										
@@ -119,15 +116,15 @@ while {true} do
 			_geld = ((500 max(round((((_spielerstart distance _start)+(_start distance _ziel))*workplacejob_taxi_multiplikator)-(time-_taxizeit))))min workplacejob_taxi_maxmoney);
 			if (_geld < 0) then {_geld = 0};
 			[player,"geld",_geld] call storage_add;	
-			systemChat  format [localize "STRS_workplacemission_taxi_success",_geld];
+			format [localize "STRS_workplacemission_taxi_success",_geld]call chat_system;
 			format["%1 action [""getOut"", (%2)]; unassignVehicle %1;",INV_LocalTaxiKunde,(vehicle player)] call network_broadcast;
 			sleep 5;
 			format["%1 doMove [(%2 select 0),(%2 select 1),0];", INV_LocalTaxiKunde, _ziel] call network_broadcast;
 			sleep ((random 10)+5);
 		};
 
-		if (!alive player or !alive INV_LocalTaxiKunde) exitWith {systemChat  localize "STRS_workplacemission_taxi_failure"; sleep 5;};
-		if (!workplacejob_taxi_active) 			exitWith {systemChat  localize "STRS_workplacemission_taxi_canceled";sleep 10;};
+		if (!alive player or !alive INV_LocalTaxiKunde) exitWith {localize "STRS_workplacemission_taxi_failure"call chat_system; sleep 5;};
+		if (!workplacejob_taxi_active) 			exitWith {localize "STRS_workplacemission_taxi_canceled"call chat_system;sleep 10;};
 		if (!workplacejob_taxi_kundebeginn) 		then 	 {_markername SetMarkerPosLocal getPos INV_LocalTaxiKunde;};
 																																																																
 		};

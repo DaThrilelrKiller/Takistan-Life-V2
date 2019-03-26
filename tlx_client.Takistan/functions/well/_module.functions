@@ -1,4 +1,6 @@
 ﻿[
 "init",
-"wish"
+"wish",
+"menu",
+"exec"
 ];

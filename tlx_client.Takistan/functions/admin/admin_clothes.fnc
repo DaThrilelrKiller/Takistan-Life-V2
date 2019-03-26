@@ -11,7 +11,8 @@ for "_i" from 0 to (count _config)-1 do {
 	_name = configName(_class);	
 	if (_name isKindof "Man")then {
 		_display = getText(_config >> _name >> "displayName");
-		_picture = getText(_config >> _name >> "picture");
+		_picture = getText(_config >> _name >> "portrait");
+		
 		_index = lbAdd [1501,format ["%1",_display]];
 		lbSetData [1501, _index, _name];
 		lbSetPicture [1501, _index, format ["%1",_picture]];

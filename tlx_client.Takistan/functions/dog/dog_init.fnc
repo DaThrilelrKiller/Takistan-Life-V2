@@ -12,7 +12,7 @@
 [player,["Dismount","noscript.sqf", '[]spawn dog_dismount', 1, false, true, "", "ar_doggy"]]call action_add;
 
 
-dog1 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9']call tag_show)}"];
-dog2 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9']call tag_show)}"];
-dog3 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9']call tag_show)}"];
-dog4 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9']call tag_show)}"];
+dog1 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9.paa']call tag_show)}"];
+dog2 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9.paa']call tag_show)}"];
+dog3 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9.paa']call tag_show)}"];
+dog4 addaction ["","noscript.sqf","[]call dog_buy", 25, false, true, "LeanRight","player distance _target < 5 && {!([_target,'Buy K9 (E)','data\images\tags\K9.paa']call tag_show)}"];

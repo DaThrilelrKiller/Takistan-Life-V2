@@ -20,7 +20,7 @@ while {alive dtk_dog && alive _target && player getVariable "CLAY_DogStatus" == 
 		_target setHit ["legs", 1];
 		_target setHit ["hands", 1];
 		_target setDammage 0.8;
-		systemChat  "The dog has bitten his target";
+		"The dog has bitten his target"call chat_system;
 		["ALL",[_target,"adthpercmstpslowwrfldnon_4"],"network_SwitchMove",false,true]call network_MPExec;
 		player setVariable ["CLAY_DogStatus", ""];
 		sleep 12;

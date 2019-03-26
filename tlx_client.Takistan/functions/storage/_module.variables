@@ -3,5 +3,6 @@ dtk_weapons = [];
 dtk_magizines = [];
 
 dtk_storage_local = [
-BuildingCollapesLogic
+BuildingCollapesLogic,
+dtk_well
 ];

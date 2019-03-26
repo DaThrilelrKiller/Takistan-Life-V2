@@ -2,6 +2,8 @@
 
 _vehicle = _this select 0;
 _vehicle = if !(typeName _vehicle == "OBJECT")then{call keys_grabVehicle}else{_vehicle};
+if (isNil "_vehicle")exitWith {};
+
 _name = _vehicle call vehicle_name;
 
 _lock = !(locked _vehicle);

@@ -2,7 +2,7 @@
 
 If (dtk_dog distance _target <= 4) then{
 	dtk_dog doMove getPos _target;		
-	systemChat  format ["Checking %1 For Illegal Contraband!", _target];
+	format ["Checking %1 For Illegal Contraband!", _target]call chat_system;
 	drugsvalue = 0;	
 	(format ["if (player == %1) then {[""drugs"", %2] execVM ""scripts\civmenu.sqf"";};", _target, player]) call network_broadcast;								
 
@@ -10,5 +10,5 @@ If (dtk_dog distance _target <= 4) then{
 else 
 { 
 	dtk_dog doMove getPos _target;
-	systemChat  "Your Dog Is Not Close Enough To Suspect!";
+	"Your Dog Is Not Close Enough To Suspect!"call chat_system;
 };

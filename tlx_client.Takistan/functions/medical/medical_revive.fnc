@@ -28,7 +28,7 @@ if (count _this == 1)then {
 }else{
 	[]call core_close;
 	call medical_terminate;
-	systemchat format ["%1 you where revived by %2",name player,name (_this select 1)];
+	format ["%1 you where revived by %2",name player,name (_this select 1)]call chat_system;
 	player setUnconscious false;
 
 };

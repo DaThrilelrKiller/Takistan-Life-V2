@@ -968,7 +968,7 @@ dtk_items = [
 ["Platinum",["Item","ressource"],["Suitcase", "Platinum"],[7000, 7000],[3, "","","",""],[true, true, true,false,"useresource.sqf"]],
 ["Silver",["Item","ressource"],["Suitcase", "Silver"],[3500, 3500],[3, "","","",""],[true, true, true,false,"useresource.sqf"]],
 
-["fernzuenderbombe",["Item","bomb"],["Suitcase", "00000000000000000 Bomb"],[100000,15000],[10, "pmc_license_journeyman", "sobr_training","",""], [true, true, true,true,"bomb_remote"]],
+["fernzuenderbombe",["Item","bomb"],["Suitcase", "Remote Bomb"],[100000,15000],[10, "pmc_license_journeyman", "sobr_training","",""], [true, true, true,true,"bomb_remote"]],
 ["zeitzuenderbombe",["Item","bomb"],["Suitcase", "Time Bomb"],[100000,15000],[10,"pmc_license_journeyman", "sobr_training","",""], [true, true, true,true,"bomb_time"]],
 ["aktivierungsbombe",["Item","bomb"], ["Suitcase", "Activation Bomb"],[100000,15000],[10,"pmc_license_journeyman", "sobr_training","",""],[true,true,true, true, "bomb_activation"]],
 ["geschwindigkeitsbombe",["Item","bomb"], ["Suitcase", "Speed Bomb"],[100000, 15000],[10,"pmc_license_journeyman", "sobr_training","",""],[true,true,true, true, "bomb_speed"]],
@@ -1005,7 +1005,6 @@ dtk_items = [
 ["roadbarrierlong",["Item", "misc"],["RoadBarrier_long", "Caution Barrier Large"],[100, 100], [2, "", ""], [true, true, true,false,"createobject"]],
 ["roadbarriersmall",["Item", "misc"],["RoadBarrier_light", "Caution Barrier Small"],[100, 100], [1, "", ""], [true, true, true,false,"createobject"]],
 ["10mTape",["Item", "misc"],["10mTape", "Caution Tape"],[100, 100], [1, "", ""], [true, true, true,false,"createobject"]],
-["stretcher",["Item", "misc"],["stretcher", "Stretcher"],[1000, 1000], [1, "", ""], [true, true, true,false,"createobject"]],
 ["gnt_scubaw",["Item", "misc"],["gnt_scubaw", "Scuba Gear"],[10000, 10000], [50, "", ""], [true, true, true,false,"createobject"]],
 ["vclammo",["Item", "carobjects"],["Suitcase", "vehicle Ammo"],[10000, 10000], [10, "", ""], [true, true, true,!(dtk_cop),"vclammo"]],
 ["boatammo",["Item", "carobjects"],["Suitcase", "Boat Ammo"],[15000, 10000], [10, "boat", "boat"], [true, true, true,!(dtk_cop),"vclammo"]],

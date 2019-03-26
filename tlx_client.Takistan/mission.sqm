@@ -41,7 +41,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=99;
+		items=100;
 		class Item0
 		{
 			side="WEST";
@@ -364,7 +364,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-18275.459,653.84613,23036.875};
+					position[]={10261.426,392.74731,-331.59079};
 					id=78;
 					side="LOGIC";
 					vehicle="Logic";
@@ -1540,7 +1540,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-18275.682,651.92621,23014.709};
+					position[]={10252.554,340.92957,-454.23419};
 					id=153;
 					side="LOGIC";
 					vehicle="Logic";
@@ -1558,7 +1558,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-18306.377,656.3811,23021.727};
+					position[]={10252.099,354.76172,-380.14447};
 					id=155;
 					side="LOGIC";
 					vehicle="Logic";
@@ -1576,7 +1576,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-18303.65,655.18182,22994.477};
+					position[]={10253.95,434.4718,-264.92914};
 					azimut=361.02872;
 					id=156;
 					side="LOGIC";
@@ -1595,7 +1595,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={-18305.998,655.28857,23003.701};
+					position[]={10260.508,467.28015,-198.03717};
 					azimut=358.60095;
 					id=157;
 					side="LOGIC";
@@ -2199,6 +2199,25 @@ class Mission
 					skill=0.60000002;
 					text="opf_20";
 					description="TLA Officer";
+				};
+			};
+		};
+		class Item99
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10262.57,471.66064,-134.60486};
+					azimut=358.60101;
+					id=186;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="dtk_well";
 				};
 			};
 		};
@@ -2837,7 +2856,7 @@ class Mission
 		};
 		class Item64
 		{
-			position[]={-18293.787,654.36957,23011.547};
+			position[]={7305.1855,403.27319,3252.7795};
 			special="NONE";
 			id=79;
 			side="EMPTY";

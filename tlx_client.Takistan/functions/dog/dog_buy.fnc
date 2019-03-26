@@ -1,14 +1,14 @@
 ﻿private ["_type","_grp","_name","_dog"];
 
 if (alive dtk_dog)exitWith {
-	systemChat "You can not own more then 1 dogs!";
+	"You can not own more then 1 dogs!"call chat_system;
 };
 
 if !([player,"geld",-dog_cost] call storage_add)exitWith {
-	systemChat  "You dont have enough money";
+	"You dont have enough money"call chat_system;
 };
 
-systemChat  format["%1 bought a dog for %2", player, (dog_cost call string_intToString)];
+format["%1 bought a dog for %2", player, (dog_cost call string_intToString)]call chat_system;
 
 _type = "Pastor";
 _grp = group player;

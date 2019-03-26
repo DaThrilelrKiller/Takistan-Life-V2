@@ -1,6 +1,6 @@
 ﻿private ["_vcl","_vclClass","_trunk","_speedupgrade","_save","_plate","_warrants","_license","_notes","_sirens","_name"];
 _vcl = (vehicle player);
-if !([player,_vcl]call keys_has)exitWith {systemChat "you dont have the keys to this vehicle"};
+if !([player,_vcl]call keys_has)exitWith {"you dont have the keys to this vehicle"call chat_system;};
 _name = _vcl call vehicle_name;
 _vclClass = (_vcl getVariable "DTK_OwnerUID" select 1);
 _trunk = _vcl getVariable "dtk_storage";
@@ -22,4 +22,4 @@ deleteVehicle _vcl;
 _save = [player, [ [dtk_side, "VehiclesLand", INVVehiclesLand] ] ];
 ["SERVER",_save,"S_statsave_save",false,false]call network_mpexec;
 
-systemChat format ["(%1) has been saved in your garage, you now have %2 vehicles stored",_name,count INVVehiclesLand];
+format ["(%1) has been saved in your garage, you now have %2 vehicles stored",_name,count INVVehiclesLand]call chat_system;

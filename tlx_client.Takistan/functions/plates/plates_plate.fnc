@@ -8,7 +8,7 @@ while {ar_plates} do
 	if !(ar_plates)exitWith {};
 	_vehicle = CursorTarget;
 
-	if ([player,_vehicle,1]call bis_isInFrontOf && {!([_vehicle,player,1]call bis_isInFrontOf)} && {player distance _vehicle < 15})then 
+	if ([player,_vehicle,1]call bis_isInFrontOf && {!([_vehicle,player,1]call bis_isInFrontOf)} && {player distance _vehicle < 25})then 
 	{
 
 	_plate = _vehicle getVariable "dtk_plate";
@@ -28,3 +28,5 @@ while {ar_plates} do
 		sleep 1;
 	};
 };
+
+589 cutText ["", "PLAIN"];

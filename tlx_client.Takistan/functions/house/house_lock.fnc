@@ -14,9 +14,9 @@ if (typeName _this == "STRING")then {
 	["ALL",_this select 1,"house_lock",false,true]call network_MPExec;
 	_locked = missionNamespace getVariable [format["%1_locked",_this select 1],false];
 	if (_locked)then {
-		systemchat "House Locked";
+		"House Locked"call chat_system;
 	}else{
-		systemchat "House Un-locked";
+		"House Un-locked"call chat_system;
 	};
 	closeDialog 0;
 };

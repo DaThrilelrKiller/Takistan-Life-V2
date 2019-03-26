@@ -14,3 +14,23 @@ Fixed - Radar scan distance
 Fixed - Police Air spawn point
 Added - New blufor whitelist
 Fixed - way objects where placed on map
+
+3/24/2019
+Added - Speed radar system
+Fixed - shops not selling do to shop active bug
+Fixed - certain players unable to access gear
+Changed - the way images are applie to UI tags
+Added - Checkpoint rasman to checkpoin contol paychecks and marked on map
+Removed - Modern chat system and reverted back to the old
+Added - Code for the suitcase bomb not in shops yet
+Fixed - INS bank
+Changed - location to change taxes to gov complex
+Alot of other bug and optimiation changed
+
+3/25/2019
+Added - Wishing well WIP
+Fixed - being able to get in vehicles at crazy heights
+Fixed - Keys saying unlocked/locked any
+Added - 26 new ipad backgrounds
+Removed - random face behing picked when player joins
+

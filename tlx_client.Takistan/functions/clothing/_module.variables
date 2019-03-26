@@ -115,7 +115,6 @@ _CSL_CIV_1 =
 "CIV_TK_WOM1",
 "CIV_TK_WOM2",
 "CIV_TK_WOM3",
-"CIV_WOLF",
 "CIV_CH_DOC"
 ];
 
@@ -151,7 +150,6 @@ _CSL_CIV_2 =
 "CIV_CH_WOK2",
 "CIV_CH_WOK3",	
 "CIV_CH_WOK4",
-"CIV_WOLF",
 "CIV_CH_DOC"
 ];
 

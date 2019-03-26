@@ -25,7 +25,7 @@ for "_i" from 0 to 3 step 1 do {
 	
 	_object = createVehicle [_class, position player, [], 10, "NONE"];
 	_object call core_setVarName;
-	["ALL",[_object,['','scripts\pickup.sqf',[_object, _resource, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up %1 (E)","%2.paa"]call tag_show)}',_name,_image]]],"network_addAction",false,true]call network_MPExec;
+	["ALL",[_object,['','scripts\pickup.sqf',[_object, _resource, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up %1 (E)","%2"]call tag_show)}',_name,_image]]],"network_addAction",false,true]call network_MPExec;
 		
 	systemchat format["%1 you found %2 %3.", name player,_amount, _name];
 };

@@ -64,7 +64,7 @@ _calssname = _infos call config_class;
 					_vclClass = (_vehicle getVariable "DTK_OwnerUID" select 1);
 					if (!isNil "_vclClass")then 
 					{
-						if (_vclClass == _item and [player,_vehicle]call keys_has) then 
+						if (_vclClass == _item and [player,_vehicle]call keys_has and _vehicle != dtk_bike) then 
 						{			
 							_index = lbAdd [301, format["%1 ($%2, %3)", _vehicle, (_preis call string_intToString), _name] ];															
 							lbSetData [301, _index, format ['%1',[_item,_infos,_preisOhneTax, _preis,[_vehicle]]]];	

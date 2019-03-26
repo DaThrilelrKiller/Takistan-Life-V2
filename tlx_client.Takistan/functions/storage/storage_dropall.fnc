@@ -32,10 +32,9 @@ _amounts = _array select 1;
 		_class = if(_x == "geld")then{"EvMoney"}else{"Suitcase"};
 		_object = _class createvehicle position _corps;
 		_name13 = _x call config_displayname;
-		_image = format ["data\images\items\%1",[_x]call config_image];
 
 		_object call core_setVarName;	
-		["ALL",[_object,['','scripts\pickup.sqf',[_object, _x, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up (%3) %1 (E)","%2"]call tag_show)}',_name13,_image,_amount]]],"network_addAction",false,true]call network_MPExec;
+		["ALL",[_object,['','scripts\pickup.sqf',[_object, _x, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up (%3) %1 (E)","%2"]call tag_show)}',_name13,[_x]call config_image,_amount]]],"network_addAction",false,true]call network_MPExec;
 	};
 }Foreach _items;
 

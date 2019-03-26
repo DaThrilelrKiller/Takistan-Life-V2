@@ -3,7 +3,7 @@
 _vehicle = _this select 0;
 
 if ((count crew _vehicle) > 0) exitWith {
-	systemchat "The vehicle is not empty!"
+	"The vehicle is not empty!"call chat_system;
 };
 
 _data = (_vehicle getVariable "DTK_OwnerUID");
@@ -32,8 +32,8 @@ deleteVehicle _vehicle;
 ["SERVER",[],"s_impound_save",false,false]call network_MPExec;
 
 if !([player,_vehicle]call keys_has)then {
-	[player,"geld",2000] call storage_add; 
-	systemchat format ["you have been paid 2000$ for impound (%1)",_displayname];
+	[player,"geld",5000] call storage_add; 
+	format ["you have been paid 5000$ for impound (%1)",_displayname]call chat_system;
 };
 
 

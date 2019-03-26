@@ -1,3 +1,4 @@
+private["_radar","_postion","_vehicles","_artillery"];
 _radar = _this select 0;
 _postion = getMarkerPos _radar;
 
@@ -10,7 +11,7 @@ for "_a" from 0 to 1 step 0 do {
 	 if (!alive player)exitWith {};
 
 	_vehicles = _postion nearEntities [["LandVehicle", "Air"], 4000];
-	_artillery = _postion nearEntities [["StaticCannon", "StaticMortar", "GRAD_Base", "MLRS", "M1129_MC_EP1"], 20000];
+	_artillery = _postion nearEntities [["StaticCannon", "StaticMortar", "GRAD_Base", "MLRS", "M1129_MC_EP1"], 4000];
 	
 	{
 		if(_x isKindOf "Air") then {
@@ -22,9 +23,7 @@ for "_a" from 0 to 1 step 0 do {
 	} forEach _vehicles;
 	
 	{
-		if (_postion distance _x > 4000) then { 
-			[_x, _forEachIndex, "Radar_artillery", "Artillery"] call radar_marker;
-		};
+		[_x, _forEachIndex, "Radar_artillery", "Artillery"] call radar_marker;
 	} forEach _artillery;
 	
 	

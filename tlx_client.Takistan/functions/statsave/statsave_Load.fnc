@@ -19,7 +19,7 @@ _stats = _this select 2;
 removeAllWeapons player;
 
 if ((getPlayerUID player) != _UID)exitWith {
-	systemChat format ["Almost loaded with (%1`s) stats requesting stats again",_UID];
+	format ["Almost loaded with (%1`s) stats requesting stats again",_UID]call chat_system;
 	["SERVER",[player,dtk_side],"s_statsave_load",false,false]call network_MPExec;
 };
 
@@ -51,6 +51,7 @@ _clothing = (_stats select 20);
 
 BuildingCollapesLogic setVariable ["dtk_storage",(_stats select 22)];
 BuildingCollapesLogic setVariable ["Gear",(_stats select 23)];
+wish_seasion = _stats select 25;
 
 if (_clothing != "")then {
 	[_clothing]call clothing_switch;
@@ -59,11 +60,11 @@ if (_clothing != "")then {
 };
 
 if ((_side select 0) != dtk_side && {(_side select 1) == s_seasion})then {
-	["ALL",[name player,(_side select 0),dtk_side],{systemchat format ["%1 switched from %2 to %3",_this select 0,_this select 1,_this select 2];},false,true]call network_MPExec;
+	["ALL",[name player,(_side select 0),dtk_side],{format ["%1 switched from %2 to %3",_this select 0,_this select 1,_this select 2]call chat_system;},false,true]call network_MPExec;
 };
 
 if (_name != name player && {_name != ""})then {
-	["ALL",[_name,name player],{systemchat format ["%1 is now know as %2",_this select 0,_this select 1];},false,true]call network_MPExec;
+	["ALL",[_name,name player],{format ["%1 is now know as %2",_this select 0,_this select 1]call chat_system;},false,true]call network_MPExec;
 };
 
 

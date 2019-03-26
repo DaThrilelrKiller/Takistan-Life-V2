@@ -1,21 +1,21 @@
 ﻿
 /*GOV*/
-[player,["Crime Log","scripts\maindialogs.sqf",["coplog"],1,false,true,"","player distance rathaus <= 3"]]call action_add;
-[player,[format ["Pay Bail", slave_cost],"scripts\maindialogs.sqf", ["bail"],1,false,true,"","player distance bailflag <= 3"]]call action_add;
+rathaus addAction["Crime Log","scripts\maindialogs.sqf",["coplog"],1,false,true,"","player distance _target <= 3"];
+bailflag addAction[format ["Pay Bail", slave_cost],"scripts\maindialogs.sqf", ["bail"],1,false,true,"","player distance _target <= 3"];
 
 /*ITEM PROSCESSING*/
-[player,["Process Diamond","scripts\itemprocess.sqf",["diamond rock", "diamond",5],1,false,true,"","player distance diamond_1 <= 5"]]call action_add;
-[player,["Process Meth","scripts\itemprocess1.sqf",["pharm", "meth", 2],1,false,true,"","player distance methlab <= 5"]]call action_add;
-[player,["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance South_oil <= 5"]]call action_add;
-[player,["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance North_oil <= 5"]]call action_add;
-[player,["Process Wheat","scripts\itemprocess.sqf",["getreide", "Bread", 2],1,false,true,"","player distance bakery <= 5"]]call action_add;
-[player,["Process Strawberries","scripts\itemprocess.sqf",["straw", "Frozens", 3],1,false,true,"","player distance bakery <= 5"]]call action_add;
-[player,["Process LSD","scripts\itemprocess.sqf",["Unprocessed_LSD", "lsd", 5],1,false,true,"","player distance gangarea1 <= 5"]]call action_add;
-[player,["Process Cocaine","scripts\itemprocess.sqf",["Unprocessed_Cocaine", "cocaine", 5],1,false,true,"","player distance gangarea1 <= 5"]]call action_add;
-[player,["Process LSD","scripts\itemprocess.sqf",["Unprocessed_LSD", "lsd", 5],1,false,true,"","player distance gangarea2 <= 5"]]call action_add;
-[player,["Process Heroin","scripts\itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5],1,false,true,"","player distance gangarea2 <= 5"]]call action_add;
-[player,["Process Heroin","scripts\itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5],1,false,true,"","player distance gangarea3 <= 5"]]call action_add;
-[player,["Process Marijuana","scripts\itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5],1,false,true,"","player distance gangarea3 <= 5"]]call action_add;
+diamond_1 addAction["Process Diamond","scripts\itemprocess.sqf",["diamond rock", "diamond",5],1,false,true,"","player distance _target <= 5"];
+methlab addAction["Process Meth","scripts\itemprocess1.sqf",["pharm", "meth", 2],1,false,true,"","player distance _target <= 5"];
+South_oil addAction["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance _target <= 5"];
+North_oil addAction["Process Oil","scripts\itemprocess.sqf",["Oil", "OilBarrel", 2],1,false,true,"","player distance _target <= 5"];
+bakery addAction["Process Wheat","scripts\itemprocess.sqf",["getreide", "Bread", 2],1,false,true,"","player distance _target <= 5"];
+bakery addAction["Process Strawberries","scripts\itemprocess.sqf",["straw", "Frozens", 3],1,false,true,"","player distance _target <= 5"];
+gangarea1 addAction["Process LSD","scripts\itemprocess.sqf",["Unprocessed_LSD", "lsd", 5],1,false,true,"","player distance _target <= 5"];
+gangarea1 addAction["Process Cocaine","scripts\itemprocess.sqf",["Unprocessed_Cocaine", "cocaine", 5],1,false,true,"","player distance _target <= 5"];
+gangarea2 addAction["Process LSD","scripts\itemprocess.sqf",["Unprocessed_LSD", "lsd", 5],1,false,true,"","player distance _target <= 5"];
+gangarea2 addAction["Process Heroin","scripts\itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5],1,false,true,"","player distance _target <= 5"];
+gangarea3 addAction["Process Heroin","scripts\itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5],1,false,true,"","player distance _target <= 5"];
+gangarea3 addAction["Process Marijuana","scripts\itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5],1,false,true,"","player distance _target <= 5"];
 
 [player,["Food And Candy","noscript.sqf",'[ (bailflag call shops_index)]call shops_openshop; ',1,false,true,"",'player distance (nearestobjects [getpos player, ["ibr_van_BNK"],  10] select 0) < 3']]call action_add;
 

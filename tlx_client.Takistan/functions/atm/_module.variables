@@ -2,5 +2,5 @@
 atm_running = false;
 bank_limit		 = 25000000;
 local_useBankPossible    = true;
-dtk_atms = [mainbank, copbank, atm1, atm2, atm3, atm4, atm5, atm6, atm8, atm11, atm12, atmpf, atmins, adminbank,vipatm,vipatm_1, civsupporteratm, copsupporteratm, opfsupporteratm, indsupporteratm,atmnews];
+dtk_atms = [mainbank, copbank, atm1, atm2,atm_ins_1, atm3, atm4, atm5, atm6, atm8, atm11, atm12, atmpf, atmins, adminbank,vipatm,vipatm_1, civsupporteratm, copsupporteratm, opfsupporteratm, indsupporteratm,atmnews];
 dtk_player_storage = 100;

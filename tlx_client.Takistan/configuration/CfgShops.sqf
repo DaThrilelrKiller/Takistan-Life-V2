@@ -2762,7 +2762,7 @@ INV_ItemShops = [
 	[["Major","Major"], _Major, _Major, {Major},nil, false],
 	[["Colonel","Colonel"], _Colonel, _Colonel, {Colonel},nil, false],
 
-	[["Rifle","Heavy Machine Gun"], _HeavyMachinegunner, _HeavyMachinegunner, {dtk_cop and Marksman},nil, false],
+	[["Rifle","Heavy Machine Gun"], _HeavyMachinegunner, _HeavyMachinegunner, {dtk_cop and Heavy_Machine_Gunner},nil, false],
 	[["Rifle","Launcher"], _Launcher, _Launcher, {dtk_cop and Launcher},nil, false],
 	[["Rifle","Marksman"], _Marksman, _Marksman, {dtk_cop and Marksman},nil, false]
 
@@ -2842,12 +2842,12 @@ INV_ItemShops = [
 ]],
 
 [redsupplyshop,["","Opfor Shop"], [
-    [["Rifle","Weapons"], _rgs, _rgs, {true},'dummyobj', true],
-	[["tools","Supplies"], _rsup, _rsup, {true},'dummyobj', true],
-	[["heli","Helicopters"], _rhs, _rhs, {true},'redhelispawn', true],
-	[["heli","Aircraft"], _rair, _rair, {true},'redairspawn', true],
-	[["car","Light Vehicles"], _rlt, _rlt, {true},'redvehspawn', true],
-	[["truck","Heavy Vehicles"], _rhvy, _rhvy, {true},'redhvyspawn', true]
+    [["Rifle","Weapons"], _rgs, _rgs, {dtk_opf},'dummyobj', true],
+	[["tools","Supplies"], _rsup, _rsup, {dtk_opf},'dummyobj', true],
+	[["heli","Helicopters"], _rhs, _rhs, {dtk_opf},'redhelispawn', true],
+	[["heli","Aircraft"], _rair, _rair, {dtk_opf},'redairspawn', true],
+	[["car","Light Vehicles"], _rlt, _rlt, {dtk_opf},'redvehspawn', true],
+	[["truck","Heavy Vehicles"], _rhvy, _rhvy, {dtk_opf},'redhvyspawn', true]
 ]],
 
 [airshop3,["","Armed Vehicles"], [
