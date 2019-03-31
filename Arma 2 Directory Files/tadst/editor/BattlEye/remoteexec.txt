@@ -1,0 +1,1 @@
+7 "toString" "setVariable" "isDedicated" "isServer" "hasInterface" "setVehicleInit" "createVehicle" "network_MPExec" "Developer" "Tester" "isAdminDev" "isSnAdmin" "isAdmin" "isMod" "supporters1" "supporters2" "supporters3" "supporters4" "supportersVIP" "Colonel" "Major" "Captain" "Lieutenant" "Sergeant_Major" "Staff_Sergeant" "Sergeant" "Corporal" "Private1" "Recruit"

@@ -1,0 +1,625 @@
+
+
+=====================================================================
+== S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe
+== "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  "-mod=S:\Steam\steamapps\common\Arma 2;EXPANSION;ca"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\server.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor" -name=editor
+=====================================================================
+Exe timestamp: 2019/03/01 12:31:17
+Current time:  2019/03/16 08:40:50
+
+Version 1.63.131129
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/UN_CDF_Soldier_base_EP1/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Commander/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Militia/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Officer/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Sniper/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Spotter/HitPoints/
+ 8:40:52 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+ 8:40:53 Connected to Steam servers
+ 8:41:04 Mission editor.Takistan: Number of roles (11) is different from 'description.ext::Header::maxPlayer' (80)
+ 8:41:04 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:04 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:04 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:04 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:04 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:05 Server error: Player without identity Tucker (id 1317684071)
+ 8:41:32 [EDITOR LOADING]...
+ 8:42:21 Tucker - Deleted - 443671: cl_feathers2.p3d
+ 8:42:22 Tucker - Deleted - 443675: cl_rock1.p3d
+ 8:42:22 Tucker - Deleted - 443679: cl_rock1.p3d
+ 8:42:23 Tucker - Deleted - 443661: cl_feathers2.p3d
+ 8:42:23 Tucker - Deleted - 443673: cl_feathers2.p3d
+ 8:42:23 Tucker - Deleted - object_894
+ 8:42:23 Tucker - Deleted - object_893
+ 8:42:24 Tucker - Deleted - 443683: cl_feathers2.p3d
+ 8:42:24 Tucker - Deleted - 443681: cl_feathers2.p3d
+ 8:42:25 Tucker - Deleted - 443692: cl_feathers2.p3d
+ 8:42:25 Tucker - Deleted - NOID stopa_l.p3d
+ 8:42:26 Tucker - Deleted - 443699: cl_rock1.p3d
+ 8:42:27 Tucker - Deleted - 443700: cl_feathers2.p3d
+ 8:42:27 Tucker - Deleted - 443705: cl_feathers2.p3d
+ 8:42:33 Tucker - Deleted - 443731: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - 443737: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - 443735: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - 443710: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - 443743: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:34 Tucker - Deleted - 443749: cl_feathers2.p3d
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:34 Tucker - Deleted - 443738: dragonfly.p3d
+ 8:42:34 Tucker - Deleted - 443750: aglais_urticae_e.p3d
+ 8:42:34 Tucker - Deleted - 443751: fly.p3d
+ 8:42:34 Tucker - Deleted - 443752: honeybee.p3d
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:34 Tucker - Deleted - 443756: fly.p3d
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:34 Tucker - Deleted - <NULL-object>
+ 8:42:48 Tucker - Deleted - object_895
+ 8:42:50 Tucker - Deleted - object_890
+ 8:42:51 Tucker - Deleted - object_891
+ 8:42:53 Tucker - Deleted - object_896
+
+
+=====================================================================
+== S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe
+== "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  "-mod=S:\Steam\steamapps\common\Arma 2;EXPANSION;ca"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\server.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor" -name=editor
+=====================================================================
+Exe timestamp: 2019/03/01 12:31:17
+Current time:  2019/03/16 08:44:25
+
+Version 1.63.131129
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/UN_CDF_Soldier_base_EP1/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Commander/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Militia/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Officer/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Sniper/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Spotter/HitPoints/
+ 8:44:26 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+ 8:44:28 Connected to Steam servers
+ 8:44:42 Mission editor.Takistan: Number of roles (11) is different from 'description.ext::Header::maxPlayer' (80)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:44:43 Server error: Player without identity Tucker (id 1536072832)
+ 8:45:09 [EDITOR LOADING]...
+ 8:45:46 Tucker - Deleted - object_893
+ 8:45:48 Tucker - Deleted - object_889
+ 8:45:48 Tucker - Deleted - object_894
+ 8:45:49 Tucker - Deleted - object_895
+ 8:46:04 Tucker - Deleted - object_890
+ 8:46:05 Tucker - Deleted - object_891
+ 8:46:06 Tucker - Deleted - <NULL-object>
+ 8:46:06 Tucker - Deleted - <NULL-object>
+ 8:46:07 Tucker - Deleted - object_896
+ 8:46:07 Tucker - Deleted - <NULL-object>
+ 8:46:07 Tucker - Deleted - <NULL-object>
+ 8:46:09 Tucker - Deleted - object_897
+ 8:46:09 Tucker - Deleted - <NULL-object>
+ 8:46:09 Tucker - Deleted - <NULL-object>
+ 8:46:09 Tucker - Deleted - <NULL-object>
+ 8:46:09 Tucker - Deleted - <NULL-object>
+ 8:46:10 Tucker - Deleted - <NULL-object>
+ 8:46:10 Tucker - Deleted - object_892
+ 8:46:10 Tucker - Deleted - <NULL-object>
+ 8:46:10 Tucker - Deleted - <NULL-object>
+ 8:46:10 Tucker - Deleted - <NULL-object>
+ 8:46:32 "[[object_901,Player_8],"object_setOwner"]"
+ 8:46:32 "[[object_901,Player_8],"object_setOwner"]"
+ 8:46:32 Tucker - Moving - object_901
+ 8:46:36 Tucker - Droped - object_901
+ 8:46:38 Tucker - Deleted - object_901
+ 8:46:43 Tucker - Deleted - object_902
+ 8:46:43 Tucker - Deleted - <NULL-object>
+ 8:46:43 Tucker - Deleted - <NULL-object>
+ 8:46:44 Tucker - Deleted - object_903
+ 8:46:44 Tucker - Deleted - <NULL-object>
+ 8:46:44 Tucker - Deleted - <NULL-object>
+ 8:46:45 Tucker - Deleted - object_898
+ 8:46:45 Tucker - Deleted - <NULL-object>
+ 8:46:46 Tucker - Deleted - <NULL-object>
+ 8:46:47 Tucker - Deleted - object_899
+ 8:46:47 Tucker - Deleted - <NULL-object>
+ 8:46:47 Tucker - Deleted - <NULL-object>
+ 8:46:47 Tucker - Deleted - <NULL-object>
+ 8:46:52 Tucker - Deleted - object_904
+ 8:46:53 Tucker - Deleted - <NULL-object>
+ 8:46:53 Tucker - Deleted - <NULL-object>
+ 8:46:55 Tucker - Deleted - object_905
+ 8:46:55 Tucker - Deleted - <NULL-object>
+ 8:46:55 Tucker - Deleted - <NULL-object>
+ 8:46:55 Tucker - Deleted - <NULL-object>
+ 8:46:56 Tucker - Deleted - object_900
+ 8:46:56 Tucker - Deleted - <NULL-object>
+ 8:46:56 Tucker - Deleted - <NULL-object>
+ 8:46:56 Tucker - Deleted - <NULL-object>
+ 8:46:57 Tucker - Deleted - object_906
+ 8:46:57 Tucker - Deleted - <NULL-object>
+ 8:46:58 Tucker - Deleted - <NULL-object>
+ 8:46:58 Tucker - Deleted - <NULL-object>
+ 8:47:03 Tucker - Deleted - object_838
+ 8:47:03 Tucker - Deleted - <NULL-object>
+ 8:47:03 Tucker - Deleted - <NULL-object>
+ 8:47:04 Tucker - Deleted - <NULL-object>
+ 8:47:05 Tucker - Deleted - object_834
+ 8:47:05 Tucker - Deleted - <NULL-object>
+ 8:47:05 Tucker - Deleted - <NULL-object>
+ 8:47:06 Tucker - Deleted - object_836
+ 8:47:06 Tucker - Deleted - <NULL-object>
+ 8:47:06 Tucker - Deleted - <NULL-object>
+ 8:47:06 Tucker - Deleted - <NULL-object>
+ 8:47:07 Tucker - Deleted - <NULL-object>
+ 8:47:07 Tucker - Deleted - <NULL-object>
+ 8:47:07 Tucker - Deleted - <NULL-object>
+ 8:47:07 Tucker - Deleted - object_837
+ 8:47:07 Tucker - Deleted - <NULL-object>
+ 8:47:08 Tucker - Deleted - <NULL-object>
+ 8:47:08 Tucker - Deleted - <NULL-object>
+ 8:47:08 Tucker - Deleted - <NULL-object>
+ 8:47:08 Tucker - Deleted - <NULL-object>
+ 8:47:08 Tucker - Deleted - <NULL-object>
+ 8:47:09 Tucker - Deleted - <NULL-object>
+ 8:47:16 Client: Remote object 2:6 not found
+ 8:47:16 Client: Remote object 2:7 not found
+ 8:47:16 Client: Remote object 2:8 not found
+
+
+=====================================================================
+== S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe
+== "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  "-mod=S:\Steam\steamapps\common\Arma 2;EXPANSION;ca"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\server.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor" -name=editor
+=====================================================================
+Exe timestamp: 2019/03/01 12:31:17
+Current time:  2019/03/16 08:50:23
+
+Version 1.63.131129
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/UN_CDF_Soldier_base_EP1/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Commander/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Militia/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Officer/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Sniper/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Spotter/HitPoints/
+ 8:50:25 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+ 8:50:25 Connected to Steam servers
+ 8:50:37 Mission editor.Takistan: Number of roles (11) is different from 'description.ext::Header::maxPlayer' (80)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:50:38 Server error: Player without identity Tucker (id 1891057178)
+ 8:51:04 [EDITOR LOADING]...
+ 8:51:41 Tucker - Deleted - object_660
+ 8:51:41 Tucker - Deleted - object_655
+ 8:51:41 Tucker - Deleted - object_659
+ 8:51:41 Tucker - Deleted - object_664
+ 8:51:41 Tucker - Deleted - object_654
+ 8:51:41 Tucker - Deleted - object_665
+ 8:51:41 Tucker - Deleted - object_653
+ 8:51:41 Tucker - Deleted - object_666
+ 8:51:41 Tucker - Deleted - object_658
+ 8:51:41 Tucker - Deleted - object_661
+ 8:51:41 Tucker - Deleted - object_657
+ 8:51:41 Tucker - Deleted - object_662
+ 8:51:41 Tucker - Deleted - object_656
+ 8:51:41 Tucker - Deleted - object_667
+ 8:51:41 Tucker - Deleted - object_647
+ 8:51:41 Tucker - Deleted - object_652
+ 8:51:41 Tucker - Deleted - object_668
+ 8:51:41 Tucker - Deleted - object_663
+ 8:51:41 Tucker - Deleted - object_651
+ 8:51:41 Tucker - Deleted - object_672
+ 8:51:41 Tucker - Deleted - object_646
+ 8:51:41 Tucker - Deleted - object_673
+ 8:51:41 Tucker - Deleted - object_645
+ 8:51:41 Tucker - Deleted - object_674
+ 8:51:41 Tucker - Deleted - object_650
+ 8:51:41 Tucker - Deleted - object_669
+ 8:51:41 Tucker - Deleted - object_649
+ 8:51:41 Tucker - Deleted - object_670
+ 8:51:41 Tucker - Deleted - object_648
+ 8:51:41 Tucker - Deleted - object_675
+ 8:51:41 Tucker - Deleted - object_644
+ 8:51:41 Tucker - Deleted - object_770
+ 8:51:41 Tucker - Deleted - object_676
+ 8:51:41 Tucker - Deleted - object_671
+ 8:51:41 Tucker - Deleted - object_769
+ 8:51:41 Tucker - Deleted - object_680
+ 8:51:41 Tucker - Deleted - object_765
+ 8:51:41 Tucker - Deleted - object_677
+ 8:51:41 Tucker - Deleted - object_764
+ 8:51:41 Tucker - Deleted - object_678
+ 8:51:41 Tucker - Deleted - object_768
+ 8:51:41 Tucker - Deleted - object_681
+ 8:51:41 Tucker - Deleted - object_767
+ 8:51:41 Tucker - Deleted - object_682
+ 8:51:41 Tucker - Deleted - object_766
+ 8:51:41 Tucker - Deleted - object_679
+ 8:51:41 Tucker - Deleted - object_758
+ 8:51:41 Tucker - Deleted - object_686
+ 8:51:41 Tucker - Deleted - object_763
+ 8:51:41 Tucker - Deleted - object_687
+ 8:51:41 Tucker - Deleted - object_762
+ 8:51:41 Tucker - Deleted - object_688
+ 8:51:41 Tucker - Deleted - object_757
+ 8:51:41 Tucker - Deleted - object_683
+ 8:51:41 Tucker - Deleted - object_756
+ 8:51:41 Tucker - Deleted - object_684
+ 8:51:41 Tucker - Deleted - object_761
+ 8:51:41 Tucker - Deleted - object_689
+ 8:51:41 Tucker - Deleted - object_760
+ 8:51:41 Tucker - Deleted - object_690
+ 8:51:41 Tucker - Deleted - object_759
+ 8:51:41 Tucker - Deleted - object_685
+ 8:51:41 Tucker - Deleted - object_750
+ 8:51:41 Tucker - Deleted - object_694
+ 8:51:41 Tucker - Deleted - object_755
+ 8:51:41 Tucker - Deleted - object_695
+ 8:51:41 Tucker - Deleted - object_754
+ 8:51:41 Tucker - Deleted - object_696
+ 8:51:41 Tucker - Deleted - object_749
+ 8:51:41 Tucker - Deleted - object_691
+ 8:51:41 Tucker - Deleted - object_748
+ 8:51:41 Tucker - Deleted - object_692
+ 8:51:41 Tucker - Deleted - object_753
+ 8:51:41 Tucker - Deleted - object_697
+ 8:51:41 Tucker - Deleted - object_752
+ 8:51:41 Tucker - Deleted - object_698
+ 8:51:41 Tucker - Deleted - object_751
+ 8:51:41 Tucker - Deleted - object_693
+ 8:51:41 Tucker - Deleted - object_742
+ 8:51:41 Tucker - Deleted - object_699
+ 8:51:41 Tucker - Deleted - object_747
+ 8:51:41 Tucker - Deleted - object_700
+ 8:51:41 Tucker - Deleted - object_746
+ 8:51:41 Tucker - Deleted - object_592
+ 8:51:41 Tucker - Deleted - object_741
+ 8:51:41 Tucker - Deleted - object_589
+ 8:51:41 Tucker - Deleted - object_740
+ 8:51:41 Tucker - Deleted - object_590
+ 8:51:41 Tucker - Deleted - object_745
+ 8:51:41 Tucker - Deleted - object_593
+ 8:51:41 Tucker - Deleted - object_772
+ 8:51:41 Tucker - Deleted - object_594
+ 8:51:41 Tucker - Deleted - object_771
+ 8:51:41 Tucker - Deleted - object_591
+ 8:51:41 Tucker - Deleted - object_734
+ 8:51:41 Tucker - Deleted - object_598
+ 8:51:41 Tucker - Deleted - object_739
+ 8:51:41 Tucker - Deleted - object_599
+ 8:51:41 Tucker - Deleted - object_738
+ 8:51:41 Tucker - Deleted - object_600
+ 8:51:41 Tucker - Deleted - object_733
+ 8:51:41 Tucker - Deleted - object_595
+ 8:51:41 Tucker - Deleted - object_732
+ 8:51:41 Tucker - Deleted - object_596
+ 8:51:41 Tucker - Deleted - object_737
+ 8:51:41 Tucker - Deleted - object_601
+ 8:51:41 Tucker - Deleted - object_736
+ 8:51:41 Tucker - Deleted - object_602
+ 8:51:41 Tucker - Deleted - object_735
+ 8:51:41 Tucker - Deleted - object_597
+ 8:51:41 Tucker - Deleted - object_726
+ 8:51:41 Tucker - Deleted - object_606
+ 8:51:41 Tucker - Deleted - object_731
+ 8:51:41 Tucker - Deleted - object_607
+ 8:51:41 Tucker - Deleted - object_730
+ 8:51:41 Tucker - Deleted - object_608
+ 8:51:41 Tucker - Deleted - object_725
+ 8:51:41 Tucker - Deleted - object_603
+ 8:51:41 Tucker - Deleted - object_724
+ 8:51:41 Tucker - Deleted - object_604
+ 8:51:41 Tucker - Deleted - object_729
+ 8:51:41 Tucker - Deleted - object_609
+ 8:51:41 Tucker - Deleted - object_728
+ 8:51:41 Tucker - Deleted - object_610
+ 8:51:41 Tucker - Deleted - object_727
+ 8:51:41 Tucker - Deleted - object_605
+ 8:51:41 Tucker - Deleted - object_744
+ 8:51:41 Tucker - Deleted - object_614
+ 8:51:41 Tucker - Deleted - object_723
+ 8:51:41 Tucker - Deleted - object_615
+ 8:51:41 Tucker - Deleted - object_722
+ 8:51:41 Tucker - Deleted - object_616
+ 8:51:41 Tucker - Deleted - object_743
+ 8:51:41 Tucker - Deleted - object_611
+ 8:51:41 Tucker - Deleted - object_721
+ 8:51:41 Tucker - Deleted - object_612
+ 8:51:41 Tucker - Deleted - object_720
+ 8:51:41 Tucker - Deleted - object_617
+ 8:51:41 Tucker - Deleted - object_719
+ 8:51:41 Tucker - Deleted - object_618
+ 8:51:41 Tucker - Deleted - object_717
+ 8:51:41 Tucker - Deleted - object_613
+ 8:51:41 Tucker - Deleted - object_718
+ 8:51:41 Tucker - Deleted - object_825
+ 8:51:41 Tucker - Deleted - object_824
+ 8:51:51 Tucker - Deleted - object_557
+ 8:51:51 Tucker - Deleted - object_558
+ 8:51:51 Tucker - Deleted - object_552
+ 8:51:51 Tucker - Deleted - object_553
+ 8:51:51 Tucker - Deleted - object_551
+ 8:51:51 Tucker - Deleted - object_562
+ 8:51:51 Tucker - Deleted - object_556
+ 8:51:51 Tucker - Deleted - object_559
+ 8:51:51 Tucker - Deleted - object_555
+ 8:51:51 Tucker - Deleted - object_560
+ 8:51:51 Tucker - Deleted - object_554
+ 8:51:51 Tucker - Deleted - object_563
+ 8:51:51 Tucker - Deleted - object_547
+ 8:51:51 Tucker - Deleted - object_564
+ 8:51:51 Tucker - Deleted - object_550
+ 8:51:51 Tucker - Deleted - object_561
+ 8:51:51 Tucker - Deleted - object_549
+ 8:51:51 Tucker - Deleted - object_545
+ 8:51:51 Tucker - Deleted - object_546
+ 8:51:51 Tucker - Deleted - object_569
+ 8:51:51 Tucker - Deleted - object_568
+ 8:51:51 Tucker - Deleted - object_570
+ 8:51:51 Tucker - Deleted - object_548
+ 8:51:51 Tucker - Deleted - object_565
+ 8:51:51 Tucker - Deleted - object_588
+ 8:51:51 Tucker - Deleted - object_566
+ 8:51:51 Tucker - Deleted - object_643
+ 8:51:51 Tucker - Deleted - object_571
+ 8:51:51 Tucker - Deleted - object_637
+ 8:51:51 Tucker - Deleted - object_572
+ 8:51:51 Tucker - Deleted - object_642
+ 8:51:51 Tucker - Deleted - object_567
+ 8:51:51 Tucker - Deleted - object_641
+ 8:51:51 Tucker - Deleted - object_576
+ 8:51:51 Tucker - Deleted - object_636
+ 8:51:51 Tucker - Deleted - object_577
+ 8:51:51 Tucker - Deleted - object_635
+ 8:51:51 Tucker - Deleted - object_578
+ 8:51:51 Tucker - Deleted - object_640
+ 8:51:51 Tucker - Deleted - object_573
+ 8:51:51 Tucker - Deleted - object_639
+ 8:51:51 Tucker - Deleted - object_574
+ 8:51:51 Tucker - Deleted - object_638
+ 8:51:51 Tucker - Deleted - object_579
+ 8:51:51 Tucker - Deleted - object_629
+ 8:51:51 Tucker - Deleted - object_580
+ 8:51:51 Tucker - Deleted - object_634
+ 8:51:51 Tucker - Deleted - object_575
+ 8:51:51 Tucker - Deleted - object_633
+ 8:51:51 Tucker - Deleted - object_583
+ 8:51:51 Tucker - Deleted - object_628
+ 8:51:51 Tucker - Deleted - object_584
+ 8:51:51 Tucker - Deleted - object_627
+ 8:51:51 Tucker - Deleted - object_585
+ 8:51:51 Tucker - Deleted - object_632
+ 8:51:51 Tucker - Deleted - object_581
+ 8:51:51 Tucker - Deleted - object_631
+ 8:51:51 Tucker - Deleted - object_582
+ 8:51:51 Tucker - Deleted - object_630
+ 8:51:51 Tucker - Deleted - object_621
+ 8:51:51 Tucker - Deleted - object_626
+ 8:51:51 Tucker - Deleted - object_625
+ 8:51:51 Tucker - Deleted - object_620
+ 8:51:51 Tucker - Deleted - object_586
+ 8:51:51 Tucker - Deleted - object_619
+ 8:51:51 Tucker - Deleted - object_587
+ 8:51:51 Tucker - Deleted - object_624
+ 8:51:51 Tucker - Deleted - object_623
+ 8:51:51 Tucker - Deleted - object_622
+ 8:53:11 Tucker - Deleted - object_884
+ 8:53:11 Tucker - Deleted - object_883
+ 8:53:11 Tucker - Deleted - object_879
+ 8:53:11 Tucker - Deleted - object_878
+ 8:53:11 Tucker - Deleted - object_885
+ 8:53:11 Tucker - Deleted - object_877
+ 8:53:11 Tucker - Deleted - object_886
+ 8:53:11 Tucker - Deleted - object_882
+ 8:53:11 Tucker - Deleted - object_887
+ 8:53:11 Tucker - Deleted - object_881
+ 8:53:11 Tucker - Deleted - object_798
+ 8:53:11 Tucker - Deleted - object_880
+ 8:53:11 Tucker - Deleted - object_829
+ 8:53:11 Tucker - Deleted - object_872
+ 8:53:11 Tucker - Deleted - object_827
+ 8:53:11 Tucker - Deleted - object_876
+ 8:53:11 Tucker - Deleted - object_826
+ 8:53:11 Tucker - Deleted - object_828
+ 8:53:11 Tucker - Deleted - object_871
+ 8:53:11 Tucker - Deleted - object_778
+ 8:53:11 Tucker - Deleted - object_870
+ 8:53:11 Tucker - Deleted - object_779
+ 8:53:11 Tucker - Deleted - object_875
+ 8:53:11 Tucker - Deleted - object_780
+ 8:53:11 Tucker - Deleted - object_874
+ 8:53:11 Tucker - Deleted - object_801
+ 8:53:11 Tucker - Deleted - object_873
+ 8:53:11 Tucker - Deleted - object_802
+ 8:53:11 Tucker - Deleted - object_864
+ 8:53:11 Tucker - Deleted - object_781
+ 8:53:11 Tucker - Deleted - object_869
+ 8:53:11 Tucker - Deleted - object_783
+ 8:53:11 Tucker - Deleted - object_868
+ 8:53:11 Tucker - Deleted - object_782
+ 8:53:11 Tucker - Deleted - object_863
+ 8:53:11 Tucker - Deleted - object_787
+ 8:53:11 Tucker - Deleted - object_862
+ 8:53:11 Tucker - Deleted - object_788
+ 8:53:11 Tucker - Deleted - object_867
+ 8:53:11 Tucker - Deleted - object_789
+ 8:53:11 Tucker - Deleted - object_866
+ 8:53:11 Tucker - Deleted - object_784
+ 8:53:11 Tucker - Deleted - object_865
+ 8:53:11 Tucker - Deleted - object_785
+ 8:53:11 Tucker - Deleted - object_856
+ 8:53:11 Tucker - Deleted - object_790
+ 8:53:11 Tucker - Deleted - object_888
+ 8:53:11 Tucker - Deleted - object_791
+ 8:53:11 Tucker - Deleted - object_861
+ 8:53:11 Tucker - Deleted - object_786
+ 8:53:11 Tucker - Deleted - object_855
+ 8:53:11 Tucker - Deleted - object_795
+ 8:53:11 Tucker - Deleted - object_854
+ 8:53:11 Tucker - Deleted - object_796
+ 8:53:11 Tucker - Deleted - object_859
+ 8:53:11 Tucker - Deleted - object_797
+ 8:53:11 Tucker - Deleted - object_858
+ 8:53:11 Tucker - Deleted - object_792
+ 8:53:11 Tucker - Deleted - object_857
+ 8:53:11 Tucker - Deleted - object_793
+ 8:53:11 Tucker - Deleted - object_850
+ 8:53:11 Tucker - Deleted - object_830
+ 8:53:11 Tucker - Deleted - object_853
+ 8:53:11 Tucker - Deleted - object_799
+ 8:53:11 Tucker - Deleted - object_852
+ 8:53:11 Tucker - Deleted - object_794
+ 8:53:11 Tucker - Deleted - object_849
+ 8:53:11 Tucker - Deleted - object_832
+ 8:53:11 Tucker - Deleted - object_848
+ 8:53:11 Tucker - Deleted - object_803
+ 8:53:11 Tucker - Deleted - object_851
+ 8:53:11 Tucker - Deleted - object_804
+ 8:53:11 Tucker - Deleted - object_842
+ 8:53:11 Tucker - Deleted - object_847
+ 8:53:11 Tucker - Deleted - object_800
+ 8:53:11 Tucker - Deleted - object_846
+ 8:53:11 Tucker - Deleted - object_805
+ 8:53:11 Tucker - Deleted - object_841
+ 8:53:11 Tucker - Deleted - object_806
+ 8:53:11 Tucker - Deleted - object_840
+ 8:53:11 Tucker - Deleted - object_831
+ 8:53:11 Tucker - Deleted - object_845
+ 8:53:11 Tucker - Deleted - object_810
+ 8:53:11 Tucker - Deleted - object_844
+ 8:53:11 Tucker - Deleted - object_811
+ 8:53:11 Tucker - Deleted - object_843
+ 8:53:11 Tucker - Deleted - object_812
+ 8:53:11 Tucker - Deleted - object_860
+ 8:53:11 Tucker - Deleted - object_807
+ 8:53:11 Tucker - Deleted - object_839
+ 8:53:11 Tucker - Deleted - object_808
+ 8:53:11 Tucker - Deleted - object_835
+ 8:53:11 Tucker - Deleted - object_813
+ 8:53:11 Tucker - Deleted - object_837
+ 8:53:11 Tucker - Deleted - object_814
+ 8:53:11 Tucker - Deleted - object_836
+ 8:53:11 Tucker - Deleted - object_809
+ 8:53:11 Tucker - Deleted - object_834
+ 8:53:11 Tucker - Deleted - object_818
+ 8:53:11 Tucker - Deleted - object_838
+ 8:53:11 Tucker - Deleted - object_819
+ 8:53:11 Tucker - Deleted - object_906
+ 8:53:11 Tucker - Deleted - object_820
+ 8:53:11 Tucker - Deleted - object_900
+ 8:53:11 Tucker - Deleted - object_815
+ 8:53:11 Tucker - Deleted - object_905
+ 8:53:11 Tucker - Deleted - object_816
+ 8:53:11 Tucker - Deleted - object_904
+ 8:53:11 Tucker - Deleted - object_821
+ 8:53:11 Tucker - Deleted - object_899
+ 8:53:11 Tucker - Deleted - object_822
+ 8:53:11 Tucker - Deleted - object_898
+ 8:53:11 Tucker - Deleted - object_817
+ 8:53:11 Tucker - Deleted - object_903
+ 8:53:11 Tucker - Deleted - object_823
+ 8:53:11 Tucker - Deleted - object_902
+ 8:53:11 Tucker - Deleted - object_901
+ 8:53:11 Tucker - Deleted - object_892
+ 8:53:11 Tucker - Deleted - object_897
+ 8:53:11 Tucker - Deleted - object_896
+ 8:53:11 Tucker - Deleted - object_891
+ 8:53:11 Tucker - Deleted - object_890
+ 8:53:11 Tucker - Deleted - object_895
+ 8:53:11 Tucker - Deleted - object_894
+ 8:53:11 Tucker - Deleted - object_893
+ 8:53:11 Tucker - Deleted - object_889
+
+
+=====================================================================
+== S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe
+== "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  "-mod=S:\Steam\steamapps\common\Arma 2;EXPANSION;ca"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\server.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor" -name=editor
+=====================================================================
+Exe timestamp: 2019/03/01 12:31:17
+Current time:  2019/03/16 08:55:21
+
+Version 1.63.131129
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/UN_CDF_Soldier_base_EP1/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Commander/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Militia/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Officer/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Sniper/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Spotter/HitPoints/
+ 8:55:22 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+ 8:55:23 Connected to Steam servers
+ 8:55:31 Mission editor.Takistan: Number of roles (11) is different from 'description.ext::Header::maxPlayer' (80)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:55:32 Server error: Player without identity Tucker (id 37407579)
+ 8:56:05 [EDITOR LOADING]...
+ 8:57:59 Client: Remote object 2:6 not found
+ 8:57:59 Client: Remote object 2:7 not found
+ 8:57:59 Client: Remote object 2:8 not found
+
+
+=====================================================================
+== S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe
+== "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  "-mod=S:\Steam\steamapps\common\Arma 2;EXPANSION;ca"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\server.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor\basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\editor" -name=editor
+=====================================================================
+Exe timestamp: 2019/03/01 12:31:17
+Current time:  2019/03/17 23:29:34
+
+Version 1.63.131129
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/UN_CDF_Soldier_base_EP1/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Commander/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Militia/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Officer/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Sniper/HitPoints/
+Updating base class HitPoints->HitPoints, by CorePatch\corepatch_characters\config.bin/CfgVehicles/CDF_Soldier_Spotter/HitPoints/
+23:29:36 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+23:29:36 Connected to Steam servers
+23:29:56 Mission editor.Takistan: Number of roles (11) is different from 'description.ext::Header::maxPlayer' (80)
+23:30:28 [EDITOR LOADING]...
+23:31:38 "[[cs_ins_1,Player_8],"object_setOwner"]"
+23:31:38 "[[cs_ins_1,Player_8],"object_setOwner"]"
+23:31:38 Tucker - Moving - cs_ins_1
+23:31:45 Tucker - Droped - cs_ins_1
+23:31:54 "[[insvehshop,Player_8],"object_setOwner"]"
+23:31:54 "[[insvehshop,Player_8],"object_setOwner"]"
+23:31:54 Tucker - Moving - insvehshop
+23:31:58 Tucker - Droped - insvehshop
+23:32:24 "[[licenseflag2,Player_8],"object_setOwner"]"
+23:32:24 "[[licenseflag2,Player_8],"object_setOwner"]"
+23:32:24 Tucker - Moving - licenseflag2
+23:32:34 Tucker - Droped - licenseflag2

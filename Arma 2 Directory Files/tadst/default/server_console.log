@@ -1,0 +1,285 @@
+﻿23:28:03 BattlEye server updated to version: 217
+23:28:03 BattlEye Server: Initialized (v1.217)
+23:28:03 Host identity created.
+23:28:03 Game Port: 2302, Steam Query Port: 2303
+23:28:22 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:28:22 Player Tucker connecting.
+23:28:22 Mission Takistan Life Xtreme V2 read from bank.
+23:28:24 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:28:24 Player Tucker connected (id=76561198138815968).
+23:28:24 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:28:31 Roles assigned.
+23:28:31 Reading mission ...
+23:29:01 Script tlx_server\functions\pre_init.sqf not found
+23:29:01 Mission Takistan Life Xtreme V2 read from bank.
+23:29:02 Roles assigned.
+23:29:02 Reading mission ...
+23:29:03 Script tlx_server\functions\pre_init.sqf not found
+23:29:03 Mission Takistan Life Xtreme V2 read from bank.
+23:29:04 Roles assigned.
+23:29:04 Reading mission ...
+23:29:04 Script tlx_server\functions\pre_init.sqf not found
+23:29:05 Mission Takistan Life Xtreme V2 read from bank.
+23:29:24 Player Tucker disconnected.
+23:29:24 BattlEye Server: Player #0 Tucker disconnected
+23:29:24 All users disconnected, waiting for users.
+23:33:48 BattlEye Server: Initialized (v1.217)
+23:33:48 Host identity created.
+23:33:48 Game Port: 2302, Steam Query Port: 2303
+23:33:54 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:33:54 Player Tucker connecting.
+23:33:54 Mission Takistan Life Xtreme V2 read from bank.
+23:33:55 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:33:56 Player Tucker connected (id=76561198138815968).
+23:33:56 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:34:00 Roles assigned.
+23:34:00 Reading mission ...
+23:34:16 Script tlx_server\functions\pre_init.sqf not found
+23:34:16 Mission Takistan Life Xtreme V2 read from bank.
+23:34:33 Roles assigned.
+23:34:33 Reading mission ...
+23:34:34 Script tlx_server\functions\pre_init.sqf not found
+23:34:34 Mission Takistan Life Xtreme V2 read from bank.
+23:39:31 BattlEye Server: Initialized (v1.217)
+23:39:31 Host identity created.
+23:39:31 Game Port: 2302, Steam Query Port: 2303
+23:41:16 BattlEye Server: Initialized (v1.217)
+23:41:16 Host identity created.
+23:41:16 Game Port: 2302, Steam Query Port: 2303
+23:41:25 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:41:25 Player Tucker connecting.
+23:41:26 Mission Takistan Life Xtreme V2 read from bank.
+23:41:27 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:41:27 Player Tucker connected (id=76561198138815968).
+23:41:27 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:41:33 Roles assigned.
+23:41:33 Reading mission ...
+23:41:48 Script tlx_server\functions\pre_init.sqf not found
+23:41:49 Mission Takistan Life Xtreme V2 read from bank.
+23:46:33 BattlEye Server: Initialized (v1.217)
+23:46:33 Host identity created.
+23:46:33 Game Port: 2302, Steam Query Port: 2303
+23:47:56 BattlEye Server: Initialized (v1.217)
+23:47:56 Host identity created.
+23:47:56 Game Port: 2302, Steam Query Port: 2303
+23:48:52 BattlEye Server: Initialized (v1.217)
+23:48:52 Host identity created.
+23:48:53 Game Port: 2302, Steam Query Port: 2303
+23:49:06 BattlEye Server: Player #0 Tucker (127.0.0.1:2316) connected
+23:49:06 Player Tucker connecting.
+23:49:06 Mission Takistan Life Xtreme V2 read from bank.
+23:49:08 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:49:08 Player Tucker connected (id=76561198138815968).
+23:49:08 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:49:12 Roles assigned.
+23:49:12 Reading mission ...
+23:49:27 Script tlx_server\functions\pre_init.sqf not found
+23:49:28 Mission Takistan Life Xtreme V2 read from bank.
+23:51:47 BattlEye Server: Initialized (v1.217)
+23:51:47 Host identity created.
+23:51:47 Game Port: 2302, Steam Query Port: 2303
+23:52:15 BattlEye Server: Player #0 Tucker (127.0.0.1:2316) connected
+23:52:16 Player Tucker connecting.
+23:52:16 Mission Takistan Life Xtreme V2 read from bank.
+23:52:17 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:52:17 Player Tucker connected (id=76561198138815968).
+23:52:17 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:53:05 Roles assigned.
+23:53:05 Reading mission ...
+23:53:44 Script MPMissions\tlx_server\functions\pre_init.sqf not found
+23:53:45 Mission Takistan Life Xtreme V2 read from bank.
+23:56:30 BattlEye Server: Initialized (v1.217)
+23:56:30 Host identity created.
+23:56:30 Game Port: 2302, Steam Query Port: 2303
+23:56:42 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:56:42 Player Tucker connecting.
+23:56:42 Mission Takistan Life Xtreme V2 read from bank.
+23:56:43 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:56:44 Player Tucker connected (id=76561198138815968).
+23:56:44 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:57:01 Roles assigned.
+23:57:01 Reading mission ...
+23:57:28 Mission read.
+23:58:22 Game started.
+12:18:59 BattlEye Server: Initialized (v1.217)
+12:18:59 Host identity created.
+12:18:59 Game Port: 2302, Steam Query Port: 2303
+12:19:30 BattlEye Server: Initialized (v1.217)
+12:19:30 Host identity created.
+12:19:30 Game Port: 2302, Steam Query Port: 2303
+12:20:22 BattlEye Server: Initialized (v1.217)
+12:20:22 Host identity created.
+12:20:22 Game Port: 2302, Steam Query Port: 2303
+12:21:23 BattlEye Server: Initialized (v1.217)
+12:21:23 Host identity created.
+12:21:23 Game Port: 2302, Steam Query Port: 2303
+14:23:17 BattlEye Server: Initialized (v1.217)
+14:23:17 Host identity created.
+14:23:17 Game Port: 2302, Steam Query Port: 2303
+14:23:24 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+14:23:24 Player Tucker connecting.
+14:23:24 Mission Takistan Life Xtreme V2 read from bank.
+14:23:25 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+14:23:26 Player Tucker connected (id=76561198138815968).
+14:23:26 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+14:23:35 Roles assigned.
+14:23:35 Reading mission ...
+14:24:07 Mission read.
+14:24:52 Game started.
+14:28:10 BattlEye Server: Initialized (v1.217)
+14:28:10 Host identity created.
+14:28:10 Game Port: 2302, Steam Query Port: 2303
+14:28:29 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+14:28:29 Player Tucker connecting.
+14:28:29 Mission Takistan Life Xtreme V2 read from bank.
+14:28:31 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+14:28:31 Player Tucker connected (id=76561198138815968).
+14:28:31 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+14:28:37 Roles assigned.
+14:28:37 Reading mission ...
+14:29:08 Mission read.
+14:30:38 Game started.
+14:35:27 BattlEye Server: Initialized (v1.217)
+14:35:27 Host identity created.
+14:35:27 Game Port: 2302, Steam Query Port: 2303
+14:36:02 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+14:36:02 Player Tucker connecting.
+14:36:02 Mission Takistan Life Xtreme V2 read from bank.
+14:36:06 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+14:36:07 Player Tucker connected (id=76561198138815968).
+14:36:07 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+14:37:32 Roles assigned.
+14:37:32 Reading mission ...
+14:38:02 Mission read.
+14:39:34 Game started.
+15:03:20 BattlEye Server: Initialized (v1.217)
+15:03:20 Host identity created.
+15:03:21 Game Port: 2302, Steam Query Port: 2303
+15:11:03 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+15:11:03 Player Tucker connecting.
+15:11:03 Mission Takistan Life Xtreme V2 read from bank.
+15:11:04 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+15:11:05 Player Tucker connected (id=76561198138815968).
+15:11:05 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+15:11:10 Roles assigned.
+15:11:10 Reading mission ...
+15:11:42 Script functions\Action\Action_removeAll.fnc not found
+15:11:43 Mission Takistan Life Xtreme V2 read from bank.
+15:11:44 Roles assigned.
+15:11:44 Reading mission ...
+15:11:46 Script functions\Action\Action_removeAll.fnc not found
+15:11:47 Mission Takistan Life Xtreme V2 read from bank.
+15:11:49 Roles assigned.
+15:11:49 Reading mission ...
+15:11:51 Script functions\Action\Action_removeAll.fnc not found
+15:11:52 Mission Takistan Life Xtreme V2 read from bank.
+15:11:52 Roles assigned.
+15:11:52 Reading mission ...
+15:11:54 Script functions\Action\Action_removeAll.fnc not found
+15:11:55 Mission Takistan Life Xtreme V2 read from bank.
+15:11:56 Roles assigned.
+15:11:56 Reading mission ...
+15:11:57 Script functions\Action\Action_removeAll.fnc not found
+15:11:59 Mission Takistan Life Xtreme V2 read from bank.
+15:11:59 Roles assigned.
+15:11:59 Reading mission ...
+15:12:01 Script functions\Action\Action_removeAll.fnc not found
+15:12:02 Mission Takistan Life Xtreme V2 read from bank.
+15:12:03 Roles assigned.
+15:12:03 Reading mission ...
+15:12:04 Script functions\Action\Action_removeAll.fnc not found
+15:12:05 Player Tucker disconnected.
+15:12:05 BattlEye Server: Player #0 Tucker disconnected
+15:14:07 BattlEye Server: Initialized (v1.217)
+15:14:07 Host identity created.
+15:14:08 Game Port: 2302, Steam Query Port: 2303
+15:14:23 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+15:14:23 Player Tucker connecting.
+15:14:23 Mission Takistan Life Xtreme V2 read from bank.
+15:14:25 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+15:14:25 Player Tucker connected (id=76561198138815968).
+15:14:25 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+15:14:38 Roles assigned.
+15:14:38 Reading mission ...
+15:15:09 Mission read.
+15:15:46 Game started.
+15:17:54 Player Tucker disconnected.
+15:17:54 BattlEye Server: Player #0 Tucker disconnected
+19:30:15 BattlEye Server: Initialized (v1.217)
+19:30:15 Host identity created.
+19:30:15 Game Port: 2302, Steam Query Port: 2303
+19:30:31 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+19:30:31 Player Tucker connecting.
+19:30:31 Mission Takistan Life Xtreme V2 read from bank.
+19:30:32 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+19:30:33 Player Tucker connected (id=76561198138815968).
+19:30:33 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+19:30:39 Roles assigned.
+19:30:39 Reading mission ...
+19:31:11 Script functions\Action\Action_removeAll.fnc not found
+19:31:12 Mission Takistan Life Xtreme V2 read from bank.
+19:31:15 Player Tucker disconnected.
+19:31:15 BattlEye Server: Player #0 Tucker disconnected
+19:31:15 All users disconnected, waiting for users.
+19:33:23 BattlEye Server: Initialized (v1.217)
+19:33:23 Host identity created.
+19:33:24 Game Port: 2302, Steam Query Port: 2303
+19:38:44 BattlEye Server: Player #0 Tucker (192.168.0.30:2316) connected
+19:38:44 Player Tucker connecting.
+19:38:44 Mission Takistan Life Xtreme V2 read from bank.
+19:38:46 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+19:38:46 Player Tucker connected (id=76561198138815968).
+19:38:46 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+19:38:53 Roles assigned.
+19:38:53 Reading mission ...
+19:39:40 Mission read.
+19:40:47 Game started.
+21:36:53 BattlEye Server: Initialized (v1.217)
+21:36:53 Host identity created.
+21:36:53 Game Port: 2302, Steam Query Port: 2303
+21:36:58 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+21:36:58 Player Tucker connecting.
+21:36:58 Mission Takistan Life Xtreme V2 read from bank.
+21:37:00 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+21:37:00 Player Tucker connected (id=76561198138815968).
+21:37:00 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+21:37:13 Roles assigned.
+21:37:13 Reading mission ...
+21:37:40 Script functions\Clothing\Clothing_menu.fnc not found
+21:37:41 Mission Takistan Life Xtreme V2 read from bank.
+21:37:50 Player Tucker disconnected.
+21:37:50 BattlEye Server: Player #0 Tucker disconnected
+21:37:50 All users disconnected, waiting for users.
+23:01:50 BattlEye Server: Initialized (v1.217)
+23:01:50 Host identity created.
+23:01:50 Game Port: 2302, Steam Query Port: 2303
+23:02:09 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:02:09 Player Tucker connecting.
+23:02:09 Mission Takistan Life Xtreme V2 read from bank.
+23:02:15 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:02:15 Player Tucker connected (id=76561198138815968).
+23:02:15 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:02:20 Roles assigned.
+23:02:20 Reading mission ...
+23:02:49 Script functions\Siren\Siren_changemode.fnc not found
+23:02:50 Mission Takistan Life Xtreme V2 read from bank.
+23:03:21 Roles assigned.
+23:03:21 Reading mission ...
+23:03:22 Script functions\Siren\Siren_changemode.fnc not found
+23:03:23 Mission Takistan Life Xtreme V2 read from bank.
+23:03:27 Player Tucker disconnected.
+23:03:27 BattlEye Server: Player #0 Tucker disconnected
+23:03:27 All users disconnected, waiting for users.
+23:35:15 BattlEye Server: Initialized (v1.217)
+23:35:15 Host identity created.
+23:35:15 Game Port: 2302, Steam Query Port: 2303
+23:36:00 BattlEye Server: Player #0 Tucker (127.0.0.1:2304) connected
+23:36:00 Player Tucker connecting.
+23:36:00 Mission Takistan Life Xtreme V2 read from bank.
+23:36:01 BattlEye Server: Player #0 Tucker - BE GUID: b0058ab5e2efff60a320f5a137653115
+23:36:02 Player Tucker connected (id=76561198138815968).
+23:36:02 BattlEye Server: Verified GUID (b0058ab5e2efff60a320f5a137653115) of player #0 Tucker
+23:36:08 Roles assigned.
+23:36:08 Reading mission ...
+23:36:35 Mission read.
+23:37:15 Game started.
