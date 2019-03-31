@@ -31,6 +31,6 @@
 
 dtk_well_options = [
 ["Make a wish",{[]call well_wish}],
-["Wishing Well Gear",{[dtk_well]call storage_trunk;}],
-["Wishing Well Storage",{[dtk_well]call gear_open}]
+["Wishing Well Storage",{[dtk_well]call storage_trunk;}],
+["Wishing Well Gear",{[dtk_well]call gear_open}]
 ];

@@ -1,10 +1,10 @@
 private ["_wish","_type","_class","_name"];
 
-if ((dtk_seasion select 0) == wish_seasion)exitWith {
+if (s_seasion == wish_seasion)exitWith {
 	systemchat "You can only use the wishing well once every restart!";
 };
 
-wish_seasion = (dtk_seasion select 0);
+wish_seasion = s_seasion;
 ["SERVER",[player, [[dtk_side, "wish", wish_seasion]]],"S_statsave_save",false,false]call network_mpexec;
 
 _wish = dtk_wishes call BIS_selectRandom;
@@ -26,5 +26,4 @@ _wish = dtk_wishes call BIS_selectRandom;
 		[_class, _x select 1, dtk_well] call INV_CreateMag;
 	};
 	systemchat format ["You have won %1 of %2 from the wishing well!",_x select 1,_name];
-
 }forEach _wish;

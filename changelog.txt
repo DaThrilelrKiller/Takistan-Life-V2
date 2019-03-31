@@ -32,5 +32,10 @@ Added - Wishing well WIP
 Fixed - being able to get in vehicles at crazy heights
 Fixed - Keys saying unlocked/locked any
 Added - 26 new ipad backgrounds
-Removed - random face behing picked when player joins
+Removed - random face being picked when player joins
+Added - icon next to clothing in clothing shop
 
+3/31/2019
+Fixed - wishing well season
+fixed - static weapons not working
+Changed - Casino to the normal villa

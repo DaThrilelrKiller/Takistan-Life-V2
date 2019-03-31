@@ -25,6 +25,13 @@ class Header
 	 maxPlayers = 80;           
 };
 
+class SkipTime {
+title="Time Speedup";
+values[]={0,1,3,4};
+default=0;
+texts[]={"24 hours day","12 hours day","6 hours day","2 hours day"};
+};
+
 
 #include "mission.sqm"
 #include "data\sounds\cfgSounds.hpp"
