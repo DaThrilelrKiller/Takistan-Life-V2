@@ -39,6 +39,7 @@ timeout 3
 cd %_ARMA2OAPATH%\TLX\tlx_client.Takistan\
 "%_PBOMan%\PBOConsole.exe" -pack %temp%\TLX\tlx_client.Takistan %temp%\TLX\tlx_client.Takistan.pbo
 
+
 xcopy  /y %temp%\TLX\tlx_client.Takistan.pbo "%_ARMA2OAPATH%\MPMissions"
 xcopy /s/e /y %temp%\TLX\tlx_server "%_ARMA2OAPATH%\MPMissions\tlx_server"
 

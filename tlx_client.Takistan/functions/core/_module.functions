@@ -26,5 +26,6 @@
 "earplugs",
 "buildingPos",
 "close",
-"control"
+"control",
+"buildingPostions"
 ];
