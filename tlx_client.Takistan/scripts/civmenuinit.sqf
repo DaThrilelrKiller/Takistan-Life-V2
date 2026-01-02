@@ -75,15 +75,14 @@ if (_art == 3) exitWith
 };
 
 if (_art == 4) exitWith 
-
 {	
-
-_strafe = _this select 1;
-if (!(_strafe call string_isInteger)) exitWith {systemChat  localize "STRS_inv_no_valid_number";};
-_strafe = _strafe call string_toInt;  if (_strafe <= 0) exitWith {};
-(format ["if (player == %1) then {[""ticket"", %2, %3] execVM ""scripts\civmenu.sqf"";}; systemChat format[localize ""STRS_civmenu_ticket_globalchat"", name %1, %2, name %3];", _civmenuciv, (_strafe call string_intToString), player]) call network_broadcast;
-
+	_strafe = _this select 1;
+	if (!(_strafe call string_isInteger)) exitWith {systemChat  localize "STRS_inv_no_valid_number";};
+	_strafe = _strafe call string_toInt;  if (_strafe <= 0) exitWith {};
+	[_civmenuciv,[(_strafe call string_intToString),player,_civmenuciv],"police_ticket",true,false]call network_MPExec;
 };
+
+
 if ((_art == 7) and (player distance maxFlag <= 40)) exitWith 
 
 {

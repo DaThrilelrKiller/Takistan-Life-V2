@@ -1,7 +1,7 @@
 private ["_current","_data","_postion","_xplayer","_pos","_xpos","_subtract"];
 
 _current = 1000;
-_postion = (_this select 0);
+_postion = _this select 0;
 _postion = if (typeName _postion == "STRING")then{getMarkerPos _postion}else{getPos _postion};
 
 _xplayer = round(_postion select 0);
@@ -25,3 +25,4 @@ _y = _data select 0 select 1;
 _yplayer = _postion select 1;
 
 _nation = if (_yplayer < _y)then{"South"}else{"North"};
+ _nation;

@@ -1,0 +1,1 @@
+[300,s_enemies_spawn]call core_AddLoop;

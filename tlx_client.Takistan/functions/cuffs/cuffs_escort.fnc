@@ -13,7 +13,7 @@ if (!isNil "_escorting") exitWith {
 };
 
 _unit = cursorTarget;
-if !(isPlayer _unit)exitWith {};
+if !(_unit isKindOf "Man")exitWith {};
 _escort = _unit getVariable "escorting";
 
 if (isNil "_unit")exitWith {};

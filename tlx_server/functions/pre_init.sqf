@@ -17,7 +17,9 @@ dtk_server_modules =
 "Hunting",
 "Zone",
 "Whitelist",
-"House"
+"House",
+"Enemies",
+"Civilians"
 ];
 
 /*loads module functions*/ 

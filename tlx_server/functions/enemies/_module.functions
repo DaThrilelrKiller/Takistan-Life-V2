@@ -1,0 +1,8 @@
+[
+["spawn",false],
+["init",false],
+["getBuilding",false],
+["handleDamage",false],
+["handler",false],
+["killed",true]
+];
