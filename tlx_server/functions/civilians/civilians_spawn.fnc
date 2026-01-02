@@ -84,6 +84,7 @@ for "_i" from 1 to _max do {
 		[_unit]call s_civilians_setLoadout;
 
 		_unit addMPEventHandler ["MPKilled",{_this call killfeed_display;}];
+		_unit addEventHandler ["Killed", { [(_this select 0),(_this select 0)] call storage_dropall;}];
 		_unit moveInDriver _veh;
 
 		_grp setBehaviour "SAFE";

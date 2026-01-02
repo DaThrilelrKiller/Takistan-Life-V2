@@ -1,13 +1,17 @@
-private["_unit","_loadout","_items","_weapons","_license"]
+private["_unit","_loadout","_items","_weapons","_license"];
 
 _unit = _this select 0;
 
 
-_loadout = DTK_CIV_Loadouts call BIS_selectRandom;
+_loadout = call (DTK_CIV_Loadouts call BIS_selectRandom);
 
-_items = call (_loadout select 0);
-_weapons = call (_loadout select 1);
-_license = call (_loadout select 2);
+_items =  _loadout select 0;
+_weapons =  _loadout select 1;
+_license =  _loadout select 2;
+
+diag_log str _items;
+diag_log str _weapons;
+diag_log str _license;
 
 {
 	[_unit,_x select 0,_x select 1]call storage_add;
